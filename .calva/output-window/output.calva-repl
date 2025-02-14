@@ -972,3 +972,91 @@ next frontier:  []
 clj꞉graph-traversal.core꞉> 
 ([:1 nil] [:3 2] [:4 2] [:2 1] [:4 4])
 clj꞉graph-traversal.q1꞉> 
+([:3 nil] [:4 2])
+clj꞉graph-traversal.q1꞉> 
+([:1 nil] [:3 2] [:4 2] [:2 1] [:4 4])
+clj꞉graph-traversal.q1꞉> 
+([:1 nil] [:3 2] [:4 2] [:2 1] [:4 4])
+clj꞉graph-traversal.q1꞉> 
+([:3 nil] [:4 2])
+clj꞉graph-traversal.q1꞉> 
+([:2 nil] [:4 4])
+clj꞉graph-traversal.q1꞉> 
+; Running all project tests…
+; ERROR in graph-traversal.q1-test/test-seq-graph-dfs (RT.java:19):
+; DFS traversal: DFS on G should produce correct result
+; error: java.lang.UnsupportedOperationException: nth not supported on this type: Keyword (RT.java:19)
+; expected:
+(= expected-dfs-result-g (vec actual-dfs-result-g))
+
+; ERROR in graph-traversal.q1-test/test-seq-graph-dfs (RT.java:20):
+; DFS traversal: BFS on G should produce correct result
+; error: java.lang.UnsupportedOperationException: nth not supported on this type: Keyword (RT.java:20)
+; expected:
+(= expected-bfs-result-g (vec actual-bfs-result-g))
+
+; 2 tests finished, problems found. 😭 errors: 2, failures: 0, ns: 1, vars: 1
+clj꞉graph-traversal.q1꞉> 
+; Execution error (IllegalAccessError) at graph-traversal.q2-test/eval11802$loading (form-init702552973623421821.clj:1).
+; make-graph does not exist
+; 
+; Syntax error compiling at (c:\Users\mordrax\code\graph-traversal\test\graph_traversal\q2_test.clj:16:15).
+; Unable to resolve symbol: make-graph in this context
+; 
+; Syntax error compiling at (c:\Users\mordrax\code\graph-traversal\test\graph_traversal\q2_test.clj:25:20).
+; Unable to resolve symbol: make-graph in this context
+clj꞉graph-traversal.q2-test꞉> 
+([[:2 1] [:3 2] [:4 3] [:5 4]]
+ [[:1 5] [:3 6] [:4 7] [:5 8]]
+ [[:1 9] [:2 10] [:4 11] [:5 12]]
+ [[:1 13] [:2 14] [:3 15] [:5 16]]
+ [[:1 17] [:2 18] [:3 19] [:4 20]])
+clj꞉graph-traversal.q2-test꞉> 
+(:2 1 :3 2 :4 3 :5 4 :1 5 :3 6 :4 7 :5 8 :1 9 :2 10 :4 11 :5 12 :1 13 :2 14 :3 15 :5 16 :1 17 :2 18 :3 19 :4 20)
+clj꞉graph-traversal.q2-test꞉> 
+40
+clj꞉graph-traversal.q2-test꞉> 
+(:2 1 :3 2 :4 3 :5 4 :1 5 :3 6 :4 7 :5 8 :1 9 :2 10 :4 11 :5 12 :1 13 :2 14 :3 15 :5 16 :1 17 :2 18 :3 19 :4 20)
+clj꞉graph-traversal.q2-test꞉> 
+; Execution error (IllegalAccessError) at graph-traversal.q2-test/eval11820$loading (form-init702552973623421821.clj:1).
+; make-graph does not exist
+; 
+; Syntax error compiling at (c:\Users\mordrax\code\graph-traversal\test\graph_traversal\q2_test.clj:16:15).
+; Unable to resolve symbol: make-graph in this context
+; 
+; Syntax error compiling at (c:\Users\mordrax\code\graph-traversal\test\graph_traversal\q2_test.clj:25:20).
+; Unable to resolve symbol: make-graph in this context
+clj꞉graph-traversal.q2-test꞉> 
+; Syntax error compiling at (c:\Users\mordrax\code\graph-traversal\test\graph_traversal\q2_test.clj:28:13).
+; Unable to resolve symbol: make-graph in this context
+clj꞉graph-traversal.q2-test꞉> 
+#'graph-traversal.q2/make-graph
+clj꞉graph-traversal.q2꞉> 
+; Sparsity value must be from 3 to 12 inclusive. N: 4 , S: 2
+nil
+clj꞉graph-traversal.q2꞉> 
+#{[:5 27] [:4 89] [:3 42] [:1 15] [:2 95]}
+clj꞉graph-traversal.q2꞉> 
+#{[:4 97] [:5 15] [:3 45] [:2 75] [:1 63]}
+clj꞉graph-traversal.q2꞉> 
+5
+clj꞉graph-traversal.q2꞉> 
+; Error printing return value (ClassCastException) at clojure.lang.APersistentMap$ValSeq/first (APersistentMap.java:236).
+; clojure.lang.PersistentVector cannot be cast to java.util.Map$Entry
+clj꞉graph-traversal.q2꞉> 
+()
+clj꞉graph-traversal.q2꞉> 
+()
+clj꞉graph-traversal.q2꞉> 
+()
+clj꞉graph-traversal.q2꞉> 
+()
+clj꞉graph-traversal.q2꞉> 
+()
+clj꞉graph-traversal.q2-test꞉> 
+#'graph-traversal.q2-test/test-make-graph-edges
+clj꞉graph-traversal.q2-test꞉> 
+()
+clj꞉graph-traversal.q2-test꞉> 
+()
+clj꞉graph-traversal.q2-test꞉> 
