@@ -1,0 +1,403 @@
+; This is the Calva REPL Window.
+; It's just a file, really, with some special treatment from Calva.
+; Use it as a REPL input prompt if you like. (When the REPL is connected.)
+; TIPS: The keyboard shortcut `ctrl+alt+o r` shows and focuses this window
+; Please see https://calva.io/repl-window/ for more info.
+; Happy coding! ♥️
+
+; TIPS: As with any Clojure file when the REPL is connected:
+; - `alt+enter` evaluates the current top level form.
+; - `ctrl+enter` evaluates the current form.
+; Special for this file:
+; - `alt+up` and `alt+down` traverse up and down the REPL command history
+;    when the cursor is after the last contents at the prompt
+; 
+; See also the Calva Inspector: https://calva.io/inspector/
+
+PLEASE NOTE
+We will update the default location of this file.
+The new default location will be
+  "<projectRootPath>/.calva/repl.calva-repl"
+For now the legacy path is used by default.
+To give yourself a smooth transition, you can opt in
+to the change, by configuring this setting as false:
+  "calva.useLegacyReplWindowPath"
+and then add "**/.calva/repl.calva-repl" to your ".gitignore" file.
+
+
+This file is configured as the output destination for all REPL output.
+You can configure this with the setting:
+  "calva.outputDestinations"
+
+
+; Jacking in...
+; Connecting using "Leiningen" project type.
+; You can make Calva auto-select this.
+;   - See https://calva.io/connect-sequences/
+; 
+
+; Starting Jack-in: pushd c:\Users\mordrax\code\graph-traversal & cmd.exe /d /c lein update-in :dependencies conj [nrepl,"1.1.1"] -- update-in :plugins conj [cider/cider-nrepl,"0.47.1"] -- update-in [:repl-options,:nrepl-middleware] conj '["cider.nrepl/cider-middleware"]' -- with-profile +uberjar repl :headless & popd
+; Jacking in...
+; Connecting using "Leiningen" project type.
+; You can make Calva auto-select this.
+;   - See https://calva.io/connect-sequences/
+; 
+
+; Starting Jack-in: pushd c:\Users\mordrax\code\graph-traversal & cmd.exe /d /c lein update-in :dependencies conj [nrepl,"1.1.1"] -- update-in :plugins conj [cider/cider-nrepl,"0.47.1"] -- update-in [:repl-options,:nrepl-middleware] conj '["cider.nrepl/cider-middleware"]' -- with-profile +uberjar repl :headless & popd
+; Jacking in...
+; Connecting using "Leiningen" project type.
+; You can make Calva auto-select this.
+;   - See https://calva.io/connect-sequences/
+; 
+
+; Starting Jack-in: pushd c:\Users\mordrax\code\graph-traversal & cmd.exe /d /c lein update-in :dependencies conj [nrepl,"1.1.1"] -- update-in :plugins conj [cider/cider-nrepl,"0.47.1"] -- update-in [:repl-options,:nrepl-middleware] conj '["cider.nrepl/cider-middleware"]' -- with-profile +uberjar repl :headless & popd
+; Jacking in...
+; Connecting using "Leiningen" project type.
+; You can make Calva auto-select this.
+;   - See https://calva.io/connect-sequences/
+; 
+
+; Starting Jack-in: pushd c:\Users\mordrax\code\graph-traversal & cmd.exe /d /c lein update-in :dependencies conj [nrepl,"1.1.1"] -- update-in :plugins conj [cider/cider-nrepl,"0.47.1"] -- update-in [:repl-options,:nrepl-middleware] conj '["cider.nrepl/cider-middleware"]' -- with-profile +uberjar repl :headless & popd
+; Jacking in...
+; Connecting using "Leiningen" project type.
+; You can make Calva auto-select this.
+;   - See https://calva.io/connect-sequences/
+; 
+
+; Starting Jack-in: pushd c:\Users\mordrax\code\graph-traversal & cmd.exe /d /c lein update-in :dependencies conj [nrepl,"1.1.1"] -- update-in :plugins conj [cider/cider-nrepl,"0.47.1"] -- update-in [:repl-options,:nrepl-middleware] conj '["cider.nrepl/cider-middleware"]' -- with-profile +uberjar repl :headless & popd
+; Jacking in...
+; Connecting using "Leiningen" project type.
+; You can make Calva auto-select this.
+;   - See https://calva.io/connect-sequences/
+; 
+
+; Starting Jack-in: pushd c:\Users\mordrax\code\graph-traversal & cmd.exe /d /c lein update-in :dependencies conj [nrepl,"1.1.1"] -- update-in :plugins conj [cider/cider-nrepl,"0.47.1"] -- update-in [:repl-options,:nrepl-middleware] conj '["cider.nrepl/cider-middleware"]' -- with-profile +uberjar repl :headless & popd
+; Jacking in...
+; Connecting using "Leiningen" project type.
+; You can make Calva auto-select this.
+;   - See https://calva.io/connect-sequences/
+; 
+
+; Starting Jack-in: pushd c:\Users\mordrax\code\graph-traversal & cmd.exe /d /c lein update-in :dependencies conj [nrepl,"1.1.1"] -- update-in :plugins conj [cider/cider-nrepl,"0.47.1"] -- update-in [:repl-options,:nrepl-middleware] conj '["cider.nrepl/cider-middleware"]' -- repl :headless & popd
+; Using host:port 127.0.0.1:55736 ...
+; Hooking up nREPL sessions ...
+; Connected session: clj
+; Evaluating code from settings: 'calva.autoEvaluateCode.onConnect.clj'
+nil
+clj꞉graph-traversal.core꞉> 
+"Please see https://calva.io/output/#about-stdout-in-the-repl-window
+about why stdout printed to this file is prepended with `;` to be line comments."
+clj꞉graph-traversal.core꞉> 
+; Jack-in done.
+clj꞉graph-traversal.core꞉> 
+#'graph-traversal.graph-generator/check-constraint
+clj꞉graph-traversal.graph-generator꞉> 
+; Syntax error compiling at (c:\Users\mordrax\code\graph-traversal\src\graph_traversal\graph-generator.clj:33:2).
+; Unable to resolve symbol: number-keyword-set in this context
+clj꞉graph-traversal.graph-generator꞉> 
+; hi
+nil
+clj꞉graph-traversal.graph-generator꞉> 
+; bye
+nil
+clj꞉graph-traversal.graph-generator꞉> 
+; Syntax error compiling at (c:\Users\mordrax\code\graph-traversal\src\graph_traversal\graph-generator.clj:33:2).
+; Unable to resolve symbol: number-keyword-set in this context
+clj꞉graph-traversal.graph-generator꞉> 
+; Sparsity value must be from  4  to  20  inclusive. N:  5 , S:  1
+; #{[1 0] [4 7] [2 9] [5 1] [3 2]}
+; hi
+; bye
+nil
+clj꞉graph-traversal.graph-generator꞉> 
+; Sparsity value must be from  4  to  20  inclusive. N:  5 , S:  1
+; #{[3 4] [4 2] [1 9] [5 7] [2 0]}
+nil
+clj꞉graph-traversal.graph-generator꞉> 
+; Sparsity value must be from  4  to  20  inclusive. N:  5 , S:  1
+; #{[1 9] [2 9] [5 7] [4 5] [3 8]}
+nil
+clj꞉graph-traversal.graph-generator꞉> 
+; Sparsity value must be from  4  to  20  inclusive. N:  5 , S:  1
+; #{[4 3] [1 5] [5 9] [3 1] [2 1]}
+nil
+clj꞉graph-traversal.graph-generator꞉> 
+; Execution error (ArityException) at graph-traversal.graph-generator/eval10353 (form-init702552973623421821.clj:41).
+; Wrong number of args (3) passed to: graph-traversal.graph-generator/generate-graph
+clj꞉graph-traversal.graph-generator꞉> 
+; Sparsity value must be from  4  to  20  inclusive. N:  5 , S:  1
+#{[5 53] [3 62] [4 92] [2 63] [1 78]}
+clj꞉graph-traversal.graph-generator꞉> 
+; Sparsity value must be from  4  to  20  inclusive. N:  5 , S:  1
+#{[3 32] [2 82] [1 12] [4 2] [5 51]}
+clj꞉graph-traversal.graph-generator꞉> 
+; Sparsity value must be from  4  to  20  inclusive. N:  5 , S:  1
+; #{[3 96] [5 43] [1 66] [2 0] [4 4]}
+#'graph-traversal.graph-generator/check-constraint
+clj꞉graph-traversal.graph-generator꞉> 
+; Sparsity value must be from  4  to  20  inclusive. N:  5 , S:  1
+#{[2 33] [1 10] [5 91] [3 50] [4 31]}
+clj꞉graph-traversal.graph-generator꞉> 
+; Sparsity value must be from  4  to  20  inclusive. N:  5 , S:  1
+; #{[1 47] [2 66] [5 44] [4 46] [3 57]}
+#'graph-traversal.graph-generator/check-constraint
+clj꞉graph-traversal.graph-generator꞉> 
+; Sparsity value must be from  4  to  20  inclusive. N:  5 , S:  1
+#{[3 49] [4 45] [1 97] [2 28] [5 48]}
+clj꞉graph-traversal.graph-generator꞉> 
+; Sparsity value must be from  4  to  20  inclusive. N:  5 , S:  1
+; #{[3 55] [2 76] [5 37] [1 51] [4 21]}
+nil
+clj꞉graph-traversal.graph-generator꞉> 
+; Sparsity value must be from  4  to  20  inclusive. N:  5 , S:  1
+#{[2 53] [1 0] [5 73] [4 18] [3 86]}
+clj꞉graph-traversal.graph-generator꞉> 
+; Sparsity value must be from  4  to  20  inclusive. N:  5 , S:  1
+; #{[3 93] [4 84] [5 73] [1 95] [2 50]}
+nil
+clj꞉graph-traversal.graph-generator꞉> 
+; Sparsity value must be from  4  to  20  inclusive. N:  5 , S:  1
+; #{[2 52] [4 2] [3 78] [1 41] [5 94]}
+nil
+clj꞉graph-traversal.graph-generator꞉> 
+; Sparsity value must be from  4  to  20  inclusive. N:  5 , S:  1
+; #{[5 64] [1 15] [2 81] [3 27] [4 16]}
+nil
+clj꞉graph-traversal.graph-generator꞉> 
+#'graph-traversal.graph-generator/add-weight
+clj꞉graph-traversal.graph-generator꞉> 
+#'graph-traversal.graph-generator/generate-graph
+clj꞉graph-traversal.graph-generator꞉> 
+#'graph-traversal.graph-generator/check-constraint
+clj꞉graph-traversal.graph-generator꞉> 
+; Sparsity value must be from  4  to  20  inclusive. N:  5 , S:  1
+#{[5 77] [3 62] [4 17] [1 96] [2 29]}
+clj꞉graph-traversal.graph-generator꞉> 
+; Sparsity value must be from  4  to  20  inclusive. N:  5 , S:  1
+#{[3 95] [4 52] [2 37] [5 40] [1 81]}
+clj꞉graph-traversal.graph-generator꞉> 
+; Sparsity value must be from  4  to  20  inclusive. N:  5 , S:  1
+; #{[3 68] [1 39] [4 14] [2 37] [5 17]}
+#'graph-traversal.graph-generator/check-constraint
+clj꞉graph-traversal.graph-generator꞉> 
+; Sparsity value must be from  4  to  20  inclusive. N:  5 , S:  1
+; #{[5 67] [4 24] [2 34] [1 89] [3 2]}
+nil
+clj꞉graph-traversal.graph-generator꞉> 
+; Sparsity value must be from  4  to  20  inclusive. N:  5 , S:  1
+; #{[5 53] [2 43] [3 38] [1 44] [4 97]}
+#'graph-traversal.graph-generator/check-constraint
+clj꞉graph-traversal.graph-generator꞉> 
+; Sparsity value must be from  4  to  20  inclusive. N:  5 , S:  1
+#{[1 9] [3 66] [4 5] [2 95] [5 63]}
+clj꞉graph-traversal.graph-generator꞉> 
+; Sparsity value must be from  4  to  20  inclusive. N:  5 , S:  1
+; #{[3 9] [4 1] [2 21] [5 68] [1 17]}
+; Syntax error compiling at (c:\Users\mordrax\code\graph-traversal\src\graph_traversal\graph-generator.clj:30:3).
+; Unable to resolve symbol: unless in this context
+clj꞉graph-traversal.graph-generator꞉> 
+nil
+clj꞉graph-traversal.graph-generator꞉> 
+; Sparsity value must be from  4  to  20  inclusive. N:  5 , S:  1
+; nil
+nil
+clj꞉graph-traversal.graph-generator꞉> 
+; Valid sparsity value.
+#{[1 65] [5 26] [3 67] [4 34] [2 88]}
+clj꞉graph-traversal.graph-generator꞉> 
+; Valid sparsity value.
+#{[1 33] [3 58] [2 61] [4 16] [5 18]}
+clj꞉graph-traversal.graph-generator꞉> 
+; Valid sparsity value.
+; #{[2 53] [5 96] [3 66] [4 53] [1 40]}
+nil
+clj꞉graph-traversal.graph-generator꞉> 
+; Valid sparsity value.
+#{[1 56] [5 52] [3 6] [4 67] [2 50]}
+clj꞉graph-traversal.graph-generator꞉> 
+; Running all project tests…
+; No tests found. 😱, ns: 0, vars: 0
+clj꞉graph-traversal.graph-generator꞉> 
+; Running all project tests…
+; No tests found. 😱, ns: 0, vars: 0
+clj꞉graph-traversal.graph-generator꞉> 
+; Running test: generate-graph-test…
+; No tests found. 😱, ns: 0, vars: 0
+clj꞉graph-traversal.graph-generator꞉> 
+; Running all project tests…
+; No tests found. 😱, ns: 0, vars: 0
+clj꞉graph-traversal.graph-generator꞉> 
+; Running all project tests…
+; No tests found. 😱, ns: 0, vars: 0
+clj꞉graph-traversal.graph-generator꞉> 
+; Running all project tests…
+; No tests found. 😱, ns: 0, vars: 0
+clj꞉graph-traversal.graph-generator꞉> 
+; Running test: graph-traversal.core-test…
+; No tests found. 😱, ns: 0, vars: 0
+clj꞉graph-traversal.graph-generator꞉> 
+; Running test: graph-traversal…
+; No tests found. 😱, ns: 0, vars: 0
+clj꞉graph-traversal.graph-generator꞉> 
+; Running all project tests…
+; No tests found. 😱, ns: 0, vars: 0
+clj꞉graph-traversal.graph-generator꞉> 
+
+neighbours of  :1 -  [:2 :3]
+ explored -  #{:1}
+ neighbors -  [:2 :3]
+ frontier -  #object[clojure.lang.PersistentQueue 0x59c0008b clojure.lang.PersistentQueue@3c6f000c]
+ next explored #{:1 :2 :3}
+ pop frontier, remove explored neighbouts-  #object[clojure.lang.PersistentQueue 0x6fc651c6 clojure.lang.PersistentQueue@1] (:2 :3)
+ next frontier #object[clojure.lang.PersistentQueue 0x272ca37b clojure.lang.PersistentQueue@8de00a00]
+(:1
+neighbours of  :2 -  [:4]
+ explored -  #{:1 :2 :3}
+ neighbors -  [:4]
+ frontier -  #object[clojure.lang.PersistentQueue 0x148b4f25 clojure.lang.PersistentQueue@8de00a00]
+ next explored #{:4 :1 :2 :3}
+ pop frontier, remove explored neighbouts-  #object[clojure.lang.PersistentQueue 0x4d80475d clojure.lang.PersistentQueue@3c6f008e] (:4)
+ next frontier #object[clojure.lang.PersistentQueue 0x7c95326e clojure.lang.PersistentQueue@8de011dd]
+ :2
+neighbours of  :3 -  [:4]
+ explored -  #{:4 :1 :2 :3}
+ neighbors -  [:4]
+ frontier -  #object[clojure.lang.PersistentQueue 0x6325b143 clojure.lang.PersistentQueue@8de011dd]
+ next explored #{:4 :1 :2 :3}
+ pop frontier, remove explored neighbouts-  #object[clojure.lang.PersistentQueue 0xbb9f296 clojure.lang.PersistentQueue@3c6f00ca] ()
+ next frontier #object[clojure.lang.PersistentQueue 0x72ce4125 clojure.lang.PersistentQueue@3c6f00ca]
+ :3
+neighbours of  :4 -  [:5]
+ explored -  #{:4 :1 :2 :3}
+ neighbors -  [:5]
+ frontier -  #object[clojure.lang.PersistentQueue 0x3db5cf04 clojure.lang.PersistentQueue@3c6f00ca]
+ next explored #{:4 :1 :2 :5 :3}
+ pop frontier, remove explored neighbouts-  #object[clojure.lang.PersistentQueue 0x74b489ec clojure.lang.PersistentQueue@1] (:5)
+ next frontier #object[clojure.lang.PersistentQueue 0x7bdd71cf clojure.lang.PersistentQueue@3c6f010b]
+ :4
+neighbours of  :5 -  [:6]
+ explored -  #{:4 :1 :2 :5 :3}
+ neighbors -  [:6]
+ frontier -  #object[clojure.lang.PersistentQueue 0x7b9ac0f8 clojure.lang.PersistentQueue@3c6f010b]
+ next explored #{:4 :1 :2 :5 :3 :6}
+ pop frontier, remove explored neighbouts-  #object[clojure.lang.PersistentQueue 0x68c4ed60 clojure.lang.PersistentQueue@1] (:6)
+ next frontier #object[clojure.lang.PersistentQueue 0x386fe27d clojure.lang.PersistentQueue@3c6f0148]
+ :5
+neighbours of  :6 -  nil
+ explored -  #{:4 :1 :2 :5 :3 :6}
+ neighbors -  nil
+ frontier -  #object[clojure.lang.PersistentQueue 0x282cafb6 clojure.lang.PersistentQueue@3c6f0148]
+ next explored #{:4 :1 :2 :5 :3 :6}
+ pop frontier, remove explored neighbouts-  #object[clojure.lang.PersistentQueue 0x51c274b clojure.lang.PersistentQueue@1] ()
+ next frontier #object[clojure.lang.PersistentQueue 0x4a7c6565 clojure.lang.PersistentQueue@1]
+ :6)
+clj꞉graph-traversal.core꞉> 
+
+neighbours of  :1 -  [:2 :3]
+ explored -  #{:1}
+ neighbors -  [:2 :3]
+ frontier -  [:1]
+ next explored #{:1 :2 :3}
+ pop frontier, remove explored neighbouts-  [] (:2 :3)
+ next frontier [:2 :3]
+(:1
+neighbours of  :3 -  [:4]
+ explored -  #{:1 :2 :3}
+ neighbors -  [:4]
+ frontier -  [:2 :3]
+ next explored #{:4 :1 :2 :3}
+ pop frontier, remove explored neighbouts-  [:2] (:4)
+ next frontier [:2 :4]
+ :3
+neighbours of  :4 -  [:5]
+ explored -  #{:4 :1 :2 :3}
+ neighbors -  [:5]
+ frontier -  [:2 :4]
+ next explored #{:4 :1 :2 :5 :3}
+ pop frontier, remove explored neighbouts-  [:2] (:5)
+ next frontier [:2 :5]
+ :4
+neighbours of  :5 -  [:6]
+ explored -  #{:4 :1 :2 :5 :3}
+ neighbors -  [:6]
+ frontier -  [:2 :5]
+ next explored #{:4 :1 :2 :5 :3 :6}
+ pop frontier, remove explored neighbouts-  [:2] (:6)
+ next frontier [:2 :6]
+ :5
+neighbours of  :6 -  nil
+ explored -  #{:4 :1 :2 :5 :3 :6}
+ neighbors -  nil
+ frontier -  [:2 :6]
+ next explored #{:4 :1 :2 :5 :3 :6}
+ pop frontier, remove explored neighbouts-  [:2] ()
+ next frontier [:2]
+ :6
+neighbours of  :2 -  [:4]
+ explored -  #{:4 :1 :2 :5 :3 :6}
+ neighbors -  [:4]
+ frontier -  [:2]
+ next explored #{:4 :1 :2 :5 :3 :6}
+ pop frontier, remove explored neighbouts-  [] ()
+ next frontier []
+ :2)
+clj꞉graph-traversal.core꞉> 
+; Syntax error compiling at (c:\Users\mordrax\code\graph-traversal\src\graph_traversal\core.clj:1:8692).
+; Unable to resolve symbol: do in this context
+clj꞉graph-traversal.core꞉> 
+
+neighbours of  :1 -  [:2 :3]
+ explored -  #{:1}
+ neighbors -  [:2 :3]
+ frontier -  #object[clojure.lang.PersistentQueue 0x7312a09d clojure.lang.PersistentQueue@3c6f000c]
+ next explored #{:1 :2 :3}
+ pop frontier, remove explored neighbouts-  #object[clojure.lang.PersistentQueue 0x2d554b35 clojure.lang.PersistentQueue@1] (:2 :3)
+ next frontier #object[clojure.lang.PersistentQueue 0x28b3f829 clojure.lang.PersistentQueue@8de00a00]
+(:1
+neighbours of  :2 -  [:4]
+ explored -  #{:1 :2 :3}
+ neighbors -  [:4]
+ frontier -  #object[clojure.lang.PersistentQueue 0x320c6713 clojure.lang.PersistentQueue@8de00a00]
+ next explored #{:4 :1 :2 :3}
+ pop frontier, remove explored neighbouts-  #object[clojure.lang.PersistentQueue 0x549b3cb clojure.lang.PersistentQueue@3c6f008e] (:4)
+ next frontier #object[clojure.lang.PersistentQueue 0x68053816 clojure.lang.PersistentQueue@8de011dd]
+ :2
+neighbours of  :3 -  [:4]
+ explored -  #{:4 :1 :2 :3}
+ neighbors -  [:4]
+ frontier -  #object[clojure.lang.PersistentQueue 0x301d2096 clojure.lang.PersistentQueue@8de011dd]
+ next explored #{:4 :1 :2 :3}
+ pop frontier, remove explored neighbouts-  #object[clojure.lang.PersistentQueue 0x78021ab5 clojure.lang.PersistentQueue@3c6f00ca] ()
+ next frontier #object[clojure.lang.PersistentQueue 0x3906482b clojure.lang.PersistentQueue@3c6f00ca]
+ :3
+neighbours of  :4 -  [:5]
+ explored -  #{:4 :1 :2 :3}
+ neighbors -  [:5]
+ frontier -  #object[clojure.lang.PersistentQueue 0x1f62d291 clojure.lang.PersistentQueue@3c6f00ca]
+ next explored #{:4 :1 :2 :5 :3}
+ pop frontier, remove explored neighbouts-  #object[clojure.lang.PersistentQueue 0x46a2587b clojure.lang.PersistentQueue@1] (:5)
+ next frontier #object[clojure.lang.PersistentQueue 0x2e9d25a8 clojure.lang.PersistentQueue@3c6f010b]
+ :4
+neighbours of  :5 -  [:6]
+ explored -  #{:4 :1 :2 :5 :3}
+ neighbors -  [:6]
+ frontier -  #object[clojure.lang.PersistentQueue 0x25d17740 clojure.lang.PersistentQueue@3c6f010b]
+ next explored #{:4 :1 :2 :5 :3 :6}
+ pop frontier, remove explored neighbouts-  #object[clojure.lang.PersistentQueue 0x2c2edf31 clojure.lang.PersistentQueue@1] (:6)
+ next frontier #object[clojure.lang.PersistentQueue 0x789b3b4f clojure.lang.PersistentQueue@3c6f0148]
+ :5
+neighbours of  :6 -  nil
+ explored -  #{:4 :1 :2 :5 :3 :6}
+ neighbors -  nil
+ frontier -  #object[clojure.lang.PersistentQueue 0x3fecf191 clojure.lang.PersistentQueue@3c6f0148]
+ next explored #{:4 :1 :2 :5 :3 :6}
+ pop frontier, remove explored neighbouts-  #object[clojure.lang.PersistentQueue 0x1129ea5b clojure.lang.PersistentQueue@1] ()
+ next frontier #object[clojure.lang.PersistentQueue 0x4ba47818 clojure.lang.PersistentQueue@1]
+ :6)
+clj꞉graph-traversal.core꞉> 
+(:1 [:2 1] [:3 2])
+clj꞉graph-traversal.core꞉> 
+(:1 :2 :3 :4 :5 :6)
+clj꞉graph-traversal.core꞉> 
+(:1 :3 :4 :5 :6 :2)
+clj꞉graph-traversal.core꞉> 
