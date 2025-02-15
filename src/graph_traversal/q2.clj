@@ -28,9 +28,6 @@
 (defn num-to-keyword [x]
   (keyword (str x)))
 
-(defn add-weight [x]
-  [(num-to-keyword (inc x)) (rand-int WEIGHT)])
-
 (defn is-valid-graph
   "Checks N > 0, S >= N-1, S <= N(N-1) and returns falsey if any of the constraints are not met"
   [N S]
@@ -97,34 +94,29 @@
     ) 
   )
   
-
-;; N = 5
-;; S = 20
-;; Distinct edge E 
-;; = floor (E / N) to (E % N)
-;; Edge 1: 0 to 1
-;; Edge 5: 1
 (defn make-graph [N S]
   (when (is-valid-graph N S)
     (let [max-neighbours (dec N)
           make-edge (partial absolute-edge-from-graph N)
-          minimum-connected-edges (map make-edge (range max-neighbours))
+          minimum-connected-edges (vec (map make-edge (range max-neighbours)))
           max-sparsity (* N max-neighbours)
           S-after-minimum-edges (->> (count minimum-connected-edges)
                                      (- S)
                                      (max 0))
-          random-edges
+          remaining-random-edge-indexes (range (dec N) max-sparsity)
+          random-edge-indexes
           (take S-after-minimum-edges
-                (shuffle (range (dec N) max-sparsity)))
-          remaining-random-edge-indexes ()]
-      minimum-connected-edges
-    ))
-)
+                (shuffle remaining-random-edge-indexes))
+          random-edges (map make-edge random-edge-indexes)
+          all-edges (concat minimum-connected-edges random-edges)
+          ]
+      (reduce
+       (fn [acc [start end]] 
+         (update acc (num-to-keyword start) conj [(num-to-keyword end) (make-weight)]))
+       {}
+       all-edges)
+      )))
 
-(make-graph 5 20) ; nil
-
-(take 19 (shuffle (range 0 20)))
-
-(count (take 15 (shuffle (range 4 20))))
-
-(map (partial absolute-edge-from-graph 5) (range 5))
+(make-graph 5 7)
+(make-graph 50 500)
+(make-graph 15 100)
