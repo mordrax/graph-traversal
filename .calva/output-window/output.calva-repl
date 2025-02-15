@@ -36,50 +36,8 @@ You can configure this with the setting:
 ;   - See https://calva.io/connect-sequences/
 ; 
 
-; Starting Jack-in: pushd c:\Users\mordrax\code\graph-traversal & cmd.exe /d /c lein update-in :dependencies conj [nrepl,"1.1.1"] -- update-in :plugins conj [cider/cider-nrepl,"0.47.1"] -- update-in [:repl-options,:nrepl-middleware] conj '["cider.nrepl/cider-middleware"]' -- with-profile +uberjar repl :headless & popd
-; Jacking in...
-; Connecting using "Leiningen" project type.
-; You can make Calva auto-select this.
-;   - See https://calva.io/connect-sequences/
-; 
-
-; Starting Jack-in: pushd c:\Users\mordrax\code\graph-traversal & cmd.exe /d /c lein update-in :dependencies conj [nrepl,"1.1.1"] -- update-in :plugins conj [cider/cider-nrepl,"0.47.1"] -- update-in [:repl-options,:nrepl-middleware] conj '["cider.nrepl/cider-middleware"]' -- with-profile +uberjar repl :headless & popd
-; Jacking in...
-; Connecting using "Leiningen" project type.
-; You can make Calva auto-select this.
-;   - See https://calva.io/connect-sequences/
-; 
-
-; Starting Jack-in: pushd c:\Users\mordrax\code\graph-traversal & cmd.exe /d /c lein update-in :dependencies conj [nrepl,"1.1.1"] -- update-in :plugins conj [cider/cider-nrepl,"0.47.1"] -- update-in [:repl-options,:nrepl-middleware] conj '["cider.nrepl/cider-middleware"]' -- with-profile +uberjar repl :headless & popd
-; Jacking in...
-; Connecting using "Leiningen" project type.
-; You can make Calva auto-select this.
-;   - See https://calva.io/connect-sequences/
-; 
-
-; Starting Jack-in: pushd c:\Users\mordrax\code\graph-traversal & cmd.exe /d /c lein update-in :dependencies conj [nrepl,"1.1.1"] -- update-in :plugins conj [cider/cider-nrepl,"0.47.1"] -- update-in [:repl-options,:nrepl-middleware] conj '["cider.nrepl/cider-middleware"]' -- with-profile +uberjar repl :headless & popd
-; Jacking in...
-; Connecting using "Leiningen" project type.
-; You can make Calva auto-select this.
-;   - See https://calva.io/connect-sequences/
-; 
-
-; Starting Jack-in: pushd c:\Users\mordrax\code\graph-traversal & cmd.exe /d /c lein update-in :dependencies conj [nrepl,"1.1.1"] -- update-in :plugins conj [cider/cider-nrepl,"0.47.1"] -- update-in [:repl-options,:nrepl-middleware] conj '["cider.nrepl/cider-middleware"]' -- with-profile +uberjar repl :headless & popd
-; Jacking in...
-; Connecting using "Leiningen" project type.
-; You can make Calva auto-select this.
-;   - See https://calva.io/connect-sequences/
-; 
-
-; Starting Jack-in: pushd c:\Users\mordrax\code\graph-traversal & cmd.exe /d /c lein update-in :dependencies conj [nrepl,"1.1.1"] -- update-in :plugins conj [cider/cider-nrepl,"0.47.1"] -- update-in [:repl-options,:nrepl-middleware] conj '["cider.nrepl/cider-middleware"]' -- with-profile +uberjar repl :headless & popd
-; Jacking in...
-; Connecting using "Leiningen" project type.
-; You can make Calva auto-select this.
-;   - See https://calva.io/connect-sequences/
-; 
-
-; Starting Jack-in: pushd c:\Users\mordrax\code\graph-traversal & cmd.exe /d /c lein update-in :dependencies conj [nrepl,"1.1.1"] -- update-in :plugins conj [cider/cider-nrepl,"0.47.1"] -- update-in [:repl-options,:nrepl-middleware] conj '["cider.nrepl/cider-middleware"]' -- repl :headless & popd
-; Using host:port 127.0.0.1:55736 ...
+; Starting Jack-in: pushd c:\Users\mordrax\code\graph-traversal & cmd.exe /d /c lein update-in :dependencies conj [nrepl,"1.1.1"] -- update-in :plugins conj [cider/cider-nrepl,"0.47.1"] -- update-in [:repl-options,:nrepl-middleware] conj '["cider.nrepl/cider-middleware"]' -- with-profile +dev repl :headless & popd
+; Using host:port 127.0.0.1:60686 ...
 ; Hooking up nREPL sessions ...
 ; Connected session: clj
 ; Evaluating code from settings: 'calva.autoEvaluateCode.onConnect.clj'
@@ -90,973 +48,163 @@ about why stdout printed to this file is prepended with `;` to be line comments.
 clj꞉graph-traversal.core꞉> 
 ; Jack-in done.
 clj꞉graph-traversal.core꞉> 
-#'graph-traversal.graph-generator/check-constraint
-clj꞉graph-traversal.graph-generator꞉> 
-; Syntax error compiling at (c:\Users\mordrax\code\graph-traversal\src\graph_traversal\graph-generator.clj:33:2).
-; Unable to resolve symbol: number-keyword-set in this context
-clj꞉graph-traversal.graph-generator꞉> 
-; hi
-nil
-clj꞉graph-traversal.graph-generator꞉> 
-; bye
-nil
-clj꞉graph-traversal.graph-generator꞉> 
-; Syntax error compiling at (c:\Users\mordrax\code\graph-traversal\src\graph_traversal\graph-generator.clj:33:2).
-; Unable to resolve symbol: number-keyword-set in this context
-clj꞉graph-traversal.graph-generator꞉> 
-; Sparsity value must be from  4  to  20  inclusive. N:  5 , S:  1
-; #{[1 0] [4 7] [2 9] [5 1] [3 2]}
-; hi
-; bye
-nil
-clj꞉graph-traversal.graph-generator꞉> 
-; Sparsity value must be from  4  to  20  inclusive. N:  5 , S:  1
-; #{[3 4] [4 2] [1 9] [5 7] [2 0]}
-nil
-clj꞉graph-traversal.graph-generator꞉> 
-; Sparsity value must be from  4  to  20  inclusive. N:  5 , S:  1
-; #{[1 9] [2 9] [5 7] [4 5] [3 8]}
-nil
-clj꞉graph-traversal.graph-generator꞉> 
-; Sparsity value must be from  4  to  20  inclusive. N:  5 , S:  1
-; #{[4 3] [1 5] [5 9] [3 1] [2 1]}
-nil
-clj꞉graph-traversal.graph-generator꞉> 
-; Execution error (ArityException) at graph-traversal.graph-generator/eval10353 (form-init702552973623421821.clj:41).
-; Wrong number of args (3) passed to: graph-traversal.graph-generator/generate-graph
-clj꞉graph-traversal.graph-generator꞉> 
-; Sparsity value must be from  4  to  20  inclusive. N:  5 , S:  1
-#{[5 53] [3 62] [4 92] [2 63] [1 78]}
-clj꞉graph-traversal.graph-generator꞉> 
-; Sparsity value must be from  4  to  20  inclusive. N:  5 , S:  1
-#{[3 32] [2 82] [1 12] [4 2] [5 51]}
-clj꞉graph-traversal.graph-generator꞉> 
-; Sparsity value must be from  4  to  20  inclusive. N:  5 , S:  1
-; #{[3 96] [5 43] [1 66] [2 0] [4 4]}
-#'graph-traversal.graph-generator/check-constraint
-clj꞉graph-traversal.graph-generator꞉> 
-; Sparsity value must be from  4  to  20  inclusive. N:  5 , S:  1
-#{[2 33] [1 10] [5 91] [3 50] [4 31]}
-clj꞉graph-traversal.graph-generator꞉> 
-; Sparsity value must be from  4  to  20  inclusive. N:  5 , S:  1
-; #{[1 47] [2 66] [5 44] [4 46] [3 57]}
-#'graph-traversal.graph-generator/check-constraint
-clj꞉graph-traversal.graph-generator꞉> 
-; Sparsity value must be from  4  to  20  inclusive. N:  5 , S:  1
-#{[3 49] [4 45] [1 97] [2 28] [5 48]}
-clj꞉graph-traversal.graph-generator꞉> 
-; Sparsity value must be from  4  to  20  inclusive. N:  5 , S:  1
-; #{[3 55] [2 76] [5 37] [1 51] [4 21]}
-nil
-clj꞉graph-traversal.graph-generator꞉> 
-; Sparsity value must be from  4  to  20  inclusive. N:  5 , S:  1
-#{[2 53] [1 0] [5 73] [4 18] [3 86]}
-clj꞉graph-traversal.graph-generator꞉> 
-; Sparsity value must be from  4  to  20  inclusive. N:  5 , S:  1
-; #{[3 93] [4 84] [5 73] [1 95] [2 50]}
-nil
-clj꞉graph-traversal.graph-generator꞉> 
-; Sparsity value must be from  4  to  20  inclusive. N:  5 , S:  1
-; #{[2 52] [4 2] [3 78] [1 41] [5 94]}
-nil
-clj꞉graph-traversal.graph-generator꞉> 
-; Sparsity value must be from  4  to  20  inclusive. N:  5 , S:  1
-; #{[5 64] [1 15] [2 81] [3 27] [4 16]}
-nil
-clj꞉graph-traversal.graph-generator꞉> 
-#'graph-traversal.graph-generator/add-weight
-clj꞉graph-traversal.graph-generator꞉> 
-#'graph-traversal.graph-generator/generate-graph
-clj꞉graph-traversal.graph-generator꞉> 
-#'graph-traversal.graph-generator/check-constraint
-clj꞉graph-traversal.graph-generator꞉> 
-; Sparsity value must be from  4  to  20  inclusive. N:  5 , S:  1
-#{[5 77] [3 62] [4 17] [1 96] [2 29]}
-clj꞉graph-traversal.graph-generator꞉> 
-; Sparsity value must be from  4  to  20  inclusive. N:  5 , S:  1
-#{[3 95] [4 52] [2 37] [5 40] [1 81]}
-clj꞉graph-traversal.graph-generator꞉> 
-; Sparsity value must be from  4  to  20  inclusive. N:  5 , S:  1
-; #{[3 68] [1 39] [4 14] [2 37] [5 17]}
-#'graph-traversal.graph-generator/check-constraint
-clj꞉graph-traversal.graph-generator꞉> 
-; Sparsity value must be from  4  to  20  inclusive. N:  5 , S:  1
-; #{[5 67] [4 24] [2 34] [1 89] [3 2]}
-nil
-clj꞉graph-traversal.graph-generator꞉> 
-; Sparsity value must be from  4  to  20  inclusive. N:  5 , S:  1
-; #{[5 53] [2 43] [3 38] [1 44] [4 97]}
-#'graph-traversal.graph-generator/check-constraint
-clj꞉graph-traversal.graph-generator꞉> 
-; Sparsity value must be from  4  to  20  inclusive. N:  5 , S:  1
-#{[1 9] [3 66] [4 5] [2 95] [5 63]}
-clj꞉graph-traversal.graph-generator꞉> 
-; Sparsity value must be from  4  to  20  inclusive. N:  5 , S:  1
-; #{[3 9] [4 1] [2 21] [5 68] [1 17]}
-; Syntax error compiling at (c:\Users\mordrax\code\graph-traversal\src\graph_traversal\graph-generator.clj:30:3).
-; Unable to resolve symbol: unless in this context
-clj꞉graph-traversal.graph-generator꞉> 
-nil
-clj꞉graph-traversal.graph-generator꞉> 
-; Sparsity value must be from  4  to  20  inclusive. N:  5 , S:  1
-; nil
-nil
-clj꞉graph-traversal.graph-generator꞉> 
-; Valid sparsity value.
-#{[1 65] [5 26] [3 67] [4 34] [2 88]}
-clj꞉graph-traversal.graph-generator꞉> 
-; Valid sparsity value.
-#{[1 33] [3 58] [2 61] [4 16] [5 18]}
-clj꞉graph-traversal.graph-generator꞉> 
-; Valid sparsity value.
-; #{[2 53] [5 96] [3 66] [4 53] [1 40]}
-nil
-clj꞉graph-traversal.graph-generator꞉> 
-; Valid sparsity value.
-#{[1 56] [5 52] [3 6] [4 67] [2 50]}
-clj꞉graph-traversal.graph-generator꞉> 
-; Running all project tests…
-; No tests found. 😱, ns: 0, vars: 0
-clj꞉graph-traversal.graph-generator꞉> 
-; Running all project tests…
-; No tests found. 😱, ns: 0, vars: 0
-clj꞉graph-traversal.graph-generator꞉> 
-; Running test: generate-graph-test…
-; No tests found. 😱, ns: 0, vars: 0
-clj꞉graph-traversal.graph-generator꞉> 
-; Running all project tests…
-; No tests found. 😱, ns: 0, vars: 0
-clj꞉graph-traversal.graph-generator꞉> 
-; Running all project tests…
-; No tests found. 😱, ns: 0, vars: 0
-clj꞉graph-traversal.graph-generator꞉> 
-; Running all project tests…
-; No tests found. 😱, ns: 0, vars: 0
-clj꞉graph-traversal.graph-generator꞉> 
-; Running test: graph-traversal.core-test…
-; No tests found. 😱, ns: 0, vars: 0
-clj꞉graph-traversal.graph-generator꞉> 
-; Running test: graph-traversal…
-; No tests found. 😱, ns: 0, vars: 0
-clj꞉graph-traversal.graph-generator꞉> 
-; Running all project tests…
-; No tests found. 😱, ns: 0, vars: 0
-clj꞉graph-traversal.graph-generator꞉> 
-
-neighbours of  :1 -  [:2 :3]
- explored -  #{:1}
- neighbors -  [:2 :3]
- frontier -  #object[clojure.lang.PersistentQueue 0x59c0008b clojure.lang.PersistentQueue@3c6f000c]
- next explored #{:1 :2 :3}
- pop frontier, remove explored neighbouts-  #object[clojure.lang.PersistentQueue 0x6fc651c6 clojure.lang.PersistentQueue@1] (:2 :3)
- next frontier #object[clojure.lang.PersistentQueue 0x272ca37b clojure.lang.PersistentQueue@8de00a00]
-(:1
-neighbours of  :2 -  [:4]
- explored -  #{:1 :2 :3}
- neighbors -  [:4]
- frontier -  #object[clojure.lang.PersistentQueue 0x148b4f25 clojure.lang.PersistentQueue@8de00a00]
- next explored #{:4 :1 :2 :3}
- pop frontier, remove explored neighbouts-  #object[clojure.lang.PersistentQueue 0x4d80475d clojure.lang.PersistentQueue@3c6f008e] (:4)
- next frontier #object[clojure.lang.PersistentQueue 0x7c95326e clojure.lang.PersistentQueue@8de011dd]
- :2
-neighbours of  :3 -  [:4]
- explored -  #{:4 :1 :2 :3}
- neighbors -  [:4]
- frontier -  #object[clojure.lang.PersistentQueue 0x6325b143 clojure.lang.PersistentQueue@8de011dd]
- next explored #{:4 :1 :2 :3}
- pop frontier, remove explored neighbouts-  #object[clojure.lang.PersistentQueue 0xbb9f296 clojure.lang.PersistentQueue@3c6f00ca] ()
- next frontier #object[clojure.lang.PersistentQueue 0x72ce4125 clojure.lang.PersistentQueue@3c6f00ca]
- :3
-neighbours of  :4 -  [:5]
- explored -  #{:4 :1 :2 :3}
- neighbors -  [:5]
- frontier -  #object[clojure.lang.PersistentQueue 0x3db5cf04 clojure.lang.PersistentQueue@3c6f00ca]
- next explored #{:4 :1 :2 :5 :3}
- pop frontier, remove explored neighbouts-  #object[clojure.lang.PersistentQueue 0x74b489ec clojure.lang.PersistentQueue@1] (:5)
- next frontier #object[clojure.lang.PersistentQueue 0x7bdd71cf clojure.lang.PersistentQueue@3c6f010b]
- :4
-neighbours of  :5 -  [:6]
- explored -  #{:4 :1 :2 :5 :3}
- neighbors -  [:6]
- frontier -  #object[clojure.lang.PersistentQueue 0x7b9ac0f8 clojure.lang.PersistentQueue@3c6f010b]
- next explored #{:4 :1 :2 :5 :3 :6}
- pop frontier, remove explored neighbouts-  #object[clojure.lang.PersistentQueue 0x68c4ed60 clojure.lang.PersistentQueue@1] (:6)
- next frontier #object[clojure.lang.PersistentQueue 0x386fe27d clojure.lang.PersistentQueue@3c6f0148]
- :5
-neighbours of  :6 -  nil
- explored -  #{:4 :1 :2 :5 :3 :6}
- neighbors -  nil
- frontier -  #object[clojure.lang.PersistentQueue 0x282cafb6 clojure.lang.PersistentQueue@3c6f0148]
- next explored #{:4 :1 :2 :5 :3 :6}
- pop frontier, remove explored neighbouts-  #object[clojure.lang.PersistentQueue 0x51c274b clojure.lang.PersistentQueue@1] ()
- next frontier #object[clojure.lang.PersistentQueue 0x4a7c6565 clojure.lang.PersistentQueue@1]
- :6)
-clj꞉graph-traversal.core꞉> 
-
-neighbours of  :1 -  [:2 :3]
- explored -  #{:1}
- neighbors -  [:2 :3]
- frontier -  [:1]
- next explored #{:1 :2 :3}
- pop frontier, remove explored neighbouts-  [] (:2 :3)
- next frontier [:2 :3]
-(:1
-neighbours of  :3 -  [:4]
- explored -  #{:1 :2 :3}
- neighbors -  [:4]
- frontier -  [:2 :3]
- next explored #{:4 :1 :2 :3}
- pop frontier, remove explored neighbouts-  [:2] (:4)
- next frontier [:2 :4]
- :3
-neighbours of  :4 -  [:5]
- explored -  #{:4 :1 :2 :3}
- neighbors -  [:5]
- frontier -  [:2 :4]
- next explored #{:4 :1 :2 :5 :3}
- pop frontier, remove explored neighbouts-  [:2] (:5)
- next frontier [:2 :5]
- :4
-neighbours of  :5 -  [:6]
- explored -  #{:4 :1 :2 :5 :3}
- neighbors -  [:6]
- frontier -  [:2 :5]
- next explored #{:4 :1 :2 :5 :3 :6}
- pop frontier, remove explored neighbouts-  [:2] (:6)
- next frontier [:2 :6]
- :5
-neighbours of  :6 -  nil
- explored -  #{:4 :1 :2 :5 :3 :6}
- neighbors -  nil
- frontier -  [:2 :6]
- next explored #{:4 :1 :2 :5 :3 :6}
- pop frontier, remove explored neighbouts-  [:2] ()
- next frontier [:2]
- :6
-neighbours of  :2 -  [:4]
- explored -  #{:4 :1 :2 :5 :3 :6}
- neighbors -  [:4]
- frontier -  [:2]
- next explored #{:4 :1 :2 :5 :3 :6}
- pop frontier, remove explored neighbouts-  [] ()
- next frontier []
- :2)
-clj꞉graph-traversal.core꞉> 
-; Syntax error compiling at (c:\Users\mordrax\code\graph-traversal\src\graph_traversal\core.clj:1:8692).
-; Unable to resolve symbol: do in this context
-clj꞉graph-traversal.core꞉> 
-
-neighbours of  :1 -  [:2 :3]
- explored -  #{:1}
- neighbors -  [:2 :3]
- frontier -  #object[clojure.lang.PersistentQueue 0x7312a09d clojure.lang.PersistentQueue@3c6f000c]
- next explored #{:1 :2 :3}
- pop frontier, remove explored neighbouts-  #object[clojure.lang.PersistentQueue 0x2d554b35 clojure.lang.PersistentQueue@1] (:2 :3)
- next frontier #object[clojure.lang.PersistentQueue 0x28b3f829 clojure.lang.PersistentQueue@8de00a00]
-(:1
-neighbours of  :2 -  [:4]
- explored -  #{:1 :2 :3}
- neighbors -  [:4]
- frontier -  #object[clojure.lang.PersistentQueue 0x320c6713 clojure.lang.PersistentQueue@8de00a00]
- next explored #{:4 :1 :2 :3}
- pop frontier, remove explored neighbouts-  #object[clojure.lang.PersistentQueue 0x549b3cb clojure.lang.PersistentQueue@3c6f008e] (:4)
- next frontier #object[clojure.lang.PersistentQueue 0x68053816 clojure.lang.PersistentQueue@8de011dd]
- :2
-neighbours of  :3 -  [:4]
- explored -  #{:4 :1 :2 :3}
- neighbors -  [:4]
- frontier -  #object[clojure.lang.PersistentQueue 0x301d2096 clojure.lang.PersistentQueue@8de011dd]
- next explored #{:4 :1 :2 :3}
- pop frontier, remove explored neighbouts-  #object[clojure.lang.PersistentQueue 0x78021ab5 clojure.lang.PersistentQueue@3c6f00ca] ()
- next frontier #object[clojure.lang.PersistentQueue 0x3906482b clojure.lang.PersistentQueue@3c6f00ca]
- :3
-neighbours of  :4 -  [:5]
- explored -  #{:4 :1 :2 :3}
- neighbors -  [:5]
- frontier -  #object[clojure.lang.PersistentQueue 0x1f62d291 clojure.lang.PersistentQueue@3c6f00ca]
- next explored #{:4 :1 :2 :5 :3}
- pop frontier, remove explored neighbouts-  #object[clojure.lang.PersistentQueue 0x46a2587b clojure.lang.PersistentQueue@1] (:5)
- next frontier #object[clojure.lang.PersistentQueue 0x2e9d25a8 clojure.lang.PersistentQueue@3c6f010b]
- :4
-neighbours of  :5 -  [:6]
- explored -  #{:4 :1 :2 :5 :3}
- neighbors -  [:6]
- frontier -  #object[clojure.lang.PersistentQueue 0x25d17740 clojure.lang.PersistentQueue@3c6f010b]
- next explored #{:4 :1 :2 :5 :3 :6}
- pop frontier, remove explored neighbouts-  #object[clojure.lang.PersistentQueue 0x2c2edf31 clojure.lang.PersistentQueue@1] (:6)
- next frontier #object[clojure.lang.PersistentQueue 0x789b3b4f clojure.lang.PersistentQueue@3c6f0148]
- :5
-neighbours of  :6 -  nil
- explored -  #{:4 :1 :2 :5 :3 :6}
- neighbors -  nil
- frontier -  #object[clojure.lang.PersistentQueue 0x3fecf191 clojure.lang.PersistentQueue@3c6f0148]
- next explored #{:4 :1 :2 :5 :3 :6}
- pop frontier, remove explored neighbouts-  #object[clojure.lang.PersistentQueue 0x1129ea5b clojure.lang.PersistentQueue@1] ()
- next frontier #object[clojure.lang.PersistentQueue 0x4ba47818 clojure.lang.PersistentQueue@1]
- :6)
-clj꞉graph-traversal.core꞉> 
-(:1 [:2 1] [:3 2])
-clj꞉graph-traversal.core꞉> 
-(:1 :2 :3 :4 :5 :6)
-clj꞉graph-traversal.core꞉> 
-(:1 :3 :4 :5 :6 :2)
-clj꞉graph-traversal.core꞉> 
-(:1 :3 :4 :5 :6 :2)
-clj꞉graph-traversal.core꞉> 
-(:1 :2 :3 :4 :5 :6)
-clj꞉graph-traversal.core꞉> 
-(:1 :2 :3 :4)
-clj꞉graph-traversal.core꞉> 
-(:1 :3 :4 :2)
-clj꞉graph-traversal.core꞉> 
-(:1 :2 :3 :4)
-clj꞉graph-traversal.core꞉> 
-#'graph-traversal.q1/seq-graph-bfs
-clj꞉graph-traversal.q1꞉> 
-#'graph-traversal.q1/seq-graph-bfs
-clj꞉graph-traversal.q1꞉> 
-#'graph-traversal.q1/seq-graph-dfs
-clj꞉graph-traversal.q1꞉> 
-#'graph-traversal.q1/seq-graph-bfs
-clj꞉graph-traversal.q1꞉> 
-(:1 :3 :4 :2)
-clj꞉graph-traversal.q1꞉> 
-#'graph-traversal.q1-test/test-seq-graph-dfs
-clj꞉graph-traversal.q1-test꞉> 
-([:1 nil] [nil nil] [nil nil])
-clj꞉graph-traversal.q1꞉> 
-([:1 nil] [nil nil] [nil nil])
-clj꞉graph-traversal.q1꞉> 
-([:1 nil] [nil nil] [nil nil])
-clj꞉graph-traversal.q1꞉> 
-(:1 :3 :4 :2)
-clj꞉graph-traversal.core꞉> 
-v:  :1
-neighbors:  [:2 :3]
-(:1v:  :2
-neighbors:  [:4]
- :2v:  :3
-neighbors:  [:4]
- :3v:  :4
-neighbors:  []
- :4)
-clj꞉graph-traversal.core꞉> 
-v:  :1
-neighbors:  [:2 :3]
-(:1v:  :3
-neighbors:  [:4]
- :3v:  :4
-neighbors:  []
- :4v:  :2
-neighbors:  [:4]
- :2)
-clj꞉graph-traversal.core꞉> 
-------
-v:  :1
-neighbors:  [:2 :3]
-(:1------
-v:  :2
-neighbors:  [:4]
- :2------
-v:  :3
-neighbors:  [:4]
- :3------
-v:  :4
-neighbors:  []
- :4)
-clj꞉graph-traversal.core꞉> 
-------
-v:  :1
-neighbors:  [:2 :3]
-(:1------
-v:  :3
-neighbors:  [:4]
- :3------
-v:  :4
-neighbors:  []
- :4------
-v:  :2
-neighbors:  [:4]
- :2)
-clj꞉graph-traversal.core꞉> 
-------
-v:  :1
-neighbors:  [:2 :3]
-------
-(:1------
-v:  :2
-neighbors:  [:4]
-------
- :2------
-v:  :3
-neighbors:  [:4]
-------
- :3------
-v:  :4
-neighbors:  []
-------
- :4)
-clj꞉graph-traversal.core꞉> 
-------
-v:  :1
-neighbors:  [:2 :3]
-------
-(:1------
-v:  :3
-neighbors:  [:4]
-------
- :3------
-v:  :4
-neighbors:  []
-------
- :4------
-v:  :2
-neighbors:  [:4]
-------
- :2)
-clj꞉graph-traversal.core꞉> 
-------
-v:  :1
-neighbors:  [:2 :3]
-------
-(:1------
-v:  :2
-neighbors:  [:4]
-------
- :2------
-v:  :3
-neighbors:  [:4]
-------
- :3------
-v:  :4
-neighbors:  []
-------
- :4)
-clj꞉graph-traversal.core꞉> 
-------
-v:  :1
-neighbors:  [:2 :3]
-------
-(:1------
-v:  :3
-neighbors:  [:4]
-------
- :3------
-v:  :4
-neighbors:  []
-------
- :4------
-v:  :2
-neighbors:  [:4]
-------
- :2)
-clj꞉graph-traversal.core꞉> 
-[:1 nil]
-neighbors:  [nil nil]
-([:1 nil][nil nil]
-neighbors:  nil
- [nil nil][nil nil]
-neighbors:  nil
- [nil nil])
-clj꞉graph-traversal.q1꞉> 
-[:1 nil]
-neighbors:  [[:2 1] [:3 2]]
-([:1 nil][:2 1]
-neighbors:  [[:4 4]]
- [:2 1][:3 2]
-neighbors:  [[:4 2]]
- [:3 2][:4 4]
-neighbors:  []
- [:4 4][:4 2]
-neighbors:  []
- [:4 2])
-clj꞉graph-traversal.q1꞉> 
-[:1 nil]
-neighbors:  [[:2 1] [:3 2]]
-([:1 nil][:3 2]
-neighbors:  [[:4 2]]
- [:3 2][:4 2]
-neighbors:  []
- [:4 2][:2 1]
-neighbors:  [[:4 4]]
- [:2 1][:4 4]
-neighbors:  []
- [:4 4])
-clj꞉graph-traversal.q1꞉> 
-[:1 nil]
-neighbors:  [[:2 1] [:3 2]]
-explored:  #{[:1 nil]}
-([:1 nil][:2 1]
-neighbors:  [[:4 4]]
-explored:  #{[:3 2] [:1 nil] [:2 1]}
- [:2 1][:3 2]
-neighbors:  [[:4 2]]
-explored:  #{[:3 2] [:4 4] [:1 nil] [:2 1]}
- [:3 2][:4 4]
-neighbors:  []
-explored:  #{[:3 2] [:4 4] [:4 2] [:1 nil] [:2 1]}
- [:4 4][:4 2]
-neighbors:  []
-explored:  #{[:3 2] [:4 4] [:4 2] [:1 nil] [:2 1]}
- [:4 2])
-clj꞉graph-traversal.q1꞉> 
-[:1 nil]
-neighbors:  [[:2 1] [:3 2]]
-explored:  #{[:1 nil]}
-frontier:  #object[clojure.lang.PersistentQueue 0x521f17e4 clojure.lang.PersistentQueue@51710193]
-next explored:  #{[:3 2] [:1 nil] [:2 1]}
-([:1 nil][:2 1]
-neighbors:  [[:4 4]]
-explored:  #{[:3 2] [:1 nil] [:2 1]}
-frontier:  #object[clojure.lang.PersistentQueue 0x64c7b0 clojure.lang.PersistentQueue@2e213da3]
-next explored:  #{[:3 2] [:4 4] [:1 nil] [:2 1]}
- [:2 1][:3 2]
-neighbors:  [[:4 2]]
-explored:  #{[:3 2] [:4 4] [:1 nil] [:2 1]}
-frontier:  #object[clojure.lang.PersistentQueue 0x5f4fb434 clojure.lang.PersistentQueue@2e223187]
-next explored:  #{[:3 2] [:4 4] [:4 2] [:1 nil] [:2 1]}
- [:3 2][:4 4]
-neighbors:  []
-explored:  #{[:3 2] [:4 4] [:4 2] [:1 nil] [:2 1]}
-frontier:  #object[clojure.lang.PersistentQueue 0x226e0c4f clojure.lang.PersistentQueue@2e2312ff]
-next explored:  #{[:3 2] [:4 4] [:4 2] [:1 nil] [:2 1]}
- [:4 4][:4 2]
-neighbors:  []
-explored:  #{[:3 2] [:4 4] [:4 2] [:1 nil] [:2 1]}
-frontier:  #object[clojure.lang.PersistentQueue 0x6a87c5a1 clojure.lang.PersistentQueue@51711897]
-next explored:  #{[:3 2] [:4 4] [:4 2] [:1 nil] [:2 1]}
- [:4 2])
-clj꞉graph-traversal.q1꞉> 
-[:1 nil]
-neighbors:  [[:2 1] [:3 2]]
-explored:  #{[:1 nil]}
-frontier:  [[:1 nil]]
-next explored:  #{[:3 2] [:1 nil] [:2 1]}
-next frontier:  [[:2 1] [:3 2]]
-([:1 nil][:3 2]
-neighbors:  [[:4 2]]
-explored:  #{[:3 2] [:1 nil] [:2 1]}
-frontier:  [[:2 1] [:3 2]]
-next explored:  #{[:3 2] [:4 2] [:1 nil] [:2 1]}
-next frontier:  [[:2 1] [:4 2]]
- [:3 2][:4 2]
-neighbors:  []
-explored:  #{[:3 2] [:4 2] [:1 nil] [:2 1]}
-frontier:  [[:2 1] [:4 2]]
-next explored:  #{[:3 2] [:4 2] [:1 nil] [:2 1]}
-next frontier:  [[:2 1]]
- [:4 2][:2 1]
-neighbors:  [[:4 4]]
-explored:  #{[:3 2] [:4 2] [:1 nil] [:2 1]}
-frontier:  [[:2 1]]
-next explored:  #{[:3 2] [:4 4] [:4 2] [:1 nil] [:2 1]}
-next frontier:  [[:4 4]]
- [:2 1][:4 4]
-neighbors:  []
-explored:  #{[:3 2] [:4 4] [:4 2] [:1 nil] [:2 1]}
-frontier:  [[:4 4]]
-next explored:  #{[:3 2] [:4 4] [:4 2] [:1 nil] [:2 1]}
-next frontier:  []
- [:4 4])
-clj꞉graph-traversal.q1꞉> 
-#'graph-traversal.q1/seq-graph
-clj꞉graph-traversal.q1꞉> 
-[:1 nil]
-neighbors:  [[:2 1] [:3 2]]
-explored:  #{[:1 nil]}
-frontier:  [[:1 nil]]
-next explored:  #{[:3 2] [:1 nil] [:2 1]}
-next frontier:  [[:2 1] [:3 2]]
-([:1 nil][:3 2]
-neighbors:  [[:4 2]]
-explored:  #{[:3 2] [:1 nil] [:2 1]}
-frontier:  [[:2 1] [:3 2]]
-next explored:  #{[:3 2] [:4 2] [:1 nil] [:2 1]}
-next frontier:  [[:2 1] [:4 2]]
- [:3 2][:4 2]
-neighbors:  []
-explored:  #{[:3 2] [:4 2] [:1 nil] [:2 1]}
-frontier:  [[:2 1] [:4 2]]
-next explored:  #{[:3 2] [:4 2] [:1 nil] [:2 1]}
-next frontier:  [[:2 1]]
- [:4 2][:2 1]
-neighbors:  [[:4 4]]
-explored:  #{[:3 2] [:4 2] [:1 nil] [:2 1]}
-frontier:  [[:2 1]]
-next explored:  #{[:3 2] [:4 4] [:4 2] [:1 nil] [:2 1]}
-next frontier:  [[:4 4]]
- [:2 1][:4 4]
-neighbors:  []
-explored:  #{[:3 2] [:4 4] [:4 2] [:1 nil] [:2 1]}
-frontier:  [[:4 4]]
-next explored:  #{[:3 2] [:4 4] [:4 2] [:1 nil] [:2 1]}
-next frontier:  []
- [:4 4])
-clj꞉graph-traversal.q1꞉> 
-:1
-neighbors:  [:2 :3]
-explored:  #{:1}
-frontier:  #object[clojure.lang.PersistentQueue 0x7c5fea14 clojure.lang.PersistentQueue@3c6f000c]
-next explored:  #{:1 :2 :3}
-next frontier:  #object[clojure.lang.PersistentQueue 0x704155db clojure.lang.PersistentQueue@8de00a00]
-(:1:2
-neighbors:  [:4]
-explored:  #{:1 :2 :3}
-frontier:  #object[clojure.lang.PersistentQueue 0x47d06733 clojure.lang.PersistentQueue@8de00a00]
-next explored:  #{:4 :1 :2 :3}
-next frontier:  #object[clojure.lang.PersistentQueue 0x3d450d9f clojure.lang.PersistentQueue@8de011dd]
- :2:3
-neighbors:  [:4]
-explored:  #{:4 :1 :2 :3}
-frontier:  #object[clojure.lang.PersistentQueue 0x307e49a9 clojure.lang.PersistentQueue@8de011dd]
-next explored:  #{:4 :1 :2 :3}
-next frontier:  #object[clojure.lang.PersistentQueue 0x7453596a clojure.lang.PersistentQueue@3c6f00ca]
- :3:4
-neighbors:  []
-explored:  #{:4 :1 :2 :3}
-frontier:  #object[clojure.lang.PersistentQueue 0x616f9b8a clojure.lang.PersistentQueue@3c6f00ca]
-next explored:  #{:4 :1 :2 :3}
-next frontier:  #object[clojure.lang.PersistentQueue 0x767bb6fa clojure.lang.PersistentQueue@1]
- :4)
-clj꞉graph-traversal.core꞉> 
-:1
-neighbors:  [:2 :3]
-explored:  #{:1}
-frontier:  [:1]
-next explored:  #{:1 :2 :3}
-next frontier:  [:2 :3]
-(:1:3
-neighbors:  [:4]
-explored:  #{:1 :2 :3}
-frontier:  [:2 :3]
-next explored:  #{:4 :1 :2 :3}
-next frontier:  [:2 :4]
- :3:4
-neighbors:  []
-explored:  #{:4 :1 :2 :3}
-frontier:  [:2 :4]
-next explored:  #{:4 :1 :2 :3}
-next frontier:  [:2]
- :4:2
-neighbors:  [:4]
-explored:  #{:4 :1 :2 :3}
-frontier:  [:2]
-next explored:  #{:4 :1 :2 :3}
-next frontier:  []
- :2)
-clj꞉graph-traversal.core꞉> 
-; Syntax error reading source at (REPL:35:25).
-; Map literal must contain an even number of forms
-clj꞉graph-traversal.core꞉> 
-([:2 :3] [:1 :5])
-clj꞉graph-traversal.core꞉> 
-([:2 :3] [:1 :5])
-clj꞉graph-traversal.core꞉> 
-; Error printing return value (ClassCastException) at clojure.core/complement$fn (core.clj:1455).
-; java.lang.Long cannot be cast to clojure.lang.IFn
-clj꞉graph-traversal.core꞉> 
-; Error printing return value (ClassCastException) at clojure.core/complement$fn (core.clj:1455).
-; java.lang.Boolean cannot be cast to clojure.lang.IFn
-clj꞉graph-traversal.core꞉> 
-(:2 :3)
-clj꞉graph-traversal.core꞉> 
-(2 3)
-clj꞉graph-traversal.core꞉> 
-; Execution error (ClassCastException) at graph-traversal.core/eval11426 (form-init702552973623421821.clj:36).
-; java.lang.Long cannot be cast to clojure.lang.IFn
-clj꞉graph-traversal.core꞉> 
-[:1 nil]
-neighbors:  [[:2 1] [:3 2]]
-explored:  #{[:1 nil]}
-frontier:  [[:1 nil]]
-next explored:  #{[:3 2] [:1 nil] [:2 1]}
-next frontier:  [[:2 1] [:3 2]]
-([:1 nil][:3 2]
-neighbors:  [[:4 2]]
-explored:  #{[:3 2] [:1 nil] [:2 1]}
-frontier:  [[:2 1] [:3 2]]
-next explored:  #{[:3 2] [:4 2] [:1 nil] [:2 1]}
-next frontier:  [[:2 1] [:4 2]]
- [:3 2][:4 2]
-neighbors:  []
-explored:  #{[:3 2] [:4 2] [:1 nil] [:2 1]}
-frontier:  [[:2 1] [:4 2]]
-next explored:  #{[:3 2] [:4 2] [:1 nil] [:2 1]}
-next frontier:  [[:2 1]]
- [:4 2][:2 1]
-neighbors:  [[:4 4]]
-explored:  #{[:3 2] [:4 2] [:1 nil] [:2 1]}
-frontier:  [[:2 1]]
-next explored:  #{[:3 2] [:4 4] [:4 2] [:1 nil] [:2 1]}
-next frontier:  [[:4 4]]
- [:2 1][:4 4]
-neighbors:  []
-explored:  #{[:3 2] [:4 4] [:4 2] [:1 nil] [:2 1]}
-frontier:  [[:4 4]]
-next explored:  #{[:3 2] [:4 4] [:4 2] [:1 nil] [:2 1]}
-next frontier:  []
- [:4 4])
-clj꞉graph-traversal.q1꞉> 
-[:1 nil]
-neighbors:  [[:2 1] [:3 2]]
-explored:  #{[:1 nil]}
-frontier:  [[:1 nil]]
-next explored:  #{[:3 2] [:1 nil] [:2 1]}
-next frontier:  [[:2 1] [:3 2]]
-([:1 nil][:3 2]
-neighbors:  [[:4 2]]
-explored:  #{[:3 2] [:1 nil] [:2 1]}
-frontier:  [[:2 1] [:3 2]]
-next explored:  #{[:3 2] [:4 2] [:1 nil] [:2 1]}
-next frontier:  [[:2 1] [:4 2]]
- [:3 2][:4 2]
-neighbors:  []
-explored:  #{[:3 2] [:4 2] [:1 nil] [:2 1]}
-frontier:  [[:2 1] [:4 2]]
-next explored:  #{[:3 2] [:4 2] [:1 nil] [:2 1]}
-next frontier:  [[:2 1]]
- [:4 2][:2 1]
-neighbors:  [[:4 4]]
-explored:  #{[:3 2] [:4 2] [:1 nil] [:2 1]}
-frontier:  [[:2 1]]
-next explored:  #{[:3 2] [:4 4] [:4 2] [:1 nil] [:2 1]}
-next frontier:  [[:4 4]]
- [:2 1][:4 4]
-neighbors:  []
-explored:  #{[:3 2] [:4 4] [:4 2] [:1 nil] [:2 1]}
-frontier:  [[:4 4]]
-next explored:  #{[:3 2] [:4 4] [:4 2] [:1 nil] [:2 1]}
-next frontier:  []
- [:4 4])
-clj꞉graph-traversal.q1꞉> 
-[:1 nil]
-neighbors:  [[:2 1] [:3 2]]
-explored:  #{[:1 nil]}
-frontier:  [[:1 nil]]
-next explored:  #{[:3 2] [:1 nil] [:2 1]}
-next frontier:  [[:2 1] [:3 2]]
-([:1 nil][:3 2]
-neighbors:  [[:4 2]]
-explored:  #{[:3 2] [:1 nil] [:2 1]}
-frontier:  [[:2 1] [:3 2]]
-next explored:  #{[:3 2] [:4 2] [:1 nil] [:2 1]}
-next frontier:  [[:2 1] [:4 2]]
- [:3 2][:4 2]
-neighbors:  []
-explored:  #{[:3 2] [:4 2] [:1 nil] [:2 1]}
-frontier:  [[:2 1] [:4 2]]
-next explored:  #{[:3 2] [:4 2] [:1 nil] [:2 1]}
-next frontier:  [[:2 1]]
- [:4 2][:2 1]
-neighbors:  [[:4 4]]
-explored:  #{[:3 2] [:4 2] [:1 nil] [:2 1]}
-frontier:  [[:2 1]]
-next explored:  #{[:3 2] [:4 4] [:4 2] [:1 nil] [:2 1]}
-next frontier:  [[:4 4]]
- [:2 1][:4 4]
-neighbors:  []
-explored:  #{[:3 2] [:4 4] [:4 2] [:1 nil] [:2 1]}
-frontier:  [[:4 4]]
-next explored:  #{[:3 2] [:4 4] [:4 2] [:1 nil] [:2 1]}
-next frontier:  []
- [:4 4])
-clj꞉graph-traversal.q1꞉> 
-; Syntax error compiling at (c:\Users\mordrax\code\graph-traversal\src\graph_traversal\q1.clj:1:8692).
-; Unable to resolve symbol: node in this context
-clj꞉graph-traversal.q1꞉> 
-([:1 nil] [:3 2] [:4 2] [:2 1] [:4 4])
-clj꞉graph-traversal.q1꞉> 
-([:1 nil] [:3 2] [:4 2] [:2 1] [:4 4])
-clj꞉graph-traversal.q1꞉> 
-([:1 nil] [:2 1] [:3 2] [:4 4] [:4 2])
-clj꞉graph-traversal.q1꞉> 
-([:1 nil] [:3 2] [:4 2] [:2 1] [:4 4])
-clj꞉graph-traversal.q1꞉> 
-([:1 nil] [:3 2] [:4 2] [:2 1] [:4 4])
-clj꞉graph-traversal.q1꞉> 
-; Syntax error compiling at (c:\Users\mordrax\code\graph-traversal\src\graph_traversal\q1.clj:1:8692).
-; Unable to resolve symbol: neighbors in this context
-clj꞉graph-traversal.q1꞉> 
-[:1 nil]
-neighbors:  [[:2 1] [:3 2]]
-explored:  #{[:1 nil]}
-frontier:  [[:1 nil]]
-next explored:  #{[:3 2] [:1 nil] [:2 1]}
-next frontier:  [[:2 1] [:3 2]]
-([:1 nil][:3 2]
-neighbors:  [[:4 2]]
-explored:  #{[:3 2] [:1 nil] [:2 1]}
-frontier:  [[:2 1] [:3 2]]
-next explored:  #{[:3 2] [:4 2] [:1 nil] [:2 1]}
-next frontier:  [[:2 1] [:4 2]]
- [:3 2][:4 2]
-neighbors:  []
-explored:  #{[:3 2] [:4 2] [:1 nil] [:2 1]}
-frontier:  [[:2 1] [:4 2]]
-next explored:  #{[:3 2] [:4 2] [:1 nil] [:2 1]}
-next frontier:  [[:2 1]]
- [:4 2][:2 1]
-neighbors:  [[:4 4]]
-explored:  #{[:3 2] [:4 2] [:1 nil] [:2 1]}
-frontier:  [[:2 1]]
-next explored:  #{[:3 2] [:4 4] [:4 2] [:1 nil] [:2 1]}
-next frontier:  [[:4 4]]
- [:2 1][:4 4]
-neighbors:  []
-explored:  #{[:3 2] [:4 4] [:4 2] [:1 nil] [:2 1]}
-frontier:  [[:4 4]]
-next explored:  #{[:3 2] [:4 4] [:4 2] [:1 nil] [:2 1]}
-next frontier:  []
- [:4 4])
-clj꞉graph-traversal.q1꞉> 
-; Error printing return value (UnsupportedOperationException) at clojure.lang.RT/nthFrom (RT.java:992).
-; nth not supported on this type: Keyword
-clj꞉graph-traversal.q1꞉> 
-[:1 nil]
-neighbors:  [[:2 1] [:3 2]]
-explored:  #{[:1 nil]}
-frontier:  [[:1 nil]]
-next explored:  #{[:3 2] [:1 nil] [:2 1]}
-next frontier:  [[:2 1] [:3 2]]
-([:1 nil][:3 2]
-neighbors:  [[:4 2]]
-explored:  #{[:3 2] [:1 nil] [:2 1]}
-frontier:  [[:2 1] [:3 2]]
-next explored:  #{[:3 2] [:4 2] [:1 nil] [:2 1]}
-next frontier:  [[:2 1] [:4 2]]
- [:3 2][:4 2]
-neighbors:  []
-explored:  #{[:3 2] [:4 2] [:1 nil] [:2 1]}
-frontier:  [[:2 1] [:4 2]]
-next explored:  #{[:3 2] [:4 2] [:1 nil] [:2 1]}
-next frontier:  [[:2 1]]
- [:4 2][:2 1]
-neighbors:  [[:4 4]]
-explored:  #{[:3 2] [:4 2] [:1 nil] [:2 1]}
-frontier:  [[:2 1]]
-next explored:  #{[:3 2] [:4 4] [:4 2] [:1 nil] [:2 1]}
-next frontier:  [[:4 4]]
- [:2 1][:4 4]
-neighbors:  []
-explored:  #{[:3 2] [:4 4] [:4 2] [:1 nil] [:2 1]}
-frontier:  [[:4 4]]
-next explored:  #{[:3 2] [:4 4] [:4 2] [:1 nil] [:2 1]}
-next frontier:  []
- [:4 4])
-clj꞉graph-traversal.q1꞉> 
-:1
-neighbors:  [:2 :3]
-explored:  #{:1}
-frontier:  [:1]
-next explored:  #{:1 :2 :3}
-next frontier:  [:2 :3]
-(:1:3
-neighbors:  [:4]
-explored:  #{:1 :2 :3}
-frontier:  [:2 :3]
-next explored:  #{:4 :1 :2 :3}
-next frontier:  [:2 :4]
- :3:4
-neighbors:  []
-explored:  #{:4 :1 :2 :3}
-frontier:  [:2 :4]
-next explored:  #{:4 :1 :2 :3}
-next frontier:  [:2]
- :4:2
-neighbors:  [:4]
-explored:  #{:4 :1 :2 :3}
-frontier:  [:2]
-next explored:  #{:4 :1 :2 :3}
-next frontier:  []
- :2)
-clj꞉graph-traversal.core꞉> 
-([:1 nil] [:3 2] [:4 2] [:2 1] [:4 4])
-clj꞉graph-traversal.q1꞉> 
-([:3 nil] [:4 2])
-clj꞉graph-traversal.q1꞉> 
-([:1 nil] [:3 2] [:4 2] [:2 1] [:4 4])
-clj꞉graph-traversal.q1꞉> 
-([:1 nil] [:3 2] [:4 2] [:2 1] [:4 4])
-clj꞉graph-traversal.q1꞉> 
-([:3 nil] [:4 2])
-clj꞉graph-traversal.q1꞉> 
-([:2 nil] [:4 4])
-clj꞉graph-traversal.q1꞉> 
-; Running all project tests…
-; ERROR in graph-traversal.q1-test/test-seq-graph-dfs (RT.java:19):
-; DFS traversal: DFS on G should produce correct result
-; error: java.lang.UnsupportedOperationException: nth not supported on this type: Keyword (RT.java:19)
-; expected:
-(= expected-dfs-result-g (vec actual-dfs-result-g))
-
-; ERROR in graph-traversal.q1-test/test-seq-graph-dfs (RT.java:20):
-; DFS traversal: BFS on G should produce correct result
-; error: java.lang.UnsupportedOperationException: nth not supported on this type: Keyword (RT.java:20)
-; expected:
-(= expected-bfs-result-g (vec actual-bfs-result-g))
-
-; 2 tests finished, problems found. 😭 errors: 2, failures: 0, ns: 1, vars: 1
-clj꞉graph-traversal.q1꞉> 
-; Execution error (IllegalAccessError) at graph-traversal.q2-test/eval11802$loading (form-init702552973623421821.clj:1).
-; make-graph does not exist
+; nREPL connection failed: Error: read ECONNRESET
+; Failed connecting.
+; nREPL Connection was closed
+; Jacking in...
+; Connecting using "Leiningen" project type.
+; You can make Calva auto-select this.
+;   - See https://calva.io/connect-sequences/
 ; 
-; Syntax error compiling at (c:\Users\mordrax\code\graph-traversal\test\graph_traversal\q2_test.clj:16:15).
-; Unable to resolve symbol: make-graph in this context
-; 
-; Syntax error compiling at (c:\Users\mordrax\code\graph-traversal\test\graph_traversal\q2_test.clj:25:20).
-; Unable to resolve symbol: make-graph in this context
-clj꞉graph-traversal.q2-test꞉> 
-([[:2 1] [:3 2] [:4 3] [:5 4]]
- [[:1 5] [:3 6] [:4 7] [:5 8]]
- [[:1 9] [:2 10] [:4 11] [:5 12]]
- [[:1 13] [:2 14] [:3 15] [:5 16]]
- [[:1 17] [:2 18] [:3 19] [:4 20]])
-clj꞉graph-traversal.q2-test꞉> 
-(:2 1 :3 2 :4 3 :5 4 :1 5 :3 6 :4 7 :5 8 :1 9 :2 10 :4 11 :5 12 :1 13 :2 14 :3 15 :5 16 :1 17 :2 18 :3 19 :4 20)
-clj꞉graph-traversal.q2-test꞉> 
-40
-clj꞉graph-traversal.q2-test꞉> 
-(:2 1 :3 2 :4 3 :5 4 :1 5 :3 6 :4 7 :5 8 :1 9 :2 10 :4 11 :5 12 :1 13 :2 14 :3 15 :5 16 :1 17 :2 18 :3 19 :4 20)
-clj꞉graph-traversal.q2-test꞉> 
-; Execution error (IllegalAccessError) at graph-traversal.q2-test/eval11820$loading (form-init702552973623421821.clj:1).
-; make-graph does not exist
-; 
-; Syntax error compiling at (c:\Users\mordrax\code\graph-traversal\test\graph_traversal\q2_test.clj:16:15).
-; Unable to resolve symbol: make-graph in this context
-; 
-; Syntax error compiling at (c:\Users\mordrax\code\graph-traversal\test\graph_traversal\q2_test.clj:25:20).
-; Unable to resolve symbol: make-graph in this context
-clj꞉graph-traversal.q2-test꞉> 
-; Syntax error compiling at (c:\Users\mordrax\code\graph-traversal\test\graph_traversal\q2_test.clj:28:13).
-; Unable to resolve symbol: make-graph in this context
-clj꞉graph-traversal.q2-test꞉> 
-#'graph-traversal.q2/make-graph
+
+; Starting Jack-in: pushd c:\Users\mordrax\code\graph-traversal & cmd.exe /d /c lein update-in :dependencies conj [nrepl,"1.1.1"] -- update-in :plugins conj [cider/cider-nrepl,"0.47.1"] -- update-in [:repl-options,:nrepl-middleware] conj '["cider.nrepl/cider-middleware"]' -- repl :headless & popd
+; Using host:port 127.0.0.1:60712 ...
+; Hooking up nREPL sessions ...
+; Connected session: clj
+; Evaluating code from settings: 'calva.autoEvaluateCode.onConnect.clj'
+nil
+clj꞉graph-traversal.core꞉> 
+; Jack-in done.
+clj꞉graph-traversal.core꞉> 
+; Execution error (NullPointerException) at graph-traversal.q2/eval10038 (form-init3047007110088846026.clj:66).
+; null
 clj꞉graph-traversal.q2꞉> 
-; Sparsity value must be from 3 to 12 inclusive. N: 4 , S: 2
-nil
+()
 clj꞉graph-traversal.q2꞉> 
-#{[:5 27] [:4 89] [:3 42] [:1 15] [:2 95]}
+(0 1 2 3 4 5 6 7 8)
 clj꞉graph-traversal.q2꞉> 
-#{[:4 97] [:5 15] [:3 45] [:2 75] [:1 63]}
+()
+clj꞉graph-traversal.q2꞉> 
+()
+clj꞉graph-traversal.q2꞉> 
+; Syntax error (IllegalArgumentException) compiling at (c:\Users\mordrax\code\graph-traversal\src\graph_traversal\q2.clj:60:5).
+; Can't call nil, form: (nil (set (map add-weight (range N))))
+clj꞉graph-traversal.q2꞉> 
+#{[:3 70] [:5 10] [:4 6] [:2 23] [:1 35]}
+clj꞉graph-traversal.q2꞉> 
+#{[:3 85] [:1 92] [:2 47] [:5 43] [:4 74]}
+clj꞉graph-traversal.q2꞉> 
+; N: 5
+; edge-index: 0
+; max-neighbours: 4
+; row: 0
+; row-edge-index: 0
+; neighbours: (1 2 3 4)
+; col: nil
+[0 nil]
+clj꞉graph-traversal.q2꞉> 
+1
+clj꞉graph-traversal.q2꞉> 
+; N: 5
+; edge-index: 0
+; max-neighbours: 4
+; row: 0
+; row-edge-index: 0
+; neighbours: (1 2 3 4)
+; col: nil
+[0 nil]
+clj꞉graph-traversal.q2꞉> 
+; N: 5
+; edge-index: 0
+; max-neighbours: 4
+; row: 0
+; row-edge-index: 0
+; neighbours: (1 2 3 4)
+; col: 1
+1
+clj꞉graph-traversal.q2꞉> 
+; N: 5
+; edge-index: 0
+; max-neighbours: 4
+; row: 0
+; row-edge-index: 0
+; neighbours: (1 2 3 4)
+; col: 1
+[0 1]
+clj꞉graph-traversal.q2꞉> 
+; Syntax error compiling at (c:\Users\mordrax\code\graph-traversal\src\graph_traversal\q2.clj:118:9).
+; Unable to resolve symbol: N in this context
+clj꞉graph-traversal.q2꞉> 
+4
+clj꞉graph-traversal.q2꞉> 
+(0 1 2 3)
 clj꞉graph-traversal.q2꞉> 
 5
 clj꞉graph-traversal.q2꞉> 
-; Error printing return value (ClassCastException) at clojure.lang.APersistentMap$ValSeq/first (APersistentMap.java:236).
-; clojure.lang.PersistentVector cannot be cast to java.util.Map$Entry
+(0 1 2 3 4)
 clj꞉graph-traversal.q2꞉> 
-()
+; Syntax error compiling at (c:\Users\mordrax\code\graph-traversal\src\graph_traversal\q2.clj:112:39).
+; Unable to resolve symbol: make-edge in this context
 clj꞉graph-traversal.q2꞉> 
-()
+; Execution error (ArityException) at graph-traversal.q2/make-graph (form-init3047007110088846026.clj:111).
+; Wrong number of args (1) passed to: graph-traversal.q2/absolute-edge-from-graph
 clj꞉graph-traversal.q2꞉> 
-()
+(10 17 14 6 8)
 clj꞉graph-traversal.q2꞉> 
-()
+(7 4 13 14 9)
 clj꞉graph-traversal.q2꞉> 
-()
-clj꞉graph-traversal.q2-test꞉> 
-#'graph-traversal.q2-test/test-make-graph-edges
-clj꞉graph-traversal.q2-test꞉> 
-()
-clj꞉graph-traversal.q2-test꞉> 
-()
-clj꞉graph-traversal.q2-test꞉> 
+(17 10 14 13 15)
+clj꞉graph-traversal.q2꞉> 
+(16 7 17 15 18)
+clj꞉graph-traversal.q2꞉> 
+(18 5 6 12 7)
+clj꞉graph-traversal.q2꞉> 
+(12 19 11 8 7)
+clj꞉graph-traversal.q2꞉> 
+(5 14 12 15 10)
+clj꞉graph-traversal.q2꞉> 
+(7 11 6 18 17)
+clj꞉graph-traversal.q2꞉> 
+(18 8 16 15 19)
+clj꞉graph-traversal.q2꞉> 
+(13 5 18 4 15)
+clj꞉graph-traversal.q2꞉> 
+(19 5 9 18 10)
+clj꞉graph-traversal.q2꞉> 
+(15 6 13 18 17)
+clj꞉graph-traversal.q2꞉> 
+(16 7 6 17 19)
+clj꞉graph-traversal.q2꞉> 
+(5 9 4 17 13)
+clj꞉graph-traversal.q2꞉> 
+(9 15 11 14 6)
+clj꞉graph-traversal.q2꞉> 
+(7 9 12 4 5)
+clj꞉graph-traversal.q2꞉> 
+(4 9 12 10 16)
+clj꞉graph-traversal.q2꞉> 
+(5 9 13 17 19)
+clj꞉graph-traversal.q2꞉> 
+(7 12 5 16 9)
+clj꞉graph-traversal.q2꞉> 
+(4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19)
+clj꞉graph-traversal.q2꞉> 
+(13 16 4 8 12 15 6 19 7 18 11 14 9 17 10 5)
+clj꞉graph-traversal.q2꞉> 
+(16 12 19 8 6 4 7 11 18 14 10 15 17 9 13 5)
+clj꞉graph-traversal.q2꞉> 
+(14 18 0 13 9 4 6 5 3 1 16 7 2 17 15 8 12 19 10)
+clj꞉graph-traversal.q2꞉> 
+19
+clj꞉graph-traversal.q2꞉> 
+19
+clj꞉graph-traversal.q2꞉> 
+19
+clj꞉graph-traversal.q2꞉> 
+16
+clj꞉graph-traversal.q2꞉> 
+16
+clj꞉graph-traversal.q2꞉> 
+0
+clj꞉graph-traversal.q2꞉> 
+15
+clj꞉graph-traversal.q2꞉> 
+([0 1] [0 2] [0 3] [0 4] [1 0])
+clj꞉graph-traversal.q2꞉> 
+; Execution error (ArityException) at graph-traversal.q2/make-graph (form-init3047007110088846026.clj:111).
+; Wrong number of args (1) passed to: graph-traversal.q2/absolute-edge-from-graph
+clj꞉graph-traversal.q2꞉> 
+([0 1] [0 2] [0 3] [0 4] [1 0])
+clj꞉graph-traversal.q2꞉> 
+([0 1] [0 2] [0 3] [0 4])
+clj꞉graph-traversal.q2꞉> 
