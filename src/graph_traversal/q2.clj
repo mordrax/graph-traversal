@@ -18,6 +18,8 @@
 ;;   contains weight and also q3. So I'm _assuming_ the simple graph will contain weight. AND
 ;;   I'm _assuming_ the weight will be set as a global constant of 0-99 for simplicity.
 ;; - Function will return nil if the sparsity constraint is not met.
+;; - If a node has no directed edge going to another node, 
+;;   it will not be included in the graph
 
 (ns graph-traversal.q2
   (:require [clojure.set :as set]))
