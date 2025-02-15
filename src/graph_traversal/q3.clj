@@ -17,6 +17,37 @@
    :E [[:D 3] [:F 1] [:C 9] [:B 6]]
    :F [[:C 3] [:E 1] [:D 2]]})
 
+(def GRAPH_15_100
+  {:14 [[:5 97] [:6 52] [:7 11] [:8 53] [:11 84] [:13 0]],
+   :12 [[:6 13] [:13 87] [:14 12] [:5 81]],
+   :11 [[:13 55] [:4 0]],
+   :10 [[:9 18] [:5 59] [:14 22] [:6 26] [:12 94] [:7 98] [:0 73] [:1 20]],
+   :13 [[:2 80] [:14 35] [:11 51] [:8 4] [:5 79] [:9 14] [:3 94]],
+   :0
+   [[:14 71]
+    [:13 40]
+    [:12 33]
+    [:11 78]
+    [:10 13]
+    [:9 54]
+    [:8 34]
+    [:7 56]
+    [:6 23]
+    [:5 72]
+    [:4 43]
+    [:3 34]
+    [:2 37]
+    [:1 87]],
+   :4 [[:8 21] [:6 75] [:12 9] [:0 21] [:2 19] [:11 72] [:9 79] [:7 19] [:1 46]],
+   :7 [[:3 39] [:9 61] [:5 91] [:14 15] [:11 79] [:0 32]],
+   :1 [[:9 47] [:0 73] [:14 88] [:10 19] [:7 42] [:6 73] [:3 49]],
+   :8 [[:9 15] [:10 34] [:7 93] [:6 83] [:2 87] [:14 20]],
+   :9 [[:3 19] [:7 98] [:4 95] [:0 38]],
+   :2 [[:9 11] [:11 9] [:12 18] [:7 28] [:10 8] [:14 39] [:13 60]],
+   :5 [[:10 14] [:13 67] [:8 68] [:1 17] [:2 6] [:0 6] [:12 4]],
+   :3 [[:4 45] [:14 55] [:0 83] [:10 57] [:11 84]],
+   :6 [[:0 90] [:4 58] [:9 34] [:10 32] [:2 52] [:1 8] [:5 85] [:14 60]]})
+
 (defn init_shortest_path_table
   "Given a graph and a start node, return a map of all keys at max distance and the start node with distance 0"
   [graph start_node]
@@ -28,40 +59,40 @@
           (assoc acc x
                  {:distance Integer/MAX_VALUE
                   :path []}))
-        {start_node {:distance 0 :path []}})))
+        {start_node {:distance 0 :path [start_node]}})))
 
-;; for each neighbouring node, check the current shortest path to that node
-;; if the current path is shorter than the existing path, update the shortest path table
-(defn- update_shortest_path_table [shortest_path_table neighbours]
+;; for each neighbouring node, get the current distance to it in the shortest_path_table
+;; if the current distance is greater than the distance to the current node + weight of the edge then
+;; we update the shortest_path_table with the new distance and path
+(defn- update-table [shortest_path_table neighbours current_node]
   (reduce
-   (fn [acc [node weight]]
-     (let [current_distance (:distance (acc node))
-           new_distance weight
-           _ (println "node:" node "weight:" weight)
-           _ (pprint/pprint acc)
-           _ (println "current_distance:" current_distance)
-           _ (println "new_distance:" new_distance)]
-       (if (< new_distance current_distance)
-         (assoc acc node
-                {:distance new_distance
-                 :path (conj (:path (acc node)) node)})
+   (fn [acc [neighbour_node neighbour_weight]]
+     (let [current_distance_to_neighbour (:distance (acc neighbour_node))
+           distance_to_current_node (:distance (acc current_node))
+           path_to_current_node (:path (acc current_node))
+           new_distance_to_neighbour (+ distance_to_current_node neighbour_weight)
+           _ (println "update-table node:" neighbour_node "weight:" neighbour_weight)
+           _ (println "current_distance:" current_distance_to_neighbour)
+           _ (pprint/pprint acc)]
+       ; NOTE: If the distance of both paths are the same, we do not change the path
+       (if (> current_distance_to_neighbour new_distance_to_neighbour)
+         (assoc acc neighbour_node
+                {:distance new_distance_to_neighbour
+                 :path (conj path_to_current_node neighbour_node)})
          acc)))
    shortest_path_table neighbours))
 
 (defn get-nearest-unvisited-node [_ []] [])
-(defn get-nearest-unvisited-node [updated_shortest_path_table updated_unvisited_nodes]
+(defn get-nearest-unvisited-node [table unvisited_nodes]
   (reduce
-   (fn [nearest_node x]
-     (let [current_nearest (:distance nearest_node)
-           x_distance (:distance (updated_shortest_path_table x))
-           _ (println "x:" x)
-           _ (println "current_distance:" current_nearest)
-           _ (println "new_distance:" x_distance)]
-       (if (< x_distance current_nearest)
-         x
+   (fn [nearest_node current_node]
+     (let [nearest_distance (:distance (table nearest_node))
+           current_node_distance (:distance (table current_node))]
+       (if (< current_node_distance nearest_distance)
+         current_node
          nearest_node)))
-   (get updated_shortest_path_table (first updated_unvisited_nodes))
-   (rest updated_unvisited_nodes)))
+   (first unvisited_nodes)
+   (rest unvisited_nodes)))
 
 
 (defn shortest-path-helper [graph
@@ -74,17 +105,24 @@
           ;; all nodes have been visited
           ;; return shortest path to end_node
      shortest_path_table
-     (let [neighbours (graph current_node)
-           updated_shortest_path_table (update_shortest_path_table shortest_path_table neighbours)
-           updated_unvisited_nodes (remove (partial = current_node) unvisited_nodes)
-           next_node_to_visit (get-nearest-unvisited-node updated_shortest_path_table updated_unvisited_nodes)
+     (let [;
+           neighbours (graph current_node)
            updated_visited_nodes (conj visited_nodes current_node)
-           _ (do
-               (println "current_node:" current_node)
-               (println "neighbours:" neighbours)
-               (println "next_unvisited_nodes:" updated_unvisited_nodes)
-               (println "shortest_path_acc:")
-               (pprint/pprint updated_shortest_path_table))]
+           updated_unvisited_nodes (remove (partial = current_node) unvisited_nodes)
+           _ (println "current_node:" current_node)
+           _ (println "neighbours:" neighbours)
+           _ (println "next_unvisited_nodes:" updated_unvisited_nodes)
+
+           updated_shortest_path_table (update-table
+                                        shortest_path_table
+                                        neighbours
+                                        current_node)
+           next_node_to_visit (get-nearest-unvisited-node
+                               updated_shortest_path_table
+                               updated_unvisited_nodes)
+           _ (println "next_node_to_visit:" next_node_to_visit)
+           ;
+           ]
        (cons updated_shortest_path_table
              (shortest-path-helper graph
                                    next_node_to_visit
@@ -114,7 +152,11 @@
                           shortest_path_table
                           visited_nodes)))
 
-(take 5 (shortest-path SIMPLE_GRAPH :A :C))
+(take 15 (shortest-path SIMPLE_GRAPH :A :C))
 
-(println "hi")
+(take 100 (shortest-path GRAPH_15_100 :12 :2))
+
+
 ;; (init_shortest_path_table SIMPLE_GRAPH :A)
+
+(reduce (fn [acc x] (+ acc x)) 0 (vec (range 16)))
