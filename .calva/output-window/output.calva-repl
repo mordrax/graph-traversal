@@ -796,3 +796,39 @@ clj꞉graph-traversal.q3꞉> 
 clj꞉graph-traversal.q3꞉> 
 #'graph-traversal.q3/shortest-path
 clj꞉graph-traversal.q3꞉> 
+; {:14 {:distance 12, :path [:12 :14]},
+;  :12 {:distance 0, :path [:12]},
+;  :11 {:distance 63, :path [:12 :14 :13 :11]},
+;  :10 {:distance 40, :path [:12 :6 :1 :10]},
+;  :13 {:distance 12, :path [:12 :14 :13]},
+;  :0 {:distance 55, :path [:12 :14 :7 :0]},
+;  :4 {:distance 63, :path [:12 :14 :13 :11 :4]},
+;  :7 {:distance 23, :path [:12 :14 :7]},
+;  :1 {:distance 21, :path [:12 :6 :1]},
+;  :8 {:distance 16, :path [:12 :14 :13 :8]},
+;  :9 {:distance 26, :path [:12 :14 :13 :9]},
+;  :2 {:distance 65, :path [:12 :6 :2]},
+;  :5 {:distance 81, :path [:12 :5]},
+;  :3 {:distance 45, :path [:12 :14 :13 :9 :3]},
+;  :6 {:distance 13, :path [:12 :6]}}
+[:12 :6 :2]
+clj꞉graph-traversal.q3꞉> 
+; {:14 {:distance 12, :path [:12 :14]},
+;  :12 {:distance 0, :path [:12]},
+;  :11 {:distance 63, :path [:12 :14 :13 :11]},
+;  :10 {:distance 40, :path [:12 :6 :1 :10]},
+;  :13 {:distance 12, :path [:12 :14 :13]},
+;  :0 {:distance 55, :path [:12 :14 :7 :0]},
+;  :4 {:distance 63, :path [:12 :14 :13 :11 :4]},
+;  :7 {:distance 23, :path [:12 :14 :7]},
+;  :1 {:distance 21, :path [:12 :6 :1]},
+;  :8 {:distance 16, :path [:12 :14 :13 :8]},
+;  :9 {:distance 26, :path [:12 :14 :13 :9]},
+;  :2 {:distance 65, :path [:12 :6 :2]},
+;  :5 {:distance 81, :path [:12 :5]},
+;  :3 {:distance 45, :path [:12 :14 :13 :9 :3]},
+;  :6 {:distance 13, :path [:12 :6]}}
+[:12 :14 :13]
+clj꞉graph-traversal.q3꞉> 
+[:12 :14 :13]
+clj꞉graph-traversal.q3꞉> 

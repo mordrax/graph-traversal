@@ -190,3 +190,5 @@
 ;;                (rand-nth (vec (keys random-graph))))
 
 ;; (init_shortest_path_table SIMPLE_GRAPH :A)
+
+(shortest-path GRAPH_15_100 :12 :13)
