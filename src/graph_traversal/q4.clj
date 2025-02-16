@@ -36,13 +36,13 @@
   (->> distances
        vals
        (map :distance)
-       (reduce max 0)))  ; Handles empty map case, default 0
+       (reduce max 0))) 
 
 (defn min-distance [distances]
   (->> distances
        vals
        (map :distance)
-       (reduce min 0)))  ; Handles empty map case, default 0
+       (reduce min 0))) 
 
 (defn eccentricity [graph node]
   (->> (shortest-path-table graph node)
@@ -52,12 +52,12 @@
 (defn radius [graph]
   (->> (keys graph)
        (map #(eccentricity graph %))
-       (reduce min Integer/MAX_VALUE)))  ; Handles empty graph case, default 0
+       (reduce min Integer/MAX_VALUE))) 
   
 (defn diameter [graph]
   (->> (keys graph)
        (map #(eccentricity graph %))
-       (reduce max Integer/MIN_VALUE)))  ; Handles empty graph case, default 0
+       (reduce max Integer/MIN_VALUE))) 
   
 
 (eccentricity SIMPLE_GRAPH :A) ;12

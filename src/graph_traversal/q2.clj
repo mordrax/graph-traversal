@@ -25,7 +25,9 @@
   (:require [clojure.set :as set]))
 
 (def WEIGHT 100)
-(defn make-weight [] (rand-int WEIGHT))
+(defn make-weight 
+  ([weight] (rand-int weight))
+  ([] (rand-int WEIGHT)))
 
 (defn num-to-keyword [x]
   (keyword (str x)))
@@ -104,7 +106,9 @@
    (range N))
   )
   
-(defn make-graph [N S]
+(defn make-graph 
+  ([N S] (make-graph N S WEIGHT))
+  ([N S max_weight]
   (when (is-valid-graph N S)
     (let [max-neighbours (dec N)
           make-edge (partial absolute-edge-from-graph N)
@@ -122,11 +126,11 @@
           ]
       (reduce
        (fn [acc [start end]] 
-         (update acc (num-to-keyword start) conj [(num-to-keyword end) (make-weight)]))
+         (update acc (num-to-keyword start) conj [(num-to-keyword end) (make-weight max_weight)]))
       ;;  (init-graph N)
        {}
        all-edges)
-      )))
+      ))))
 
 (make-graph 10 10)
 (make-graph 50 500)

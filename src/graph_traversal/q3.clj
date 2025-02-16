@@ -27,14 +27,7 @@
    :C [[:F 3] [:E 9]],
    :D [[:A 8] [:B 5] [:E 3] [:F 2]]
    :E [[:D 3] [:F 1] [:C 9] [:B 6]]
-   :F [[:C 3] [:E 1] [:D 2]]})             
-
-;; (def SIMPLE_GRAPH
-;;   {:1 [[:2 4] [:3 2]],
-;;    :2 [[:3 3] [:4 2] [:5 3]],
-;;    :3 [[:2 1] [:5 5] [:4 4]],
-;;    :4 []
-;;    :5 [[:4 1]]})
+   :F [[:C 3] [:E 1] [:D 2]]})
 
 (def GRAPH_15_100
   {:14 [[:5 97] [:6 52] [:7 11] [:8 53] [:11 84] [:13 0]],
@@ -78,10 +71,7 @@
           (assoc acc x
                  {:distance Integer/MAX_VALUE
                   :path []}))
-        {start_node {:distance 0 :path [start_node]}
-        ;;  :radius Integer/MAX_VALUE
-        ;;  :diameter Integer/MIN_VALUE
-         })))
+        {start_node {:distance 0 :path [start_node]}})))
 
 ;; for each neighbouring node, get the current distance to it in the shortest_path_table
 ;; if the current distance is greater than the distance to the current node + weight of the edge then
@@ -92,28 +82,18 @@
      (let [current_distance_to_neighbour (get-in acc [neighbour_node :distance] Integer/MAX_VALUE)
            distance_to_current_node (get-in acc [current_node :distance] Integer/MAX_VALUE)
            path_to_current_node (get-in acc [current_node :path] [])
-          ;;  current_distance_to_neighbour (:distance (acc neighbour_node))
-          ;;  distance_to_current_node (:distance (acc current_node))
-          ;;  path_to_current_node (:path (acc current_node))
-           new_distance_to_neighbour (+ distance_to_current_node neighbour_weight)           
+           new_distance_to_neighbour (+ distance_to_current_node neighbour_weight)
           ;;  _ (println "update-table node:" neighbour_node "weight:" neighbour_weight)
           ;;  _ (println "current_distance:" current_distance_to_neighbour)
           ;;  _ (println "new_distance:" new_distance_to_neighbour)
           ;;  _ (pprint/pprint acc)
            ]
        ; NOTE: If the distance of both paths are the same, we do not change the path
-       (-> acc
-           (cond-> (> current_distance_to_neighbour new_distance_to_neighbour)
-             (assoc neighbour_node
-                    {:distance new_distance_to_neighbour
-                     :path (conj path_to_current_node neighbour_node)}))
-          ;;  (cond-> (and (> (:radius acc) new_distance_to_neighbour)
-          ;;               (> current_distance_to_neighbour new_distance_to_neighbour))
-          ;;    (assoc :radius new_distance_to_neighbour))
-          ;;  (cond-> (and (< (:diameter acc) new_distance_to_neighbour) 
-          ;;               (> current_distance_to_neighbour new_distance_to_neighbour))
-          ;;    (assoc :diameter new_distance_to_neighbour)))
-       )))
+       (if (> current_distance_to_neighbour new_distance_to_neighbour)
+         (assoc acc neighbour_node
+                {:distance new_distance_to_neighbour
+                 :path (conj path_to_current_node neighbour_node)})
+         acc)))
    shortest_path_table neighbours))
 
 (defn get-nearest-unvisited-node [_ []] [])
