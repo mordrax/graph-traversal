@@ -78,7 +78,10 @@
           (assoc acc x
                  {:distance Integer/MAX_VALUE
                   :path []}))
-        {start_node {:distance 0 :path [start_node]}})))
+        {start_node {:distance 0 :path [start_node]}
+        ;;  :radius Integer/MAX_VALUE
+        ;;  :diameter Integer/MIN_VALUE
+         })))
 
 ;; for each neighbouring node, get the current distance to it in the shortest_path_table
 ;; if the current distance is greater than the distance to the current node + weight of the edge then
@@ -92,18 +95,25 @@
           ;;  current_distance_to_neighbour (:distance (acc neighbour_node))
           ;;  distance_to_current_node (:distance (acc current_node))
           ;;  path_to_current_node (:path (acc current_node))
-           new_distance_to_neighbour (+ distance_to_current_node neighbour_weight)
+           new_distance_to_neighbour (+ distance_to_current_node neighbour_weight)           
           ;;  _ (println "update-table node:" neighbour_node "weight:" neighbour_weight)
           ;;  _ (println "current_distance:" current_distance_to_neighbour)
           ;;  _ (println "new_distance:" new_distance_to_neighbour)
           ;;  _ (pprint/pprint acc)
            ]
        ; NOTE: If the distance of both paths are the same, we do not change the path
-       (if (> current_distance_to_neighbour new_distance_to_neighbour)
-         (assoc acc neighbour_node
-                {:distance new_distance_to_neighbour
-                 :path (conj path_to_current_node neighbour_node)})
-         acc)))
+       (-> acc
+           (cond-> (> current_distance_to_neighbour new_distance_to_neighbour)
+             (assoc neighbour_node
+                    {:distance new_distance_to_neighbour
+                     :path (conj path_to_current_node neighbour_node)}))
+          ;;  (cond-> (and (> (:radius acc) new_distance_to_neighbour)
+          ;;               (> current_distance_to_neighbour new_distance_to_neighbour))
+          ;;    (assoc :radius new_distance_to_neighbour))
+          ;;  (cond-> (and (< (:diameter acc) new_distance_to_neighbour) 
+          ;;               (> current_distance_to_neighbour new_distance_to_neighbour))
+          ;;    (assoc :diameter new_distance_to_neighbour)))
+       )))
    shortest_path_table neighbours))
 
 (defn get-nearest-unvisited-node [_ []] [])
@@ -157,18 +167,23 @@
 ;; OR
 ;; no more neighbours left to visit (ie remaining unvisited nodes are not connected)  
 (defn shortest-path-table
+  ([graph start_node]
+   (shortest-path-table graph start_node nil false))
+
   ([graph start_node end_node]
-     (shortest-path-table graph start_node end_node false))
-  
+   (shortest-path-table graph start_node end_node false))
+
   ([graph start_node end_node debug]
    (loop [current_node start_node
           unvisited_nodes (keys graph)
           shortest_path_table (init_shortest_path_table graph start_node)
           visited_nodes []]
-     (if (empty? unvisited_nodes)
+     (if (or (empty? unvisited_nodes)
+             (and (not (nil? end_node))
+                  (some #(= end_node %) visited_nodes)))
       ;; Return the path to end_node from the final table
        (do
-         (if debug (pprint/pprint shortest_path_table))
+         (when debug (pprint/pprint shortest_path_table))
          shortest_path_table)
 
        (let [{:keys [next_node unvisited_nodes table visited_nodes]}
@@ -176,8 +191,8 @@
          (recur next_node
                 unvisited_nodes
                 table
-                visited_nodes)))))
-)
+                visited_nodes))))))
+
 
 (defn shortest-path
   ([graph start_node end_node]
@@ -190,7 +205,7 @@
 
 
 
-;; (shortest-path SIMPLE_GRAPH :A :C)
+(shortest-path SIMPLE_GRAPH :A :C true)
 
 ;; (def random-graph (make-graph 10 10))
 
