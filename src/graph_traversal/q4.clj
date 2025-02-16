@@ -13,12 +13,20 @@
 ;; (radius random-graph) ; => minimal eccentricity
 ;; (diameter random-graph) ; => maximal eccentricity
 
+;; Assumptions:
+;; - The graph is connected.
 (ns graph-traversal.q4
   (:require
-   [clojure.pprint :as pprint]))
+   [clojure.pprint :as pprint])
+  (:require
+   [graph-traversal.q3 :refer
+    [shortest-path-table]]))
+  
 
 
-(defn eccentricity [graph node])
+(defn eccentricity [graph node]
+  
+  )
 (defn radius [graph])
 (defn diameter [graph])
 

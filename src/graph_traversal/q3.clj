@@ -156,9 +156,9 @@
 ;; all (keys graph) are visited
 ;; OR
 ;; no more neighbours left to visit (ie remaining unvisited nodes are not connected)  
-(defn shortest-path
+(defn shortest-path-table
   ([graph start_node end_node]
-     (shortest-path graph start_node end_node false))
+     (shortest-path-table graph start_node end_node false))
   
   ([graph start_node end_node debug]
    (loop [current_node start_node
@@ -168,9 +168,9 @@
      (if (empty? unvisited_nodes)
       ;; Return the path to end_node from the final table
        (do
-         (if debug
-           (pprint/pprint shortest_path_table))
-         (get-in shortest_path_table [end_node :path]))
+         (if debug (pprint/pprint shortest_path_table))
+         shortest_path_table)
+
        (let [{:keys [next_node unvisited_nodes table visited_nodes]}
              (step graph current_node unvisited_nodes shortest_path_table visited_nodes)]
          (recur next_node
@@ -178,6 +178,15 @@
                 table
                 visited_nodes)))))
 )
+
+(defn shortest-path
+  ([graph start_node end_node]
+   (shortest-path graph start_node end_node false))
+
+  ([graph start_node end_node debug]
+   (let [all_paths (shortest-path-table graph start_node end_node debug)
+         shortest_path (get-in all_paths [end_node :path])]
+     shortest_path)))
 
 
 
