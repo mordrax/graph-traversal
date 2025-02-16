@@ -1,2319 +1,535 @@
-current_node: :12
-neighbours: [[:6 13] [:13 87] [:14 12] [:5 81]]
-next_unvisited_nodes: (:14 :11 :10 :13 :0 :4 :7 :1 :8 :9 :2 :5 :3 :6)
-update-table node: :6 weight: 13
-current_distance: 2147483647
-{:14 {:distance 2147483647, :path []},
- :12 {:distance 0, :path [:12]},
- :11 {:distance 2147483647, :path []},
- :10 {:distance 2147483647, :path []},
- :13 {:distance 2147483647, :path []},
- :0 {:distance 2147483647, :path []},
- :4 {:distance 2147483647, :path []},
- :7 {:distance 2147483647, :path []},
- :1 {:distance 2147483647, :path []},
- :8 {:distance 2147483647, :path []},
- :9 {:distance 2147483647, :path []},
- :2 {:distance 2147483647, :path []},
- :5 {:distance 2147483647, :path []},
- :3 {:distance 2147483647, :path []},
- :6 {:distance 2147483647, :path []}}
-update-table node: :13 weight: 87
-current_distance: 2147483647
-{:14 {:distance 2147483647, :path []},
- :12 {:distance 0, :path [:12]},
- :11 {:distance 2147483647, :path []},
- :10 {:distance 2147483647, :path []},
- :13 {:distance 2147483647, :path []},
- :0 {:distance 2147483647, :path []},
- :4 {:distance 2147483647, :path []},
- :7 {:distance 2147483647, :path []},
- :1 {:distance 2147483647, :path []},
- :8 {:distance 2147483647, :path []},
- :9 {:distance 2147483647, :path []},
- :2 {:distance 2147483647, :path []},
- :5 {:distance 2147483647, :path []},
- :3 {:distance 2147483647, :path []},
- :6 {:distance 13, :path [:12 :6]}}
-update-table node: :14 weight: 12
-current_distance: 2147483647
-{:14 {:distance 2147483647, :path []},
- :12 {:distance 0, :path [:12]},
- :11 {:distance 2147483647, :path []},
- :10 {:distance 2147483647, :path []},
- :13 {:distance 87, :path [:12 :13]},
- :0 {:distance 2147483647, :path []},
- :4 {:distance 2147483647, :path []},
- :7 {:distance 2147483647, :path []},
- :1 {:distance 2147483647, :path []},
- :8 {:distance 2147483647, :path []},
- :9 {:distance 2147483647, :path []},
- :2 {:distance 2147483647, :path []},
- :5 {:distance 2147483647, :path []},
- :3 {:distance 2147483647, :path []},
- :6 {:distance 13, :path [:12 :6]}}
-update-table node: :5 weight: 81
-current_distance: 2147483647
-{:14 {:distance 12, :path [:12 :14]},
- :12 {:distance 0, :path [:12]},
- :11 {:distance 2147483647, :path []},
- :10 {:distance 2147483647, :path []},
- :13 {:distance 87, :path [:12 :13]},
- :0 {:distance 2147483647, :path []},
- :4 {:distance 2147483647, :path []},
- :7 {:distance 2147483647, :path []},
- :1 {:distance 2147483647, :path []},
- :8 {:distance 2147483647, :path []},
- :9 {:distance 2147483647, :path []},
- :2 {:distance 2147483647, :path []},
- :5 {:distance 2147483647, :path []},
- :3 {:distance 2147483647, :path []},
- :6 {:distance 13, :path [:12 :6]}}
-next_node_to_visit: :14
-({:14 {:distance 12, :path [:12 :14]},
-  :12 {:distance 0, :path [:12]},
-  :11 {:distance 2147483647, :path []},
-  :10 {:distance 2147483647, :path []},
-  :13 {:distance 87, :path [:12 :13]},
-  :0 {:distance 2147483647, :path []},
-  :4 {:distance 2147483647, :path []},
-  :7 {:distance 2147483647, :path []},
-  :1 {:distance 2147483647, :path []},
-  :8 {:distance 2147483647, :path []},
-  :9 {:distance 2147483647, :path []},
-  :2 {:distance 2147483647, :path []},
-  :5 {:distance 81, :path [:12 :5]},
-  :3 {:distance 2147483647, :path []},
-  :6 {:distance 13, :path [:12 :6]}}current_node: :14
-neighbours: [[:5 97] [:6 52] [:7 11] [:8 53] [:11 84] [:13 0]]
-next_unvisited_nodes: (:11 :10 :13 :0 :4 :7 :1 :8 :9 :2 :5 :3 :6)
-update-table node: :5 weight: 97
-current_distance: 81
-{:14 {:distance 12, :path [:12 :14]},
- :12 {:distance 0, :path [:12]},
- :11 {:distance 2147483647, :path []},
- :10 {:distance 2147483647, :path []},
- :13 {:distance 87, :path [:12 :13]},
- :0 {:distance 2147483647, :path []},
- :4 {:distance 2147483647, :path []},
- :7 {:distance 2147483647, :path []},
- :1 {:distance 2147483647, :path []},
- :8 {:distance 2147483647, :path []},
- :9 {:distance 2147483647, :path []},
- :2 {:distance 2147483647, :path []},
- :5 {:distance 81, :path [:12 :5]},
- :3 {:distance 2147483647, :path []},
- :6 {:distance 13, :path [:12 :6]}}
-update-table node: :6 weight: 52
-current_distance: 13
-{:14 {:distance 12, :path [:12 :14]},
- :12 {:distance 0, :path [:12]},
- :11 {:distance 2147483647, :path []},
- :10 {:distance 2147483647, :path []},
- :13 {:distance 87, :path [:12 :13]},
- :0 {:distance 2147483647, :path []},
- :4 {:distance 2147483647, :path []},
- :7 {:distance 2147483647, :path []},
- :1 {:distance 2147483647, :path []},
- :8 {:distance 2147483647, :path []},
- :9 {:distance 2147483647, :path []},
- :2 {:distance 2147483647, :path []},
- :5 {:distance 81, :path [:12 :5]},
- :3 {:distance 2147483647, :path []},
- :6 {:distance 13, :path [:12 :6]}}
-update-table node: :7 weight: 11
-current_distance: 2147483647
-{:14 {:distance 12, :path [:12 :14]},
- :12 {:distance 0, :path [:12]},
- :11 {:distance 2147483647, :path []},
- :10 {:distance 2147483647, :path []},
- :13 {:distance 87, :path [:12 :13]},
- :0 {:distance 2147483647, :path []},
- :4 {:distance 2147483647, :path []},
- :7 {:distance 2147483647, :path []},
- :1 {:distance 2147483647, :path []},
- :8 {:distance 2147483647, :path []},
- :9 {:distance 2147483647, :path []},
- :2 {:distance 2147483647, :path []},
- :5 {:distance 81, :path [:12 :5]},
- :3 {:distance 2147483647, :path []},
- :6 {:distance 13, :path [:12 :6]}}
-update-table node: :8 weight: 53
-current_distance: 2147483647
-{:14 {:distance 12, :path [:12 :14]},
- :12 {:distance 0, :path [:12]},
- :11 {:distance 2147483647, :path []},
- :10 {:distance 2147483647, :path []},
- :13 {:distance 87, :path [:12 :13]},
- :0 {:distance 2147483647, :path []},
- :4 {:distance 2147483647, :path []},
- :7 {:distance 23, :path [:12 :14 :7]},
- :1 {:distance 2147483647, :path []},
- :8 {:distance 2147483647, :path []},
- :9 {:distance 2147483647, :path []},
- :2 {:distance 2147483647, :path []},
- :5 {:distance 81, :path [:12 :5]},
- :3 {:distance 2147483647, :path []},
- :6 {:distance 13, :path [:12 :6]}}
-update-table node: :11 weight: 84
-current_distance: 2147483647
-{:14 {:distance 12, :path [:12 :14]},
- :12 {:distance 0, :path [:12]},
- :11 {:distance 2147483647, :path []},
- :10 {:distance 2147483647, :path []},
- :13 {:distance 87, :path [:12 :13]},
- :0 {:distance 2147483647, :path []},
- :4 {:distance 2147483647, :path []},
- :7 {:distance 23, :path [:12 :14 :7]},
- :1 {:distance 2147483647, :path []},
- :8 {:distance 65, :path [:12 :14 :8]},
- :9 {:distance 2147483647, :path []},
- :2 {:distance 2147483647, :path []},
- :5 {:distance 81, :path [:12 :5]},
- :3 {:distance 2147483647, :path []},
- :6 {:distance 13, :path [:12 :6]}}
-update-table node: :13 weight: 0
-current_distance: 87
-{:14 {:distance 12, :path [:12 :14]},
- :12 {:distance 0, :path [:12]},
- :11 {:distance 96, :path [:12 :14 :11]},
- :10 {:distance 2147483647, :path []},
- :13 {:distance 87, :path [:12 :13]},
- :0 {:distance 2147483647, :path []},
- :4 {:distance 2147483647, :path []},
- :7 {:distance 23, :path [:12 :14 :7]},
- :1 {:distance 2147483647, :path []},
- :8 {:distance 65, :path [:12 :14 :8]},
- :9 {:distance 2147483647, :path []},
- :2 {:distance 2147483647, :path []},
- :5 {:distance 81, :path [:12 :5]},
- :3 {:distance 2147483647, :path []},
- :6 {:distance 13, :path [:12 :6]}}
-next_node_to_visit: :13
-
- {:14 {:distance 12, :path [:12 :14]},
-  :12 {:distance 0, :path [:12]},
-  :11 {:distance 96, :path [:12 :14 :11]},
-  :10 {:distance 2147483647, :path []},
-  :13 {:distance 12, :path [:12 :14 :13]},
-  :0 {:distance 2147483647, :path []},
-  :4 {:distance 2147483647, :path []},
-  :7 {:distance 23, :path [:12 :14 :7]},
-  :1 {:distance 2147483647, :path []},
-  :8 {:distance 65, :path [:12 :14 :8]},
-  :9 {:distance 2147483647, :path []},
-  :2 {:distance 2147483647, :path []},
-  :5 {:distance 81, :path [:12 :5]},
-  :3 {:distance 2147483647, :path []},
-  :6 {:distance 13, :path [:12 :6]}}current_node: :13
-neighbours: [[:2 80] [:14 35] [:11 51] [:8 4] [:5 79] [:9 14] [:3 94]]
-next_unvisited_nodes: (:11 :10 :0 :4 :7 :1 :8 :9 :2 :5 :3 :6)
-update-table node: :2 weight: 80
-current_distance: 2147483647
-{:14 {:distance 12, :path [:12 :14]},
- :12 {:distance 0, :path [:12]},
- :11 {:distance 96, :path [:12 :14 :11]},
- :10 {:distance 2147483647, :path []},
- :13 {:distance 12, :path [:12 :14 :13]},
- :0 {:distance 2147483647, :path []},
- :4 {:distance 2147483647, :path []},
- :7 {:distance 23, :path [:12 :14 :7]},
- :1 {:distance 2147483647, :path []},
- :8 {:distance 65, :path [:12 :14 :8]},
- :9 {:distance 2147483647, :path []},
- :2 {:distance 2147483647, :path []},
- :5 {:distance 81, :path [:12 :5]},
- :3 {:distance 2147483647, :path []},
- :6 {:distance 13, :path [:12 :6]}}
-update-table node: :14 weight: 35
-current_distance: 12
-{:14 {:distance 12, :path [:12 :14]},
- :12 {:distance 0, :path [:12]},
- :11 {:distance 96, :path [:12 :14 :11]},
- :10 {:distance 2147483647, :path []},
- :13 {:distance 12, :path [:12 :14 :13]},
- :0 {:distance 2147483647, :path []},
- :4 {:distance 2147483647, :path []},
- :7 {:distance 23, :path [:12 :14 :7]},
- :1 {:distance 2147483647, :path []},
- :8 {:distance 65, :path [:12 :14 :8]},
- :9 {:distance 2147483647, :path []},
- :2 {:distance 92, :path [:12 :14 :13 :2]},
- :5 {:distance 81, :path [:12 :5]},
- :3 {:distance 2147483647, :path []},
- :6 {:distance 13, :path [:12 :6]}}
-update-table node: :11 weight: 51
-current_distance: 96
-{:14 {:distance 12, :path [:12 :14]},
- :12 {:distance 0, :path [:12]},
- :11 {:distance 96, :path [:12 :14 :11]},
- :10 {:distance 2147483647, :path []},
- :13 {:distance 12, :path [:12 :14 :13]},
- :0 {:distance 2147483647, :path []},
- :4 {:distance 2147483647, :path []},
- :7 {:distance 23, :path [:12 :14 :7]},
- :1 {:distance 2147483647, :path []},
- :8 {:distance 65, :path [:12 :14 :8]},
- :9 {:distance 2147483647, :path []},
- :2 {:distance 92, :path [:12 :14 :13 :2]},
- :5 {:distance 81, :path [:12 :5]},
- :3 {:distance 2147483647, :path []},
- :6 {:distance 13, :path [:12 :6]}}
-update-table node: :8 weight: 4
-current_distance: 65
-{:14 {:distance 12, :path [:12 :14]},
- :12 {:distance 0, :path [:12]},
- :11 {:distance 63, :path [:12 :14 :13 :11]},
- :10 {:distance 2147483647, :path []},
- :13 {:distance 12, :path [:12 :14 :13]},
- :0 {:distance 2147483647, :path []},
- :4 {:distance 2147483647, :path []},
- :7 {:distance 23, :path [:12 :14 :7]},
- :1 {:distance 2147483647, :path []},
- :8 {:distance 65, :path [:12 :14 :8]},
- :9 {:distance 2147483647, :path []},
- :2 {:distance 92, :path [:12 :14 :13 :2]},
- :5 {:distance 81, :path [:12 :5]},
- :3 {:distance 2147483647, :path []},
- :6 {:distance 13, :path [:12 :6]}}
-update-table node: :5 weight: 79
-current_distance: 81
-{:14 {:distance 12, :path [:12 :14]},
- :12 {:distance 0, :path [:12]},
- :11 {:distance 63, :path [:12 :14 :13 :11]},
- :10 {:distance 2147483647, :path []},
- :13 {:distance 12, :path [:12 :14 :13]},
- :0 {:distance 2147483647, :path []},
- :4 {:distance 2147483647, :path []},
- :7 {:distance 23, :path [:12 :14 :7]},
- :1 {:distance 2147483647, :path []},
- :8 {:distance 16, :path [:12 :14 :13 :8]},
- :9 {:distance 2147483647, :path []},
- :2 {:distance 92, :path [:12 :14 :13 :2]},
- :5 {:distance 81, :path [:12 :5]},
- :3 {:distance 2147483647, :path []},
- :6 {:distance 13, :path [:12 :6]}}
-update-table node: :9 weight: 14
-current_distance: 2147483647
-{:14 {:distance 12, :path [:12 :14]},
- :12 {:distance 0, :path [:12]},
- :11 {:distance 63, :path [:12 :14 :13 :11]},
- :10 {:distance 2147483647, :path []},
- :13 {:distance 12, :path [:12 :14 :13]},
- :0 {:distance 2147483647, :path []},
- :4 {:distance 2147483647, :path []},
- :7 {:distance 23, :path [:12 :14 :7]},
- :1 {:distance 2147483647, :path []},
- :8 {:distance 16, :path [:12 :14 :13 :8]},
- :9 {:distance 2147483647, :path []},
- :2 {:distance 92, :path [:12 :14 :13 :2]},
- :5 {:distance 81, :path [:12 :5]},
- :3 {:distance 2147483647, :path []},
- :6 {:distance 13, :path [:12 :6]}}
-update-table node: :3 weight: 94
-current_distance: 2147483647
-{:14 {:distance 12, :path [:12 :14]},
- :12 {:distance 0, :path [:12]},
- :11 {:distance 63, :path [:12 :14 :13 :11]},
- :10 {:distance 2147483647, :path []},
- :13 {:distance 12, :path [:12 :14 :13]},
- :0 {:distance 2147483647, :path []},
- :4 {:distance 2147483647, :path []},
- :7 {:distance 23, :path [:12 :14 :7]},
- :1 {:distance 2147483647, :path []},
- :8 {:distance 16, :path [:12 :14 :13 :8]},
- :9 {:distance 26, :path [:12 :14 :13 :9]},
- :2 {:distance 92, :path [:12 :14 :13 :2]},
- :5 {:distance 81, :path [:12 :5]},
- :3 {:distance 2147483647, :path []},
- :6 {:distance 13, :path [:12 :6]}}
-next_node_to_visit: :6
-
- {:14 {:distance 12, :path [:12 :14]},
-  :12 {:distance 0, :path [:12]},
-  :11 {:distance 63, :path [:12 :14 :13 :11]},
-  :10 {:distance 2147483647, :path []},
-  :13 {:distance 12, :path [:12 :14 :13]},
-  :0 {:distance 2147483647, :path []},
-  :4 {:distance 2147483647, :path []},
-  :7 {:distance 23, :path [:12 :14 :7]},
-  :1 {:distance 2147483647, :path []},
-  :8 {:distance 16, :path [:12 :14 :13 :8]},
-  :9 {:distance 26, :path [:12 :14 :13 :9]},
-  :2 {:distance 92, :path [:12 :14 :13 :2]},
-  :5 {:distance 81, :path [:12 :5]},
-  :3 {:distance 106, :path [:12 :14 :13 :3]},
-  :6 {:distance 13, :path [:12 :6]}}current_node: :6
-neighbours: [[:0 90] [:4 58] [:9 34] [:10 32] [:2 52] [:1 8] [:5 85] [:14 60]]
-next_unvisited_nodes: (:11 :10 :0 :4 :7 :1 :8 :9 :2 :5 :3)
-update-table node: :0 weight: 90
-current_distance: 2147483647
-{:14 {:distance 12, :path [:12 :14]},
- :12 {:distance 0, :path [:12]},
- :11 {:distance 63, :path [:12 :14 :13 :11]},
- :10 {:distance 2147483647, :path []},
- :13 {:distance 12, :path [:12 :14 :13]},
- :0 {:distance 2147483647, :path []},
- :4 {:distance 2147483647, :path []},
- :7 {:distance 23, :path [:12 :14 :7]},
- :1 {:distance 2147483647, :path []},
- :8 {:distance 16, :path [:12 :14 :13 :8]},
- :9 {:distance 26, :path [:12 :14 :13 :9]},
- :2 {:distance 92, :path [:12 :14 :13 :2]},
- :5 {:distance 81, :path [:12 :5]},
- :3 {:distance 106, :path [:12 :14 :13 :3]},
- :6 {:distance 13, :path [:12 :6]}}
-update-table node: :4 weight: 58
-current_distance: 2147483647
-{:14 {:distance 12, :path [:12 :14]},
- :12 {:distance 0, :path [:12]},
- :11 {:distance 63, :path [:12 :14 :13 :11]},
- :10 {:distance 2147483647, :path []},
- :13 {:distance 12, :path [:12 :14 :13]},
- :0 {:distance 103, :path [:12 :6 :0]},
- :4 {:distance 2147483647, :path []},
- :7 {:distance 23, :path [:12 :14 :7]},
- :1 {:distance 2147483647, :path []},
- :8 {:distance 16, :path [:12 :14 :13 :8]},
- :9 {:distance 26, :path [:12 :14 :13 :9]},
- :2 {:distance 92, :path [:12 :14 :13 :2]},
- :5 {:distance 81, :path [:12 :5]},
- :3 {:distance 106, :path [:12 :14 :13 :3]},
- :6 {:distance 13, :path [:12 :6]}}
-update-table node: :9 weight: 34
-current_distance: 26
-{:14 {:distance 12, :path [:12 :14]},
- :12 {:distance 0, :path [:12]},
- :11 {:distance 63, :path [:12 :14 :13 :11]},
- :10 {:distance 2147483647, :path []},
- :13 {:distance 12, :path [:12 :14 :13]},
- :0 {:distance 103, :path [:12 :6 :0]},
- :4 {:distance 71, :path [:12 :6 :4]},
- :7 {:distance 23, :path [:12 :14 :7]},
- :1 {:distance 2147483647, :path []},
- :8 {:distance 16, :path [:12 :14 :13 :8]},
- :9 {:distance 26, :path [:12 :14 :13 :9]},
- :2 {:distance 92, :path [:12 :14 :13 :2]},
- :5 {:distance 81, :path [:12 :5]},
- :3 {:distance 106, :path [:12 :14 :13 :3]},
- :6 {:distance 13, :path [:12 :6]}}
-update-table node: :10 weight: 32
-current_distance: 2147483647
-{:14 {:distance 12, :path [:12 :14]},
- :12 {:distance 0, :path [:12]},
- :11 {:distance 63, :path [:12 :14 :13 :11]},
- :10 {:distance 2147483647, :path []},
- :13 {:distance 12, :path [:12 :14 :13]},
- :0 {:distance 103, :path [:12 :6 :0]},
- :4 {:distance 71, :path [:12 :6 :4]},
- :7 {:distance 23, :path [:12 :14 :7]},
- :1 {:distance 2147483647, :path []},
- :8 {:distance 16, :path [:12 :14 :13 :8]},
- :9 {:distance 26, :path [:12 :14 :13 :9]},
- :2 {:distance 92, :path [:12 :14 :13 :2]},
- :5 {:distance 81, :path [:12 :5]},
- :3 {:distance 106, :path [:12 :14 :13 :3]},
- :6 {:distance 13, :path [:12 :6]}}
-update-table node: :2 weight: 52
-current_distance: 92
-{:14 {:distance 12, :path [:12 :14]},
- :12 {:distance 0, :path [:12]},
- :11 {:distance 63, :path [:12 :14 :13 :11]},
- :10 {:distance 45, :path [:12 :6 :10]},
- :13 {:distance 12, :path [:12 :14 :13]},
- :0 {:distance 103, :path [:12 :6 :0]},
- :4 {:distance 71, :path [:12 :6 :4]},
- :7 {:distance 23, :path [:12 :14 :7]},
- :1 {:distance 2147483647, :path []},
- :8 {:distance 16, :path [:12 :14 :13 :8]},
- :9 {:distance 26, :path [:12 :14 :13 :9]},
- :2 {:distance 92, :path [:12 :14 :13 :2]},
- :5 {:distance 81, :path [:12 :5]},
- :3 {:distance 106, :path [:12 :14 :13 :3]},
- :6 {:distance 13, :path [:12 :6]}}
-update-table node: :1 weight: 8
-current_distance: 2147483647
-{:14 {:distance 12, :path [:12 :14]},
- :12 {:distance 0, :path [:12]},
- :11 {:distance 63, :path [:12 :14 :13 :11]},
- :10 {:distance 45, :path [:12 :6 :10]},
- :13 {:distance 12, :path [:12 :14 :13]},
- :0 {:distance 103, :path [:12 :6 :0]},
- :4 {:distance 71, :path [:12 :6 :4]},
- :7 {:distance 23, :path [:12 :14 :7]},
- :1 {:distance 2147483647, :path []},
- :8 {:distance 16, :path [:12 :14 :13 :8]},
- :9 {:distance 26, :path [:12 :14 :13 :9]},
- :2 {:distance 65, :path [:12 :6 :2]},
- :5 {:distance 81, :path [:12 :5]},
- :3 {:distance 106, :path [:12 :14 :13 :3]},
- :6 {:distance 13, :path [:12 :6]}}
-update-table node: :5 weight: 85
-current_distance: 81
-{:14 {:distance 12, :path [:12 :14]},
- :12 {:distance 0, :path [:12]},
- :11 {:distance 63, :path [:12 :14 :13 :11]},
- :10 {:distance 45, :path [:12 :6 :10]},
- :13 {:distance 12, :path [:12 :14 :13]},
- :0 {:distance 103, :path [:12 :6 :0]},
- :4 {:distance 71, :path [:12 :6 :4]},
- :7 {:distance 23, :path [:12 :14 :7]},
- :1 {:distance 21, :path [:12 :6 :1]},
- :8 {:distance 16, :path [:12 :14 :13 :8]},
- :9 {:distance 26, :path [:12 :14 :13 :9]},
- :2 {:distance 65, :path [:12 :6 :2]},
- :5 {:distance 81, :path [:12 :5]},
- :3 {:distance 106, :path [:12 :14 :13 :3]},
- :6 {:distance 13, :path [:12 :6]}}
-update-table node: :14 weight: 60
-current_distance: 12
-{:14 {:distance 12, :path [:12 :14]},
- :12 {:distance 0, :path [:12]},
- :11 {:distance 63, :path [:12 :14 :13 :11]},
- :10 {:distance 45, :path [:12 :6 :10]},
- :13 {:distance 12, :path [:12 :14 :13]},
- :0 {:distance 103, :path [:12 :6 :0]},
- :4 {:distance 71, :path [:12 :6 :4]},
- :7 {:distance 23, :path [:12 :14 :7]},
- :1 {:distance 21, :path [:12 :6 :1]},
- :8 {:distance 16, :path [:12 :14 :13 :8]},
- :9 {:distance 26, :path [:12 :14 :13 :9]},
- :2 {:distance 65, :path [:12 :6 :2]},
- :5 {:distance 81, :path [:12 :5]},
- :3 {:distance 106, :path [:12 :14 :13 :3]},
- :6 {:distance 13, :path [:12 :6]}}
-next_node_to_visit: :8
-
- {:14 {:distance 12, :path [:12 :14]},
-  :12 {:distance 0, :path [:12]},
-  :11 {:distance 63, :path [:12 :14 :13 :11]},
-  :10 {:distance 45, :path [:12 :6 :10]},
-  :13 {:distance 12, :path [:12 :14 :13]},
-  :0 {:distance 103, :path [:12 :6 :0]},
-  :4 {:distance 71, :path [:12 :6 :4]},
-  :7 {:distance 23, :path [:12 :14 :7]},
-  :1 {:distance 21, :path [:12 :6 :1]},
-  :8 {:distance 16, :path [:12 :14 :13 :8]},
-  :9 {:distance 26, :path [:12 :14 :13 :9]},
-  :2 {:distance 65, :path [:12 :6 :2]},
-  :5 {:distance 81, :path [:12 :5]},
-  :3 {:distance 106, :path [:12 :14 :13 :3]},
-  :6 {:distance 13, :path [:12 :6]}}current_node: :8
-neighbours: [[:9 15] [:10 34] [:7 93] [:6 83] [:2 87] [:14 20]]
-next_unvisited_nodes: (:11 :10 :0 :4 :7 :1 :9 :2 :5 :3)
-update-table node: :9 weight: 15
-current_distance: 26
-{:14 {:distance 12, :path [:12 :14]},
- :12 {:distance 0, :path [:12]},
- :11 {:distance 63, :path [:12 :14 :13 :11]},
- :10 {:distance 45, :path [:12 :6 :10]},
- :13 {:distance 12, :path [:12 :14 :13]},
- :0 {:distance 103, :path [:12 :6 :0]},
- :4 {:distance 71, :path [:12 :6 :4]},
- :7 {:distance 23, :path [:12 :14 :7]},
- :1 {:distance 21, :path [:12 :6 :1]},
- :8 {:distance 16, :path [:12 :14 :13 :8]},
- :9 {:distance 26, :path [:12 :14 :13 :9]},
- :2 {:distance 65, :path [:12 :6 :2]},
- :5 {:distance 81, :path [:12 :5]},
- :3 {:distance 106, :path [:12 :14 :13 :3]},
- :6 {:distance 13, :path [:12 :6]}}
-update-table node: :10 weight: 34
-current_distance: 45
-{:14 {:distance 12, :path [:12 :14]},
- :12 {:distance 0, :path [:12]},
- :11 {:distance 63, :path [:12 :14 :13 :11]},
- :10 {:distance 45, :path [:12 :6 :10]},
- :13 {:distance 12, :path [:12 :14 :13]},
- :0 {:distance 103, :path [:12 :6 :0]},
- :4 {:distance 71, :path [:12 :6 :4]},
- :7 {:distance 23, :path [:12 :14 :7]},
- :1 {:distance 21, :path [:12 :6 :1]},
- :8 {:distance 16, :path [:12 :14 :13 :8]},
- :9 {:distance 26, :path [:12 :14 :13 :9]},
- :2 {:distance 65, :path [:12 :6 :2]},
- :5 {:distance 81, :path [:12 :5]},
- :3 {:distance 106, :path [:12 :14 :13 :3]},
- :6 {:distance 13, :path [:12 :6]}}
-update-table node: :7 weight: 93
-current_distance: 23
-{:14 {:distance 12, :path [:12 :14]},
- :12 {:distance 0, :path [:12]},
- :11 {:distance 63, :path [:12 :14 :13 :11]},
- :10 {:distance 45, :path [:12 :6 :10]},
- :13 {:distance 12, :path [:12 :14 :13]},
- :0 {:distance 103, :path [:12 :6 :0]},
- :4 {:distance 71, :path [:12 :6 :4]},
- :7 {:distance 23, :path [:12 :14 :7]},
- :1 {:distance 21, :path [:12 :6 :1]},
- :8 {:distance 16, :path [:12 :14 :13 :8]},
- :9 {:distance 26, :path [:12 :14 :13 :9]},
- :2 {:distance 65, :path [:12 :6 :2]},
- :5 {:distance 81, :path [:12 :5]},
- :3 {:distance 106, :path [:12 :14 :13 :3]},
- :6 {:distance 13, :path [:12 :6]}}
-update-table node: :6 weight: 83
-current_distance: 13
-{:14 {:distance 12, :path [:12 :14]},
- :12 {:distance 0, :path [:12]},
- :11 {:distance 63, :path [:12 :14 :13 :11]},
- :10 {:distance 45, :path [:12 :6 :10]},
- :13 {:distance 12, :path [:12 :14 :13]},
- :0 {:distance 103, :path [:12 :6 :0]},
- :4 {:distance 71, :path [:12 :6 :4]},
- :7 {:distance 23, :path [:12 :14 :7]},
- :1 {:distance 21, :path [:12 :6 :1]},
- :8 {:distance 16, :path [:12 :14 :13 :8]},
- :9 {:distance 26, :path [:12 :14 :13 :9]},
- :2 {:distance 65, :path [:12 :6 :2]},
- :5 {:distance 81, :path [:12 :5]},
- :3 {:distance 106, :path [:12 :14 :13 :3]},
- :6 {:distance 13, :path [:12 :6]}}
-update-table node: :2 weight: 87
-current_distance: 65
-{:14 {:distance 12, :path [:12 :14]},
- :12 {:distance 0, :path [:12]},
- :11 {:distance 63, :path [:12 :14 :13 :11]},
- :10 {:distance 45, :path [:12 :6 :10]},
- :13 {:distance 12, :path [:12 :14 :13]},
- :0 {:distance 103, :path [:12 :6 :0]},
- :4 {:distance 71, :path [:12 :6 :4]},
- :7 {:distance 23, :path [:12 :14 :7]},
- :1 {:distance 21, :path [:12 :6 :1]},
- :8 {:distance 16, :path [:12 :14 :13 :8]},
- :9 {:distance 26, :path [:12 :14 :13 :9]},
- :2 {:distance 65, :path [:12 :6 :2]},
- :5 {:distance 81, :path [:12 :5]},
- :3 {:distance 106, :path [:12 :14 :13 :3]},
- :6 {:distance 13, :path [:12 :6]}}
-update-table node: :14 weight: 20
-current_distance: 12
-{:14 {:distance 12, :path [:12 :14]},
- :12 {:distance 0, :path [:12]},
- :11 {:distance 63, :path [:12 :14 :13 :11]},
- :10 {:distance 45, :path [:12 :6 :10]},
- :13 {:distance 12, :path [:12 :14 :13]},
- :0 {:distance 103, :path [:12 :6 :0]},
- :4 {:distance 71, :path [:12 :6 :4]},
- :7 {:distance 23, :path [:12 :14 :7]},
- :1 {:distance 21, :path [:12 :6 :1]},
- :8 {:distance 16, :path [:12 :14 :13 :8]},
- :9 {:distance 26, :path [:12 :14 :13 :9]},
- :2 {:distance 65, :path [:12 :6 :2]},
- :5 {:distance 81, :path [:12 :5]},
- :3 {:distance 106, :path [:12 :14 :13 :3]},
- :6 {:distance 13, :path [:12 :6]}}
-next_node_to_visit: :1
-
- {:14 {:distance 12, :path [:12 :14]},
-  :12 {:distance 0, :path [:12]},
-  :11 {:distance 63, :path [:12 :14 :13 :11]},
-  :10 {:distance 45, :path [:12 :6 :10]},
-  :13 {:distance 12, :path [:12 :14 :13]},
-  :0 {:distance 103, :path [:12 :6 :0]},
-  :4 {:distance 71, :path [:12 :6 :4]},
-  :7 {:distance 23, :path [:12 :14 :7]},
-  :1 {:distance 21, :path [:12 :6 :1]},
-  :8 {:distance 16, :path [:12 :14 :13 :8]},
-  :9 {:distance 26, :path [:12 :14 :13 :9]},
-  :2 {:distance 65, :path [:12 :6 :2]},
-  :5 {:distance 81, :path [:12 :5]},
-  :3 {:distance 106, :path [:12 :14 :13 :3]},
-  :6 {:distance 13, :path [:12 :6]}}current_node: :1
-neighbours: [[:9 47] [:0 73] [:14 88] [:10 19] [:7 42] [:6 73] [:3 49]]
-next_unvisited_nodes: (:11 :10 :0 :4 :7 :9 :2 :5 :3)
-update-table node: :9 weight: 47
-current_distance: 26
-{:14 {:distance 12, :path [:12 :14]},
- :12 {:distance 0, :path [:12]},
- :11 {:distance 63, :path [:12 :14 :13 :11]},
- :10 {:distance 45, :path [:12 :6 :10]},
- :13 {:distance 12, :path [:12 :14 :13]},
- :0 {:distance 103, :path [:12 :6 :0]},
- :4 {:distance 71, :path [:12 :6 :4]},
- :7 {:distance 23, :path [:12 :14 :7]},
- :1 {:distance 21, :path [:12 :6 :1]},
- :8 {:distance 16, :path [:12 :14 :13 :8]},
- :9 {:distance 26, :path [:12 :14 :13 :9]},
- :2 {:distance 65, :path [:12 :6 :2]},
- :5 {:distance 81, :path [:12 :5]},
- :3 {:distance 106, :path [:12 :14 :13 :3]},
- :6 {:distance 13, :path [:12 :6]}}
-update-table node: :0 weight: 73
-current_distance: 103
-{:14 {:distance 12, :path [:12 :14]},
- :12 {:distance 0, :path [:12]},
- :11 {:distance 63, :path [:12 :14 :13 :11]},
- :10 {:distance 45, :path [:12 :6 :10]},
- :13 {:distance 12, :path [:12 :14 :13]},
- :0 {:distance 103, :path [:12 :6 :0]},
- :4 {:distance 71, :path [:12 :6 :4]},
- :7 {:distance 23, :path [:12 :14 :7]},
- :1 {:distance 21, :path [:12 :6 :1]},
- :8 {:distance 16, :path [:12 :14 :13 :8]},
- :9 {:distance 26, :path [:12 :14 :13 :9]},
- :2 {:distance 65, :path [:12 :6 :2]},
- :5 {:distance 81, :path [:12 :5]},
- :3 {:distance 106, :path [:12 :14 :13 :3]},
- :6 {:distance 13, :path [:12 :6]}}
-update-table node: :14 weight: 88
-current_distance: 12
-{:14 {:distance 12, :path [:12 :14]},
- :12 {:distance 0, :path [:12]},
- :11 {:distance 63, :path [:12 :14 :13 :11]},
- :10 {:distance 45, :path [:12 :6 :10]},
- :13 {:distance 12, :path [:12 :14 :13]},
- :0 {:distance 94, :path [:12 :6 :1 :0]},
- :4 {:distance 71, :path [:12 :6 :4]},
- :7 {:distance 23, :path [:12 :14 :7]},
- :1 {:distance 21, :path [:12 :6 :1]},
- :8 {:distance 16, :path [:12 :14 :13 :8]},
- :9 {:distance 26, :path [:12 :14 :13 :9]},
- :2 {:distance 65, :path [:12 :6 :2]},
- :5 {:distance 81, :path [:12 :5]},
- :3 {:distance 106, :path [:12 :14 :13 :3]},
- :6 {:distance 13, :path [:12 :6]}}
-update-table node: :10 weight: 19
-current_distance: 45
-{:14 {:distance 12, :path [:12 :14]},
- :12 {:distance 0, :path [:12]},
- :11 {:distance 63, :path [:12 :14 :13 :11]},
- :10 {:distance 45, :path [:12 :6 :10]},
- :13 {:distance 12, :path [:12 :14 :13]},
- :0 {:distance 94, :path [:12 :6 :1 :0]},
- :4 {:distance 71, :path [:12 :6 :4]},
- :7 {:distance 23, :path [:12 :14 :7]},
- :1 {:distance 21, :path [:12 :6 :1]},
- :8 {:distance 16, :path [:12 :14 :13 :8]},
- :9 {:distance 26, :path [:12 :14 :13 :9]},
- :2 {:distance 65, :path [:12 :6 :2]},
- :5 {:distance 81, :path [:12 :5]},
- :3 {:distance 106, :path [:12 :14 :13 :3]},
- :6 {:distance 13, :path [:12 :6]}}
-update-table node: :7 weight: 42
-current_distance: 23
-{:14 {:distance 12, :path [:12 :14]},
- :12 {:distance 0, :path [:12]},
- :11 {:distance 63, :path [:12 :14 :13 :11]},
- :10 {:distance 40, :path [:12 :6 :1 :10]},
- :13 {:distance 12, :path [:12 :14 :13]},
- :0 {:distance 94, :path [:12 :6 :1 :0]},
- :4 {:distance 71, :path [:12 :6 :4]},
- :7 {:distance 23, :path [:12 :14 :7]},
- :1 {:distance 21, :path [:12 :6 :1]},
- :8 {:distance 16, :path [:12 :14 :13 :8]},
- :9 {:distance 26, :path [:12 :14 :13 :9]},
- :2 {:distance 65, :path [:12 :6 :2]},
- :5 {:distance 81, :path [:12 :5]},
- :3 {:distance 106, :path [:12 :14 :13 :3]},
- :6 {:distance 13, :path [:12 :6]}}
-update-table node: :6 weight: 73
-current_distance: 13
-{:14 {:distance 12, :path [:12 :14]},
- :12 {:distance 0, :path [:12]},
- :11 {:distance 63, :path [:12 :14 :13 :11]},
- :10 {:distance 40, :path [:12 :6 :1 :10]},
- :13 {:distance 12, :path [:12 :14 :13]},
- :0 {:distance 94, :path [:12 :6 :1 :0]},
- :4 {:distance 71, :path [:12 :6 :4]},
- :7 {:distance 23, :path [:12 :14 :7]},
- :1 {:distance 21, :path [:12 :6 :1]},
- :8 {:distance 16, :path [:12 :14 :13 :8]},
- :9 {:distance 26, :path [:12 :14 :13 :9]},
- :2 {:distance 65, :path [:12 :6 :2]},
- :5 {:distance 81, :path [:12 :5]},
- :3 {:distance 106, :path [:12 :14 :13 :3]},
- :6 {:distance 13, :path [:12 :6]}}
-update-table node: :3 weight: 49
-current_distance: 106
-{:14 {:distance 12, :path [:12 :14]},
- :12 {:distance 0, :path [:12]},
- :11 {:distance 63, :path [:12 :14 :13 :11]},
- :10 {:distance 40, :path [:12 :6 :1 :10]},
- :13 {:distance 12, :path [:12 :14 :13]},
- :0 {:distance 94, :path [:12 :6 :1 :0]},
- :4 {:distance 71, :path [:12 :6 :4]},
- :7 {:distance 23, :path [:12 :14 :7]},
- :1 {:distance 21, :path [:12 :6 :1]},
- :8 {:distance 16, :path [:12 :14 :13 :8]},
- :9 {:distance 26, :path [:12 :14 :13 :9]},
- :2 {:distance 65, :path [:12 :6 :2]},
- :5 {:distance 81, :path [:12 :5]},
- :3 {:distance 106, :path [:12 :14 :13 :3]},
- :6 {:distance 13, :path [:12 :6]}}
-next_node_to_visit: :7
-
- {:14 {:distance 12, :path [:12 :14]},
-  :12 {:distance 0, :path [:12]},
-  :11 {:distance 63, :path [:12 :14 :13 :11]},
-  :10 {:distance 40, :path [:12 :6 :1 :10]},
-  :13 {:distance 12, :path [:12 :14 :13]},
-  :0 {:distance 94, :path [:12 :6 :1 :0]},
-  :4 {:distance 71, :path [:12 :6 :4]},
-  :7 {:distance 23, :path [:12 :14 :7]},
-  :1 {:distance 21, :path [:12 :6 :1]},
-  :8 {:distance 16, :path [:12 :14 :13 :8]},
-  :9 {:distance 26, :path [:12 :14 :13 :9]},
-  :2 {:distance 65, :path [:12 :6 :2]},
-  :5 {:distance 81, :path [:12 :5]},
-  :3 {:distance 70, :path [:12 :6 :1 :3]},
-  :6 {:distance 13, :path [:12 :6]}}current_node: :7
-neighbours: [[:3 39] [:9 61] [:5 91] [:14 15] [:11 79] [:0 32]]
-next_unvisited_nodes: (:11 :10 :0 :4 :9 :2 :5 :3)
-update-table node: :3 weight: 39
-current_distance: 70
-{:14 {:distance 12, :path [:12 :14]},
- :12 {:distance 0, :path [:12]},
- :11 {:distance 63, :path [:12 :14 :13 :11]},
- :10 {:distance 40, :path [:12 :6 :1 :10]},
- :13 {:distance 12, :path [:12 :14 :13]},
- :0 {:distance 94, :path [:12 :6 :1 :0]},
- :4 {:distance 71, :path [:12 :6 :4]},
- :7 {:distance 23, :path [:12 :14 :7]},
- :1 {:distance 21, :path [:12 :6 :1]},
- :8 {:distance 16, :path [:12 :14 :13 :8]},
- :9 {:distance 26, :path [:12 :14 :13 :9]},
- :2 {:distance 65, :path [:12 :6 :2]},
- :5 {:distance 81, :path [:12 :5]},
- :3 {:distance 70, :path [:12 :6 :1 :3]},
- :6 {:distance 13, :path [:12 :6]}}
-update-table node: :9 weight: 61
-current_distance: 26
-{:14 {:distance 12, :path [:12 :14]},
- :12 {:distance 0, :path [:12]},
- :11 {:distance 63, :path [:12 :14 :13 :11]},
- :10 {:distance 40, :path [:12 :6 :1 :10]},
- :13 {:distance 12, :path [:12 :14 :13]},
- :0 {:distance 94, :path [:12 :6 :1 :0]},
- :4 {:distance 71, :path [:12 :6 :4]},
- :7 {:distance 23, :path [:12 :14 :7]},
- :1 {:distance 21, :path [:12 :6 :1]},
- :8 {:distance 16, :path [:12 :14 :13 :8]},
- :9 {:distance 26, :path [:12 :14 :13 :9]},
- :2 {:distance 65, :path [:12 :6 :2]},
- :5 {:distance 81, :path [:12 :5]},
- :3 {:distance 62, :path [:12 :14 :7 :3]},
- :6 {:distance 13, :path [:12 :6]}}
-update-table node: :5 weight: 91
-current_distance: 81
-{:14 {:distance 12, :path [:12 :14]},
- :12 {:distance 0, :path [:12]},
- :11 {:distance 63, :path [:12 :14 :13 :11]},
- :10 {:distance 40, :path [:12 :6 :1 :10]},
- :13 {:distance 12, :path [:12 :14 :13]},
- :0 {:distance 94, :path [:12 :6 :1 :0]},
- :4 {:distance 71, :path [:12 :6 :4]},
- :7 {:distance 23, :path [:12 :14 :7]},
- :1 {:distance 21, :path [:12 :6 :1]},
- :8 {:distance 16, :path [:12 :14 :13 :8]},
- :9 {:distance 26, :path [:12 :14 :13 :9]},
- :2 {:distance 65, :path [:12 :6 :2]},
- :5 {:distance 81, :path [:12 :5]},
- :3 {:distance 62, :path [:12 :14 :7 :3]},
- :6 {:distance 13, :path [:12 :6]}}
-update-table node: :14 weight: 15
-current_distance: 12
-{:14 {:distance 12, :path [:12 :14]},
- :12 {:distance 0, :path [:12]},
- :11 {:distance 63, :path [:12 :14 :13 :11]},
- :10 {:distance 40, :path [:12 :6 :1 :10]},
- :13 {:distance 12, :path [:12 :14 :13]},
- :0 {:distance 94, :path [:12 :6 :1 :0]},
- :4 {:distance 71, :path [:12 :6 :4]},
- :7 {:distance 23, :path [:12 :14 :7]},
- :1 {:distance 21, :path [:12 :6 :1]},
- :8 {:distance 16, :path [:12 :14 :13 :8]},
- :9 {:distance 26, :path [:12 :14 :13 :9]},
- :2 {:distance 65, :path [:12 :6 :2]},
- :5 {:distance 81, :path [:12 :5]},
- :3 {:distance 62, :path [:12 :14 :7 :3]},
- :6 {:distance 13, :path [:12 :6]}}
-update-table node: :11 weight: 79
-current_distance: 63
-{:14 {:distance 12, :path [:12 :14]},
- :12 {:distance 0, :path [:12]},
- :11 {:distance 63, :path [:12 :14 :13 :11]},
- :10 {:distance 40, :path [:12 :6 :1 :10]},
- :13 {:distance 12, :path [:12 :14 :13]},
- :0 {:distance 94, :path [:12 :6 :1 :0]},
- :4 {:distance 71, :path [:12 :6 :4]},
- :7 {:distance 23, :path [:12 :14 :7]},
- :1 {:distance 21, :path [:12 :6 :1]},
- :8 {:distance 16, :path [:12 :14 :13 :8]},
- :9 {:distance 26, :path [:12 :14 :13 :9]},
- :2 {:distance 65, :path [:12 :6 :2]},
- :5 {:distance 81, :path [:12 :5]},
- :3 {:distance 62, :path [:12 :14 :7 :3]},
- :6 {:distance 13, :path [:12 :6]}}
-update-table node: :0 weight: 32
-current_distance: 94
-{:14 {:distance 12, :path [:12 :14]},
- :12 {:distance 0, :path [:12]},
- :11 {:distance 63, :path [:12 :14 :13 :11]},
- :10 {:distance 40, :path [:12 :6 :1 :10]},
- :13 {:distance 12, :path [:12 :14 :13]},
- :0 {:distance 94, :path [:12 :6 :1 :0]},
- :4 {:distance 71, :path [:12 :6 :4]},
- :7 {:distance 23, :path [:12 :14 :7]},
- :1 {:distance 21, :path [:12 :6 :1]},
- :8 {:distance 16, :path [:12 :14 :13 :8]},
- :9 {:distance 26, :path [:12 :14 :13 :9]},
- :2 {:distance 65, :path [:12 :6 :2]},
- :5 {:distance 81, :path [:12 :5]},
- :3 {:distance 62, :path [:12 :14 :7 :3]},
- :6 {:distance 13, :path [:12 :6]}}
-next_node_to_visit: :9
-
- {:14 {:distance 12, :path [:12 :14]},
-  :12 {:distance 0, :path [:12]},
-  :11 {:distance 63, :path [:12 :14 :13 :11]},
-  :10 {:distance 40, :path [:12 :6 :1 :10]},
-  :13 {:distance 12, :path [:12 :14 :13]},
-  :0 {:distance 55, :path [:12 :14 :7 :0]},
-  :4 {:distance 71, :path [:12 :6 :4]},
-  :7 {:distance 23, :path [:12 :14 :7]},
-  :1 {:distance 21, :path [:12 :6 :1]},
-  :8 {:distance 16, :path [:12 :14 :13 :8]},
-  :9 {:distance 26, :path [:12 :14 :13 :9]},
-  :2 {:distance 65, :path [:12 :6 :2]},
-  :5 {:distance 81, :path [:12 :5]},
-  :3 {:distance 62, :path [:12 :14 :7 :3]},
-  :6 {:distance 13, :path [:12 :6]}}current_node: :9
-neighbours: [[:3 19] [:7 98] [:4 95] [:0 38]]
-next_unvisited_nodes: (:11 :10 :0 :4 :2 :5 :3)
-update-table node: :3 weight: 19
-current_distance: 62
-{:14 {:distance 12, :path [:12 :14]},
- :12 {:distance 0, :path [:12]},
- :11 {:distance 63, :path [:12 :14 :13 :11]},
- :10 {:distance 40, :path [:12 :6 :1 :10]},
- :13 {:distance 12, :path [:12 :14 :13]},
- :0 {:distance 55, :path [:12 :14 :7 :0]},
- :4 {:distance 71, :path [:12 :6 :4]},
- :7 {:distance 23, :path [:12 :14 :7]},
- :1 {:distance 21, :path [:12 :6 :1]},
- :8 {:distance 16, :path [:12 :14 :13 :8]},
- :9 {:distance 26, :path [:12 :14 :13 :9]},
- :2 {:distance 65, :path [:12 :6 :2]},
- :5 {:distance 81, :path [:12 :5]},
- :3 {:distance 62, :path [:12 :14 :7 :3]},
- :6 {:distance 13, :path [:12 :6]}}
-update-table node: :7 weight: 98
-current_distance: 23
-{:14 {:distance 12, :path [:12 :14]},
- :12 {:distance 0, :path [:12]},
- :11 {:distance 63, :path [:12 :14 :13 :11]},
- :10 {:distance 40, :path [:12 :6 :1 :10]},
- :13 {:distance 12, :path [:12 :14 :13]},
- :0 {:distance 55, :path [:12 :14 :7 :0]},
- :4 {:distance 71, :path [:12 :6 :4]},
- :7 {:distance 23, :path [:12 :14 :7]},
- :1 {:distance 21, :path [:12 :6 :1]},
- :8 {:distance 16, :path [:12 :14 :13 :8]},
- :9 {:distance 26, :path [:12 :14 :13 :9]},
- :2 {:distance 65, :path [:12 :6 :2]},
- :5 {:distance 81, :path [:12 :5]},
- :3 {:distance 45, :path [:12 :14 :13 :9 :3]},
- :6 {:distance 13, :path [:12 :6]}}
-update-table node: :4 weight: 95
-current_distance: 71
-{:14 {:distance 12, :path [:12 :14]},
- :12 {:distance 0, :path [:12]},
- :11 {:distance 63, :path [:12 :14 :13 :11]},
- :10 {:distance 40, :path [:12 :6 :1 :10]},
- :13 {:distance 12, :path [:12 :14 :13]},
- :0 {:distance 55, :path [:12 :14 :7 :0]},
- :4 {:distance 71, :path [:12 :6 :4]},
- :7 {:distance 23, :path [:12 :14 :7]},
- :1 {:distance 21, :path [:12 :6 :1]},
- :8 {:distance 16, :path [:12 :14 :13 :8]},
- :9 {:distance 26, :path [:12 :14 :13 :9]},
- :2 {:distance 65, :path [:12 :6 :2]},
- :5 {:distance 81, :path [:12 :5]},
- :3 {:distance 45, :path [:12 :14 :13 :9 :3]},
- :6 {:distance 13, :path [:12 :6]}}
-update-table node: :0 weight: 38
-current_distance: 55
-...
-next_node_to_visit: :10
-
- ...current_node: :10
-neighbours: [[:9 18] [:5 59] [:14 22] [:6 26] [:12 94] [:7 98] [:0 73] [:1 20]]
-next_unvisited_nodes: (:11 :0 :4 :2 :5 :3)
-update-table node: :9 weight: 18
-current_distance: 26
-...
-update-table node: :5 weight: 59
-current_distance: 81
-...
-update-table node: :14 weight: 22
-current_distance: 12
-...
-update-table node: :6 weight: 26
-current_distance: 13
-...
-update-table node: :12 weight: 94
-current_distance: 0
-...
-update-table node: :7 weight: 98
-current_distance: 23
-...
-update-table node: :0 weight: 73
-current_distance: 55
-...
-update-table node: :1 weight: 20
-current_distance: 21
-...
-next_node_to_visit: :3
-
- ...current_node: :3
-neighbours: [[:4 45] [:14 55] [:0 83] [:10 57] [:11 84]]
-next_unvisited_nodes: (:11 :0 :4 :2 :5)
-update-table node: :4 weight: 45
-current_distance: 71
-...
-update-table node: :14 weight: 55
-current_distance: 12
-...
-update-table node: :0 weight: 83
-current_distance: 55
-...
-update-table node: :10 weight: 57
-current_distance: 40
-...
-update-table node: :11 weight: 84
-current_distance: 63
-...
-next_node_to_visit: :0
-
- ...current_node: :0
-neighbours: [[:14 71] [:13 40] [:12 33] [:11 78] [:10 13] [:9 54] [:8 34] [:7 56] [:6 23] [:5 72] [:4 43] [:3 34] [:2 37] [:1 87]]
-next_unvisited_nodes: (:11 :4 :2 :5)
-update-table node: :14 weight: 71
-current_distance: 12
-...
-update-table node: :13 weight: 40
-current_distance: 12
-...
-update-table node: :12 weight: 33
-current_distance: 0
-...
-update-table node: :11 weight: 78
-current_distance: 63
-...
-update-table node: :10 weight: 13
-current_distance: 40
-...
-update-table node: :9 weight: 54
-current_distance: 26
-...
-update-table node: :8 weight: 34
-current_distance: 16
-...
-update-table node: :7 weight: 56
-current_distance: 23
-...
-update-table node: :6 weight: 23
-current_distance: 13
-...
-update-table node: :5 weight: 72
-current_distance: 81
-...
-update-table node: :4 weight: 43
-current_distance: 71
-...
-update-table node: :3 weight: 34
-current_distance: 45
-...
-update-table node: :2 weight: 37
-current_distance: 65
-...
-update-table node: :1 weight: 87
-current_distance: 21
-...
-next_node_to_visit: :11
-
- ...current_node: :11
-neighbours: [[:13 55] [:4 0]]
-next_unvisited_nodes: (:4 :2 :5)
-update-table node: :13 weight: 55
-current_distance: 12
-...
-update-table node: :4 weight: 0
-current_distance: 71
-...
-next_node_to_visit: :4
-
- ...current_node: :4
-neighbours: [[:8 21] [:6 75] [:12 9] [:0 21] [:2 19] [:11 72] [:9 79] [:7 19] [:1 46]]
-next_unvisited_nodes: (:2 :5)
-update-table node: :8 weight: 21
-current_distance: 16
-...
-update-table node: :6 weight: 75
-current_distance: 13
-...
-update-table node: :12 weight: 9
-current_distance: 0
-...
-update-table node: :0 weight: 21
-current_distance: 55
-...
-update-table node: :2 weight: 19
-current_distance: 65
-...
-update-table node: :11 weight: 72
-current_distance: 63
-...
-update-table node: :9 weight: 79
-current_distance: 26
-...
-update-table node: :7 weight: 19
-current_distance: 23
-...
-update-table node: :1 weight: 46
-current_distance: 21
-...
-next_node_to_visit: :2
-
- ...current_node: :2
-neighbours: [[:9 11] [:11 9] [:12 18] [:7 28] [:10 8] [:14 39] [:13 60]]
-next_unvisited_nodes: (:5)
-update-table node: :9 weight: 11
-current_distance: 26
-...
-update-table node: :11 weight: 9
-current_distance: 63
-...
-update-table node: :12 weight: 18
-current_distance: 0
-...
-update-table node: :7 weight: 28
-current_distance: 23
-...
-update-table node: :10 weight: 8
-current_distance: 40
-...
-update-table node: :14 weight: 39
-current_distance: 12
-...
-update-table node: :13 weight: 60
-current_distance: 12
-...
-next_node_to_visit: :5
-
- ...current_node: :5
-neighbours: [[:10 14] [:13 67] [:8 68] [:1 17] [:2 6] [:0 6] [:12 4]]
-next_unvisited_nodes: ()
-update-table node: :10 weight: 14
-current_distance: 40
-...
-update-table node: :13 weight: 67
-current_distance: 12
-...
-update-table node: :8 weight: 68
-current_distance: 16
-...
-update-table node: :1 weight: 17
-current_distance: 21
-...
-update-table node: :2 weight: 6
-current_distance: 65
-...
-update-table node: :0 weight: 6
-current_distance: 55
-...
-update-table node: :12 weight: 4
-current_distance: 0
-...
-next_node_to_visit: nil
-
- ...
- ...
- ...
- ...
- ...
- ...
- ...
- ...
- ...
- ...
- ...
- ...
- ...
- ...
- ...
- ...)
+#'graph-traversal.q3/shortest-path
 clj꞉graph-traversal.q3꞉> 
-; Execution error (ClassCastException) at java.lang.Class/cast (REPL:-1).
-; Cannot cast clojure.lang.LongRange to java.lang.Number
+; current_node: :A
+; neighbours: [[:B 2] [:D 8]]
+; next_unvisited_nodes: (:B :C :D :E :F)
+; update-table node: :B weight: 2
+; current_distance: 2147483647
+; {:A {:distance 0, :path [:A]},
+;  :B {:distance 2147483647, :path []},
+;  :C {:distance 2147483647, :path []},
+;  :D {:distance 2147483647, :path []},
+;  :E {:distance 2147483647, :path []},
+;  :F {:distance 2147483647, :path []}}
+; update-table node: :D weight: 8
+; current_distance: 2147483647
+; {:A {:distance 0, :path [:A]},
+;  :B {:distance 2, :path [:A :B]},
+;  :C {:distance 2147483647, :path []},
+;  :D {:distance 2147483647, :path []},
+;  :E {:distance 2147483647, :path []},
+;  :F {:distance 2147483647, :path []}}
+; next_node_to_visit: :B
+; current_node: :B
+; neighbours: [[:A 2] [:D 5] [:E 6]]
+; next_unvisited_nodes: (:C :D :E :F)
+; update-table node: :A weight: 2
+; current_distance: 0
+; {:A {:distance 0, :path [:A]},
+;  :B {:distance 2, :path [:A :B]},
+;  :C {:distance 2147483647, :path []},
+;  :D {:distance 8, :path [:A :D]},
+;  :E {:distance 2147483647, :path []},
+;  :F {:distance 2147483647, :path []}}
+; update-table node: :D weight: 5
+; current_distance: 8
+; {:A {:distance 0, :path [:A]},
+;  :B {:distance 2, :path [:A :B]},
+;  :C {:distance 2147483647, :path []},
+;  :D {:distance 8, :path [:A :D]},
+;  :E {:distance 2147483647, :path []},
+;  :F {:distance 2147483647, :path []}}
+; update-table node: :E weight: 6
+; current_distance: 2147483647
+; {:A {:distance 0, :path [:A]},
+;  :B {:distance 2, :path [:A :B]},
+;  :C {:distance 2147483647, :path []},
+;  :D {:distance 7, :path [:A :B :D]},
+;  :E {:distance 2147483647, :path []},
+;  :F {:distance 2147483647, :path []}}
+; next_node_to_visit: :D
+; current_node: :D
+; neighbours: [[:A 8] [:B 5] [:E 3] [:F 2]]
+; next_unvisited_nodes: (:C :E :F)
+; update-table node: :A weight: 8
+; current_distance: 0
+; {:A {:distance 0, :path [:A]},
+;  :B {:distance 2, :path [:A :B]},
+;  :C {:distance 2147483647, :path []},
+;  :D {:distance 7, :path [:A :B :D]},
+;  :E {:distance 8, :path [:A :B :E]},
+;  :F {:distance 2147483647, :path []}}
+; update-table node: :B weight: 5
+; current_distance: 2
+; {:A {:distance 0, :path [:A]},
+;  :B {:distance 2, :path [:A :B]},
+;  :C {:distance 2147483647, :path []},
+;  :D {:distance 7, :path [:A :B :D]},
+;  :E {:distance 8, :path [:A :B :E]},
+;  :F {:distance 2147483647, :path []}}
+; update-table node: :E weight: 3
+; current_distance: 8
+; {:A {:distance 0, :path [:A]},
+;  :B {:distance 2, :path [:A :B]},
+;  :C {:distance 2147483647, :path []},
+;  :D {:distance 7, :path [:A :B :D]},
+;  :E {:distance 8, :path [:A :B :E]},
+;  :F {:distance 2147483647, :path []}}
+; update-table node: :F weight: 2
+; current_distance: 2147483647
+; {:A {:distance 0, :path [:A]},
+;  :B {:distance 2, :path [:A :B]},
+;  :C {:distance 2147483647, :path []},
+;  :D {:distance 7, :path [:A :B :D]},
+;  :E {:distance 8, :path [:A :B :E]},
+;  :F {:distance 2147483647, :path []}}
+; next_node_to_visit: :E
+; current_node: :E
+; neighbours: [[:D 3] [:F 1] [:C 9] [:B 6]]
+; next_unvisited_nodes: (:C :F)
+; update-table node: :D weight: 3
+; current_distance: 7
+; {:A {:distance 0, :path [:A]},
+;  :B {:distance 2, :path [:A :B]},
+;  :C {:distance 2147483647, :path []},
+;  :D {:distance 7, :path [:A :B :D]},
+;  :E {:distance 8, :path [:A :B :E]},
+;  :F {:distance 9, :path [:A :B :D :F]}}
+; update-table node: :F weight: 1
+; current_distance: 9
+; {:A {:distance 0, :path [:A]},
+;  :B {:distance 2, :path [:A :B]},
+;  :C {:distance 2147483647, :path []},
+;  :D {:distance 7, :path [:A :B :D]},
+;  :E {:distance 8, :path [:A :B :E]},
+;  :F {:distance 9, :path [:A :B :D :F]}}
+; update-table node: :C weight: 9
+; current_distance: 2147483647
+; {:A {:distance 0, :path [:A]},
+;  :B {:distance 2, :path [:A :B]},
+;  :C {:distance 2147483647, :path []},
+;  :D {:distance 7, :path [:A :B :D]},
+;  :E {:distance 8, :path [:A :B :E]},
+;  :F {:distance 9, :path [:A :B :D :F]}}
+; update-table node: :B weight: 6
+; current_distance: 2
+; {:A {:distance 0, :path [:A]},
+;  :B {:distance 2, :path [:A :B]},
+;  :C {:distance 17, :path [:A :B :E :C]},
+;  :D {:distance 7, :path [:A :B :D]},
+;  :E {:distance 8, :path [:A :B :E]},
+;  :F {:distance 9, :path [:A :B :D :F]}}
+; next_node_to_visit: :F
+; current_node: :F
+; neighbours: [[:C 3] [:E 1] [:D 2]]
+; next_unvisited_nodes: (:C)
+; update-table node: :C weight: 3
+; current_distance: 17
+; {:A {:distance 0, :path [:A]},
+;  :B {:distance 2, :path [:A :B]},
+;  :C {:distance 17, :path [:A :B :E :C]},
+;  :D {:distance 7, :path [:A :B :D]},
+;  :E {:distance 8, :path [:A :B :E]},
+;  :F {:distance 9, :path [:A :B :D :F]}}
+; update-table node: :E weight: 1
+; current_distance: 8
+; {:A {:distance 0, :path [:A]},
+;  :B {:distance 2, :path [:A :B]},
+;  :C {:distance 12, :path [:A :B :D :F :C]},
+;  :D {:distance 7, :path [:A :B :D]},
+;  :E {:distance 8, :path [:A :B :E]},
+;  :F {:distance 9, :path [:A :B :D :F]}}
+; update-table node: :D weight: 2
+; current_distance: 7
+; {:A {:distance 0, :path [:A]},
+;  :B {:distance 2, :path [:A :B]},
+;  :C {:distance 12, :path [:A :B :D :F :C]},
+;  :D {:distance 7, :path [:A :B :D]},
+;  :E {:distance 8, :path [:A :B :E]},
+;  :F {:distance 9, :path [:A :B :D :F]}}
+; next_node_to_visit: :C
+; current_node: :C
+; neighbours: [[:F 3] [:E 9]]
+; next_unvisited_nodes: ()
+; update-table node: :F weight: 3
+; current_distance: 9
+; {:A {:distance 0, :path [:A]},
+;  :B {:distance 2, :path [:A :B]},
+;  :C {:distance 12, :path [:A :B :D :F :C]},
+;  :D {:distance 7, :path [:A :B :D]},
+;  :E {:distance 8, :path [:A :B :E]},
+;  :F {:distance 9, :path [:A :B :D :F]}}
+; update-table node: :E weight: 9
+; current_distance: 8
+; {:A {:distance 0, :path [:A]},
+;  :B {:distance 2, :path [:A :B]},
+;  :C {:distance 12, :path [:A :B :D :F :C]},
+;  :D {:distance 7, :path [:A :B :D]},
+;  :E {:distance 8, :path [:A :B :E]},
+;  :F {:distance 9, :path [:A :B :D :F]}}
+; next_node_to_visit: nil
+[:A :B :D :F :C]
 clj꞉graph-traversal.q3꞉> 
-; Execution error (ClassCastException) at graph-traversal.q3/eval11049$fn (form-init2405310019828224872.clj:162).
-; java.lang.Long cannot be cast to clojure.lang.IFn
+; current_node: :A
+; neighbours: [[:B 2] [:D 8]]
+; next_unvisited_nodes: (:B :C :D :E :F)
+; update-table node: :B weight: 2
+; current_distance: 2147483647
+; {:A {:distance 0, :path [:A]},
+;  :B {:distance 2147483647, :path []},
+;  :C {:distance 2147483647, :path []},
+;  :D {:distance 2147483647, :path []},
+;  :E {:distance 2147483647, :path []},
+;  :F {:distance 2147483647, :path []}}
+; update-table node: :D weight: 8
+; current_distance: 2147483647
+; {:A {:distance 0, :path [:A]},
+;  :B {:distance 2, :path [:A :B]},
+;  :C {:distance 2147483647, :path []},
+;  :D {:distance 2147483647, :path []},
+;  :E {:distance 2147483647, :path []},
+;  :F {:distance 2147483647, :path []}}
+; next_node_to_visit: :B
+; current_node: :B
+; neighbours: [[:A 2] [:D 5] [:E 6]]
+; next_unvisited_nodes: (:C :D :E :F)
+; update-table node: :A weight: 2
+; current_distance: 0
+; {:A {:distance 0, :path [:A]},
+;  :B {:distance 2, :path [:A :B]},
+;  :C {:distance 2147483647, :path []},
+;  :D {:distance 8, :path [:A :D]},
+;  :E {:distance 2147483647, :path []},
+;  :F {:distance 2147483647, :path []}}
+; update-table node: :D weight: 5
+; current_distance: 8
+; {:A {:distance 0, :path [:A]},
+;  :B {:distance 2, :path [:A :B]},
+;  :C {:distance 2147483647, :path []},
+;  :D {:distance 8, :path [:A :D]},
+;  :E {:distance 2147483647, :path []},
+;  :F {:distance 2147483647, :path []}}
+; update-table node: :E weight: 6
+; current_distance: 2147483647
+; {:A {:distance 0, :path [:A]},
+;  :B {:distance 2, :path [:A :B]},
+;  :C {:distance 2147483647, :path []},
+;  :D {:distance 7, :path [:A :B :D]},
+;  :E {:distance 2147483647, :path []},
+;  :F {:distance 2147483647, :path []}}
+; next_node_to_visit: :D
+; current_node: :D
+; neighbours: [[:A 8] [:B 5] [:E 3] [:F 2]]
+; next_unvisited_nodes: (:C :E :F)
+; update-table node: :A weight: 8
+; current_distance: 0
+; {:A {:distance 0, :path [:A]},
+;  :B {:distance 2, :path [:A :B]},
+;  :C {:distance 2147483647, :path []},
+;  :D {:distance 7, :path [:A :B :D]},
+;  :E {:distance 8, :path [:A :B :E]},
+;  :F {:distance 2147483647, :path []}}
+; update-table node: :B weight: 5
+; current_distance: 2
+; {:A {:distance 0, :path [:A]},
+;  :B {:distance 2, :path [:A :B]},
+;  :C {:distance 2147483647, :path []},
+;  :D {:distance 7, :path [:A :B :D]},
+;  :E {:distance 8, :path [:A :B :E]},
+;  :F {:distance 2147483647, :path []}}
+; update-table node: :E weight: 3
+; current_distance: 8
+; {:A {:distance 0, :path [:A]},
+;  :B {:distance 2, :path [:A :B]},
+;  :C {:distance 2147483647, :path []},
+;  :D {:distance 7, :path [:A :B :D]},
+;  :E {:distance 8, :path [:A :B :E]},
+;  :F {:distance 2147483647, :path []}}
+; update-table node: :F weight: 2
+; current_distance: 2147483647
+; {:A {:distance 0, :path [:A]},
+;  :B {:distance 2, :path [:A :B]},
+;  :C {:distance 2147483647, :path []},
+;  :D {:distance 7, :path [:A :B :D]},
+;  :E {:distance 8, :path [:A :B :E]},
+;  :F {:distance 2147483647, :path []}}
+; next_node_to_visit: :E
+; current_node: :E
+; neighbours: [[:D 3] [:F 1] [:C 9] [:B 6]]
+; next_unvisited_nodes: (:C :F)
+; update-table node: :D weight: 3
+; current_distance: 7
+; {:A {:distance 0, :path [:A]},
+;  :B {:distance 2, :path [:A :B]},
+;  :C {:distance 2147483647, :path []},
+;  :D {:distance 7, :path [:A :B :D]},
+;  :E {:distance 8, :path [:A :B :E]},
+;  :F {:distance 9, :path [:A :B :D :F]}}
+; update-table node: :F weight: 1
+; current_distance: 9
+; {:A {:distance 0, :path [:A]},
+;  :B {:distance 2, :path [:A :B]},
+;  :C {:distance 2147483647, :path []},
+;  :D {:distance 7, :path [:A :B :D]},
+;  :E {:distance 8, :path [:A :B :E]},
+;  :F {:distance 9, :path [:A :B :D :F]}}
+; update-table node: :C weight: 9
+; current_distance: 2147483647
+; {:A {:distance 0, :path [:A]},
+;  :B {:distance 2, :path [:A :B]},
+;  :C {:distance 2147483647, :path []},
+;  :D {:distance 7, :path [:A :B :D]},
+;  :E {:distance 8, :path [:A :B :E]},
+;  :F {:distance 9, :path [:A :B :D :F]}}
+; update-table node: :B weight: 6
+; current_distance: 2
+; {:A {:distance 0, :path [:A]},
+;  :B {:distance 2, :path [:A :B]},
+;  :C {:distance 17, :path [:A :B :E :C]},
+;  :D {:distance 7, :path [:A :B :D]},
+;  :E {:distance 8, :path [:A :B :E]},
+;  :F {:distance 9, :path [:A :B :D :F]}}
+; next_node_to_visit: :F
+; current_node: :F
+; neighbours: [[:C 3] [:E 1] [:D 2]]
+; next_unvisited_nodes: (:C)
+; update-table node: :C weight: 3
+; current_distance: 17
+; {:A {:distance 0, :path [:A]},
+;  :B {:distance 2, :path [:A :B]},
+;  :C {:distance 17, :path [:A :B :E :C]},
+;  :D {:distance 7, :path [:A :B :D]},
+;  :E {:distance 8, :path [:A :B :E]},
+;  :F {:distance 9, :path [:A :B :D :F]}}
+; update-table node: :E weight: 1
+; current_distance: 8
+; {:A {:distance 0, :path [:A]},
+;  :B {:distance 2, :path [:A :B]},
+;  :C {:distance 12, :path [:A :B :D :F :C]},
+;  :D {:distance 7, :path [:A :B :D]},
+;  :E {:distance 8, :path [:A :B :E]},
+;  :F {:distance 9, :path [:A :B :D :F]}}
+; update-table node: :D weight: 2
+; current_distance: 7
+; {:A {:distance 0, :path [:A]},
+;  :B {:distance 2, :path [:A :B]},
+;  :C {:distance 12, :path [:A :B :D :F :C]},
+;  :D {:distance 7, :path [:A :B :D]},
+;  :E {:distance 8, :path [:A :B :E]},
+;  :F {:distance 9, :path [:A :B :D :F]}}
+; next_node_to_visit: :C
+; current_node: :C
+; neighbours: [[:F 3] [:E 9]]
+; next_unvisited_nodes: ()
+; update-table node: :F weight: 3
+; current_distance: 9
+; {:A {:distance 0, :path [:A]},
+;  :B {:distance 2, :path [:A :B]},
+;  :C {:distance 12, :path [:A :B :D :F :C]},
+;  :D {:distance 7, :path [:A :B :D]},
+;  :E {:distance 8, :path [:A :B :E]},
+;  :F {:distance 9, :path [:A :B :D :F]}}
+; update-table node: :E weight: 9
+; current_distance: 8
+; {:A {:distance 0, :path [:A]},
+;  :B {:distance 2, :path [:A :B]},
+;  :C {:distance 12, :path [:A :B :D :F :C]},
+;  :D {:distance 7, :path [:A :B :D]},
+;  :E {:distance 8, :path [:A :B :E]},
+;  :F {:distance 9, :path [:A :B :D :F]}}
+; next_node_to_visit: nil
+[:A :B :D :F :C]
 clj꞉graph-traversal.q3꞉> 
-; Syntax error reading source at (REPL:162:1).
-; EOF while reading, starting at line 162
+; current_node: :A
+; neighbours: [[:B 2] [:D 8]]
+; next_unvisited_nodes: (:B :C :D :E :F)
+; update-table node: :B weight: 2
+; current_distance: 2147483647
+; {:A {:distance 0, :path [:A]},
+;  :B {:distance 2147483647, :path []},
+;  :C {:distance 2147483647, :path []},
+;  :D {:distance 2147483647, :path []},
+;  :E {:distance 2147483647, :path []},
+;  :F {:distance 2147483647, :path []}}
+; update-table node: :D weight: 8
+; current_distance: 2147483647
+; {:A {:distance 0, :path [:A]},
+;  :B {:distance 2, :path [:A :B]},
+;  :C {:distance 2147483647, :path []},
+;  :D {:distance 2147483647, :path []},
+;  :E {:distance 2147483647, :path []},
+;  :F {:distance 2147483647, :path []}}
+; next_node_to_visit: :B
+; current_node: :B
+; neighbours: [[:A 2] [:D 5] [:E 6]]
+; next_unvisited_nodes: (:C :D :E :F)
+; update-table node: :A weight: 2
+; current_distance: 0
+; {:A {:distance 0, :path [:A]},
+;  :B {:distance 2, :path [:A :B]},
+;  :C {:distance 2147483647, :path []},
+;  :D {:distance 8, :path [:A :D]},
+;  :E {:distance 2147483647, :path []},
+;  :F {:distance 2147483647, :path []}}
+; update-table node: :D weight: 5
+; current_distance: 8
+; {:A {:distance 0, :path [:A]},
+;  :B {:distance 2, :path [:A :B]},
+;  :C {:distance 2147483647, :path []},
+;  :D {:distance 8, :path [:A :D]},
+;  :E {:distance 2147483647, :path []},
+;  :F {:distance 2147483647, :path []}}
+; update-table node: :E weight: 6
+; current_distance: 2147483647
+; {:A {:distance 0, :path [:A]},
+;  :B {:distance 2, :path [:A :B]},
+;  :C {:distance 2147483647, :path []},
+;  :D {:distance 7, :path [:A :B :D]},
+;  :E {:distance 2147483647, :path []},
+;  :F {:distance 2147483647, :path []}}
+; next_node_to_visit: :D
+; current_node: :D
+; neighbours: [[:A 8] [:B 5] [:E 3] [:F 2]]
+; next_unvisited_nodes: (:C :E :F)
+; update-table node: :A weight: 8
+; current_distance: 0
+; {:A {:distance 0, :path [:A]},
+;  :B {:distance 2, :path [:A :B]},
+;  :C {:distance 2147483647, :path []},
+;  :D {:distance 7, :path [:A :B :D]},
+;  :E {:distance 8, :path [:A :B :E]},
+;  :F {:distance 2147483647, :path []}}
+; update-table node: :B weight: 5
+; current_distance: 2
+; {:A {:distance 0, :path [:A]},
+;  :B {:distance 2, :path [:A :B]},
+;  :C {:distance 2147483647, :path []},
+;  :D {:distance 7, :path [:A :B :D]},
+;  :E {:distance 8, :path [:A :B :E]},
+;  :F {:distance 2147483647, :path []}}
+; update-table node: :E weight: 3
+; current_distance: 8
+; {:A {:distance 0, :path [:A]},
+;  :B {:distance 2, :path [:A :B]},
+;  :C {:distance 2147483647, :path []},
+;  :D {:distance 7, :path [:A :B :D]},
+;  :E {:distance 8, :path [:A :B :E]},
+;  :F {:distance 2147483647, :path []}}
+; update-table node: :F weight: 2
+; current_distance: 2147483647
+; {:A {:distance 0, :path [:A]},
+;  :B {:distance 2, :path [:A :B]},
+;  :C {:distance 2147483647, :path []},
+;  :D {:distance 7, :path [:A :B :D]},
+;  :E {:distance 8, :path [:A :B :E]},
+;  :F {:distance 2147483647, :path []}}
+; next_node_to_visit: :E
+; current_node: :E
+; neighbours: [[:D 3] [:F 1] [:C 9] [:B 6]]
+; next_unvisited_nodes: (:C :F)
+; update-table node: :D weight: 3
+; current_distance: 7
+; {:A {:distance 0, :path [:A]},
+;  :B {:distance 2, :path [:A :B]},
+;  :C {:distance 2147483647, :path []},
+;  :D {:distance 7, :path [:A :B :D]},
+;  :E {:distance 8, :path [:A :B :E]},
+;  :F {:distance 9, :path [:A :B :D :F]}}
+; update-table node: :F weight: 1
+; current_distance: 9
+; {:A {:distance 0, :path [:A]},
+;  :B {:distance 2, :path [:A :B]},
+;  :C {:distance 2147483647, :path []},
+;  :D {:distance 7, :path [:A :B :D]},
+;  :E {:distance 8, :path [:A :B :E]},
+;  :F {:distance 9, :path [:A :B :D :F]}}
+; update-table node: :C weight: 9
+; current_distance: 2147483647
+; {:A {:distance 0, :path [:A]},
+;  :B {:distance 2, :path [:A :B]},
+;  :C {:distance 2147483647, :path []},
+;  :D {:distance 7, :path [:A :B :D]},
+;  :E {:distance 8, :path [:A :B :E]},
+;  :F {:distance 9, :path [:A :B :D :F]}}
+; update-table node: :B weight: 6
+; current_distance: 2
+; {:A {:distance 0, :path [:A]},
+;  :B {:distance 2, :path [:A :B]},
+;  :C {:distance 17, :path [:A :B :E :C]},
+;  :D {:distance 7, :path [:A :B :D]},
+;  :E {:distance 8, :path [:A :B :E]},
+;  :F {:distance 9, :path [:A :B :D :F]}}
+; next_node_to_visit: :F
+; current_node: :F
+; neighbours: [[:C 3] [:E 1] [:D 2]]
+; next_unvisited_nodes: (:C)
+; update-table node: :C weight: 3
+; current_distance: 17
+; {:A {:distance 0, :path [:A]},
+;  :B {:distance 2, :path [:A :B]},
+;  :C {:distance 17, :path [:A :B :E :C]},
+;  :D {:distance 7, :path [:A :B :D]},
+;  :E {:distance 8, :path [:A :B :E]},
+;  :F {:distance 9, :path [:A :B :D :F]}}
+; update-table node: :E weight: 1
+; current_distance: 8
+; {:A {:distance 0, :path [:A]},
+;  :B {:distance 2, :path [:A :B]},
+;  :C {:distance 12, :path [:A :B :D :F :C]},
+;  :D {:distance 7, :path [:A :B :D]},
+;  :E {:distance 8, :path [:A :B :E]},
+;  :F {:distance 9, :path [:A :B :D :F]}}
+; update-table node: :D weight: 2
+; current_distance: 7
+; {:A {:distance 0, :path [:A]},
+;  :B {:distance 2, :path [:A :B]},
+;  :C {:distance 12, :path [:A :B :D :F :C]},
+;  :D {:distance 7, :path [:A :B :D]},
+;  :E {:distance 8, :path [:A :B :E]},
+;  :F {:distance 9, :path [:A :B :D :F]}}
+; next_node_to_visit: :C
+; current_node: :C
+; neighbours: [[:F 3] [:E 9]]
+; next_unvisited_nodes: ()
+; update-table node: :F weight: 3
+; current_distance: 9
+; {:A {:distance 0, :path [:A]},
+;  :B {:distance 2, :path [:A :B]},
+;  :C {:distance 12, :path [:A :B :D :F :C]},
+;  :D {:distance 7, :path [:A :B :D]},
+;  :E {:distance 8, :path [:A :B :E]},
+;  :F {:distance 9, :path [:A :B :D :F]}}
+; update-table node: :E weight: 9
+; current_distance: 8
+; {:A {:distance 0, :path [:A]},
+;  :B {:distance 2, :path [:A :B]},
+;  :C {:distance 12, :path [:A :B :D :F :C]},
+;  :D {:distance 7, :path [:A :B :D]},
+;  :E {:distance 8, :path [:A :B :E]},
+;  :F {:distance 9, :path [:A :B :D :F]}}
+; next_node_to_visit: nil
+[:A :B :D :F :C]
 clj꞉graph-traversal.q3꞉> 
-; Execution error (ClassCastException) at graph-traversal.q3/eval11053$fn (form-init2405310019828224872.clj:162).
-; java.lang.Long cannot be cast to clojure.lang.IFn
+[:A :B :D :F :C]
 clj꞉graph-traversal.q3꞉> 
-(0 1 2 3 4 5 6 7 8 9 10 11 12 13 14)
+; Execution error (ArityException) at graph-traversal.q3/eval11654 (form-init2405310019828224872.clj:195).
+; Wrong number of args (3) passed to: graph-traversal.q3/shortest-path
 clj꞉graph-traversal.q3꞉> 
-[0 1 2 3 4 5 6 7 8 9 10 11 12 13 14]
+; Syntax error compiling at (c:\Users\mordrax\code\graph-traversal\src\graph_traversal\q3.clj:187:10).
+; Unable to resolve symbol: debug? in this context
+; 
+; Execution error (ArityException) at graph-traversal.q3/eval11690 (form-init2405310019828224872.clj:199).
+; Wrong number of args (3) passed to: graph-traversal.q3/shortest-path
 clj꞉graph-traversal.q3꞉> 
-; Execution error (ClassCastException) at graph-traversal.q3/eval11061$fn (form-init2405310019828224872.clj:162).
-; java.lang.Long cannot be cast to clojure.lang.IFn
+[:A :B :D :F :C]
 clj꞉graph-traversal.q3꞉> 
-105
+; {:A {:distance 0, :path [:A]},
+;  :B {:distance 2, :path [:A :B]},
+;  :C {:distance 12, :path [:A :B :D :F :C]},
+;  :D {:distance 7, :path [:A :B :D]},
+;  :E {:distance 8, :path [:A :B :E]},
+;  :F {:distance 9, :path [:A :B :D :F]}}
+[:A :B :D :F :C]
 clj꞉graph-traversal.q3꞉> 
-120
-clj꞉graph-traversal.q3꞉> 
-(0 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15)
-clj꞉graph-traversal.q3꞉> 
-current_node: :12
-neighbours: [[:6 13] [:13 87] [:14 12] [:5 81]]
-next_unvisited_nodes: (:14 :11 :10 :13 :0 :4 :7 :1 :8 :9 :2 :5 :3 :6)
-update-table node: :6 weight: 13
-current_distance: 2147483647
-{:14 {:distance 2147483647, :path []},
- :12 {:distance 0, :path [:12]},
- :11 {:distance 2147483647, :path []},
- :10 {:distance 2147483647, :path []},
- :13 {:distance 2147483647, :path []},
- :0 {:distance 2147483647, :path []},
- :4 {:distance 2147483647, :path []},
- :7 {:distance 2147483647, :path []},
- :1 {:distance 2147483647, :path []},
- :8 {:distance 2147483647, :path []},
- :9 {:distance 2147483647, :path []},
- :2 {:distance 2147483647, :path []},
- :5 {:distance 2147483647, :path []},
- :3 {:distance 2147483647, :path []},
- :6 {:distance 2147483647, :path []}}
-update-table node: :13 weight: 87
-current_distance: 2147483647
-{:14 {:distance 2147483647, :path []},
- :12 {:distance 0, :path [:12]},
- :11 {:distance 2147483647, :path []},
- :10 {:distance 2147483647, :path []},
- :13 {:distance 2147483647, :path []},
- :0 {:distance 2147483647, :path []},
- :4 {:distance 2147483647, :path []},
- :7 {:distance 2147483647, :path []},
- :1 {:distance 2147483647, :path []},
- :8 {:distance 2147483647, :path []},
- :9 {:distance 2147483647, :path []},
- :2 {:distance 2147483647, :path []},
- :5 {:distance 2147483647, :path []},
- :3 {:distance 2147483647, :path []},
- :6 {:distance 13, :path [:12 :6]}}
-update-table node: :14 weight: 12
-current_distance: 2147483647
-{:14 {:distance 2147483647, :path []},
- :12 {:distance 0, :path [:12]},
- :11 {:distance 2147483647, :path []},
- :10 {:distance 2147483647, :path []},
- :13 {:distance 87, :path [:12 :13]},
- :0 {:distance 2147483647, :path []},
- :4 {:distance 2147483647, :path []},
- :7 {:distance 2147483647, :path []},
- :1 {:distance 2147483647, :path []},
- :8 {:distance 2147483647, :path []},
- :9 {:distance 2147483647, :path []},
- :2 {:distance 2147483647, :path []},
- :5 {:distance 2147483647, :path []},
- :3 {:distance 2147483647, :path []},
- :6 {:distance 13, :path [:12 :6]}}
-update-table node: :5 weight: 81
-current_distance: 2147483647
-{:14 {:distance 12, :path [:12 :14]},
- :12 {:distance 0, :path [:12]},
- :11 {:distance 2147483647, :path []},
- :10 {:distance 2147483647, :path []},
- :13 {:distance 87, :path [:12 :13]},
- :0 {:distance 2147483647, :path []},
- :4 {:distance 2147483647, :path []},
- :7 {:distance 2147483647, :path []},
- :1 {:distance 2147483647, :path []},
- :8 {:distance 2147483647, :path []},
- :9 {:distance 2147483647, :path []},
- :2 {:distance 2147483647, :path []},
- :5 {:distance 2147483647, :path []},
- :3 {:distance 2147483647, :path []},
- :6 {:distance 13, :path [:12 :6]}}
-next_node_to_visit: :14
-({:14 {:distance 12, :path [:12 :14]},
-  :12 {:distance 0, :path [:12]},
-  :11 {:distance 2147483647, :path []},
-  :10 {:distance 2147483647, :path []},
-  :13 {:distance 87, :path [:12 :13]},
-  :0 {:distance 2147483647, :path []},
-  :4 {:distance 2147483647, :path []},
-  :7 {:distance 2147483647, :path []},
-  :1 {:distance 2147483647, :path []},
-  :8 {:distance 2147483647, :path []},
-  :9 {:distance 2147483647, :path []},
-  :2 {:distance 2147483647, :path []},
-  :5 {:distance 81, :path [:12 :5]},
-  :3 {:distance 2147483647, :path []},
-  :6 {:distance 13, :path [:12 :6]}}current_node: :14
-neighbours: [[:5 97] [:6 52] [:7 11] [:8 53] [:11 84] [:13 0]]
-next_unvisited_nodes: (:11 :10 :13 :0 :4 :7 :1 :8 :9 :2 :5 :3 :6)
-update-table node: :5 weight: 97
-current_distance: 81
-{:14 {:distance 12, :path [:12 :14]},
- :12 {:distance 0, :path [:12]},
- :11 {:distance 2147483647, :path []},
- :10 {:distance 2147483647, :path []},
- :13 {:distance 87, :path [:12 :13]},
- :0 {:distance 2147483647, :path []},
- :4 {:distance 2147483647, :path []},
- :7 {:distance 2147483647, :path []},
- :1 {:distance 2147483647, :path []},
- :8 {:distance 2147483647, :path []},
- :9 {:distance 2147483647, :path []},
- :2 {:distance 2147483647, :path []},
- :5 {:distance 81, :path [:12 :5]},
- :3 {:distance 2147483647, :path []},
- :6 {:distance 13, :path [:12 :6]}}
-update-table node: :6 weight: 52
-current_distance: 13
-{:14 {:distance 12, :path [:12 :14]},
- :12 {:distance 0, :path [:12]},
- :11 {:distance 2147483647, :path []},
- :10 {:distance 2147483647, :path []},
- :13 {:distance 87, :path [:12 :13]},
- :0 {:distance 2147483647, :path []},
- :4 {:distance 2147483647, :path []},
- :7 {:distance 2147483647, :path []},
- :1 {:distance 2147483647, :path []},
- :8 {:distance 2147483647, :path []},
- :9 {:distance 2147483647, :path []},
- :2 {:distance 2147483647, :path []},
- :5 {:distance 81, :path [:12 :5]},
- :3 {:distance 2147483647, :path []},
- :6 {:distance 13, :path [:12 :6]}}
-update-table node: :7 weight: 11
-current_distance: 2147483647
-{:14 {:distance 12, :path [:12 :14]},
- :12 {:distance 0, :path [:12]},
- :11 {:distance 2147483647, :path []},
- :10 {:distance 2147483647, :path []},
- :13 {:distance 87, :path [:12 :13]},
- :0 {:distance 2147483647, :path []},
- :4 {:distance 2147483647, :path []},
- :7 {:distance 2147483647, :path []},
- :1 {:distance 2147483647, :path []},
- :8 {:distance 2147483647, :path []},
- :9 {:distance 2147483647, :path []},
- :2 {:distance 2147483647, :path []},
- :5 {:distance 81, :path [:12 :5]},
- :3 {:distance 2147483647, :path []},
- :6 {:distance 13, :path [:12 :6]}}
-update-table node: :8 weight: 53
-current_distance: 2147483647
-{:14 {:distance 12, :path [:12 :14]},
- :12 {:distance 0, :path [:12]},
- :11 {:distance 2147483647, :path []},
- :10 {:distance 2147483647, :path []},
- :13 {:distance 87, :path [:12 :13]},
- :0 {:distance 2147483647, :path []},
- :4 {:distance 2147483647, :path []},
- :7 {:distance 23, :path [:12 :14 :7]},
- :1 {:distance 2147483647, :path []},
- :8 {:distance 2147483647, :path []},
- :9 {:distance 2147483647, :path []},
- :2 {:distance 2147483647, :path []},
- :5 {:distance 81, :path [:12 :5]},
- :3 {:distance 2147483647, :path []},
- :6 {:distance 13, :path [:12 :6]}}
-update-table node: :11 weight: 84
-current_distance: 2147483647
-{:14 {:distance 12, :path [:12 :14]},
- :12 {:distance 0, :path [:12]},
- :11 {:distance 2147483647, :path []},
- :10 {:distance 2147483647, :path []},
- :13 {:distance 87, :path [:12 :13]},
- :0 {:distance 2147483647, :path []},
- :4 {:distance 2147483647, :path []},
- :7 {:distance 23, :path [:12 :14 :7]},
- :1 {:distance 2147483647, :path []},
- :8 {:distance 65, :path [:12 :14 :8]},
- :9 {:distance 2147483647, :path []},
- :2 {:distance 2147483647, :path []},
- :5 {:distance 81, :path [:12 :5]},
- :3 {:distance 2147483647, :path []},
- :6 {:distance 13, :path [:12 :6]}}
-update-table node: :13 weight: 0
-current_distance: 87
-{:14 {:distance 12, :path [:12 :14]},
- :12 {:distance 0, :path [:12]},
- :11 {:distance 96, :path [:12 :14 :11]},
- :10 {:distance 2147483647, :path []},
- :13 {:distance 87, :path [:12 :13]},
- :0 {:distance 2147483647, :path []},
- :4 {:distance 2147483647, :path []},
- :7 {:distance 23, :path [:12 :14 :7]},
- :1 {:distance 2147483647, :path []},
- :8 {:distance 65, :path [:12 :14 :8]},
- :9 {:distance 2147483647, :path []},
- :2 {:distance 2147483647, :path []},
- :5 {:distance 81, :path [:12 :5]},
- :3 {:distance 2147483647, :path []},
- :6 {:distance 13, :path [:12 :6]}}
-next_node_to_visit: :13
-
- {:14 {:distance 12, :path [:12 :14]},
-  :12 {:distance 0, :path [:12]},
-  :11 {:distance 96, :path [:12 :14 :11]},
-  :10 {:distance 2147483647, :path []},
-  :13 {:distance 12, :path [:12 :14 :13]},
-  :0 {:distance 2147483647, :path []},
-  :4 {:distance 2147483647, :path []},
-  :7 {:distance 23, :path [:12 :14 :7]},
-  :1 {:distance 2147483647, :path []},
-  :8 {:distance 65, :path [:12 :14 :8]},
-  :9 {:distance 2147483647, :path []},
-  :2 {:distance 2147483647, :path []},
-  :5 {:distance 81, :path [:12 :5]},
-  :3 {:distance 2147483647, :path []},
-  :6 {:distance 13, :path [:12 :6]}}current_node: :13
-neighbours: [[:2 80] [:14 35] [:11 51] [:8 4] [:5 79] [:9 14] [:3 94]]
-next_unvisited_nodes: (:11 :10 :0 :4 :7 :1 :8 :9 :2 :5 :3 :6)
-update-table node: :2 weight: 80
-current_distance: 2147483647
-{:14 {:distance 12, :path [:12 :14]},
- :12 {:distance 0, :path [:12]},
- :11 {:distance 96, :path [:12 :14 :11]},
- :10 {:distance 2147483647, :path []},
- :13 {:distance 12, :path [:12 :14 :13]},
- :0 {:distance 2147483647, :path []},
- :4 {:distance 2147483647, :path []},
- :7 {:distance 23, :path [:12 :14 :7]},
- :1 {:distance 2147483647, :path []},
- :8 {:distance 65, :path [:12 :14 :8]},
- :9 {:distance 2147483647, :path []},
- :2 {:distance 2147483647, :path []},
- :5 {:distance 81, :path [:12 :5]},
- :3 {:distance 2147483647, :path []},
- :6 {:distance 13, :path [:12 :6]}}
-update-table node: :14 weight: 35
-current_distance: 12
-{:14 {:distance 12, :path [:12 :14]},
- :12 {:distance 0, :path [:12]},
- :11 {:distance 96, :path [:12 :14 :11]},
- :10 {:distance 2147483647, :path []},
- :13 {:distance 12, :path [:12 :14 :13]},
- :0 {:distance 2147483647, :path []},
- :4 {:distance 2147483647, :path []},
- :7 {:distance 23, :path [:12 :14 :7]},
- :1 {:distance 2147483647, :path []},
- :8 {:distance 65, :path [:12 :14 :8]},
- :9 {:distance 2147483647, :path []},
- :2 {:distance 92, :path [:12 :14 :13 :2]},
- :5 {:distance 81, :path [:12 :5]},
- :3 {:distance 2147483647, :path []},
- :6 {:distance 13, :path [:12 :6]}}
-update-table node: :11 weight: 51
-current_distance: 96
-{:14 {:distance 12, :path [:12 :14]},
- :12 {:distance 0, :path [:12]},
- :11 {:distance 96, :path [:12 :14 :11]},
- :10 {:distance 2147483647, :path []},
- :13 {:distance 12, :path [:12 :14 :13]},
- :0 {:distance 2147483647, :path []},
- :4 {:distance 2147483647, :path []},
- :7 {:distance 23, :path [:12 :14 :7]},
- :1 {:distance 2147483647, :path []},
- :8 {:distance 65, :path [:12 :14 :8]},
- :9 {:distance 2147483647, :path []},
- :2 {:distance 92, :path [:12 :14 :13 :2]},
- :5 {:distance 81, :path [:12 :5]},
- :3 {:distance 2147483647, :path []},
- :6 {:distance 13, :path [:12 :6]}}
-update-table node: :8 weight: 4
-current_distance: 65
-{:14 {:distance 12, :path [:12 :14]},
- :12 {:distance 0, :path [:12]},
- :11 {:distance 63, :path [:12 :14 :13 :11]},
- :10 {:distance 2147483647, :path []},
- :13 {:distance 12, :path [:12 :14 :13]},
- :0 {:distance 2147483647, :path []},
- :4 {:distance 2147483647, :path []},
- :7 {:distance 23, :path [:12 :14 :7]},
- :1 {:distance 2147483647, :path []},
- :8 {:distance 65, :path [:12 :14 :8]},
- :9 {:distance 2147483647, :path []},
- :2 {:distance 92, :path [:12 :14 :13 :2]},
- :5 {:distance 81, :path [:12 :5]},
- :3 {:distance 2147483647, :path []},
- :6 {:distance 13, :path [:12 :6]}}
-update-table node: :5 weight: 79
-current_distance: 81
-{:14 {:distance 12, :path [:12 :14]},
- :12 {:distance 0, :path [:12]},
- :11 {:distance 63, :path [:12 :14 :13 :11]},
- :10 {:distance 2147483647, :path []},
- :13 {:distance 12, :path [:12 :14 :13]},
- :0 {:distance 2147483647, :path []},
- :4 {:distance 2147483647, :path []},
- :7 {:distance 23, :path [:12 :14 :7]},
- :1 {:distance 2147483647, :path []},
- :8 {:distance 16, :path [:12 :14 :13 :8]},
- :9 {:distance 2147483647, :path []},
- :2 {:distance 92, :path [:12 :14 :13 :2]},
- :5 {:distance 81, :path [:12 :5]},
- :3 {:distance 2147483647, :path []},
- :6 {:distance 13, :path [:12 :6]}}
-update-table node: :9 weight: 14
-current_distance: 2147483647
-{:14 {:distance 12, :path [:12 :14]},
- :12 {:distance 0, :path [:12]},
- :11 {:distance 63, :path [:12 :14 :13 :11]},
- :10 {:distance 2147483647, :path []},
- :13 {:distance 12, :path [:12 :14 :13]},
- :0 {:distance 2147483647, :path []},
- :4 {:distance 2147483647, :path []},
- :7 {:distance 23, :path [:12 :14 :7]},
- :1 {:distance 2147483647, :path []},
- :8 {:distance 16, :path [:12 :14 :13 :8]},
- :9 {:distance 2147483647, :path []},
- :2 {:distance 92, :path [:12 :14 :13 :2]},
- :5 {:distance 81, :path [:12 :5]},
- :3 {:distance 2147483647, :path []},
- :6 {:distance 13, :path [:12 :6]}}
-update-table node: :3 weight: 94
-current_distance: 2147483647
-{:14 {:distance 12, :path [:12 :14]},
- :12 {:distance 0, :path [:12]},
- :11 {:distance 63, :path [:12 :14 :13 :11]},
- :10 {:distance 2147483647, :path []},
- :13 {:distance 12, :path [:12 :14 :13]},
- :0 {:distance 2147483647, :path []},
- :4 {:distance 2147483647, :path []},
- :7 {:distance 23, :path [:12 :14 :7]},
- :1 {:distance 2147483647, :path []},
- :8 {:distance 16, :path [:12 :14 :13 :8]},
- :9 {:distance 26, :path [:12 :14 :13 :9]},
- :2 {:distance 92, :path [:12 :14 :13 :2]},
- :5 {:distance 81, :path [:12 :5]},
- :3 {:distance 2147483647, :path []},
- :6 {:distance 13, :path [:12 :6]}}
-next_node_to_visit: :6
-
- {:14 {:distance 12, :path [:12 :14]},
-  :12 {:distance 0, :path [:12]},
-  :11 {:distance 63, :path [:12 :14 :13 :11]},
-  :10 {:distance 2147483647, :path []},
-  :13 {:distance 12, :path [:12 :14 :13]},
-  :0 {:distance 2147483647, :path []},
-  :4 {:distance 2147483647, :path []},
-  :7 {:distance 23, :path [:12 :14 :7]},
-  :1 {:distance 2147483647, :path []},
-  :8 {:distance 16, :path [:12 :14 :13 :8]},
-  :9 {:distance 26, :path [:12 :14 :13 :9]},
-  :2 {:distance 92, :path [:12 :14 :13 :2]},
-  :5 {:distance 81, :path [:12 :5]},
-  :3 {:distance 106, :path [:12 :14 :13 :3]},
-  :6 {:distance 13, :path [:12 :6]}}current_node: :6
-neighbours: [[:0 90] [:4 58] [:9 34] [:10 32] [:2 52] [:1 8] [:5 85] [:14 60]]
-next_unvisited_nodes: (:11 :10 :0 :4 :7 :1 :8 :9 :2 :5 :3)
-update-table node: :0 weight: 90
-current_distance: 2147483647
-{:14 {:distance 12, :path [:12 :14]},
- :12 {:distance 0, :path [:12]},
- :11 {:distance 63, :path [:12 :14 :13 :11]},
- :10 {:distance 2147483647, :path []},
- :13 {:distance 12, :path [:12 :14 :13]},
- :0 {:distance 2147483647, :path []},
- :4 {:distance 2147483647, :path []},
- :7 {:distance 23, :path [:12 :14 :7]},
- :1 {:distance 2147483647, :path []},
- :8 {:distance 16, :path [:12 :14 :13 :8]},
- :9 {:distance 26, :path [:12 :14 :13 :9]},
- :2 {:distance 92, :path [:12 :14 :13 :2]},
- :5 {:distance 81, :path [:12 :5]},
- :3 {:distance 106, :path [:12 :14 :13 :3]},
- :6 {:distance 13, :path [:12 :6]}}
-update-table node: :4 weight: 58
-current_distance: 2147483647
-{:14 {:distance 12, :path [:12 :14]},
- :12 {:distance 0, :path [:12]},
- :11 {:distance 63, :path [:12 :14 :13 :11]},
- :10 {:distance 2147483647, :path []},
- :13 {:distance 12, :path [:12 :14 :13]},
- :0 {:distance 103, :path [:12 :6 :0]},
- :4 {:distance 2147483647, :path []},
- :7 {:distance 23, :path [:12 :14 :7]},
- :1 {:distance 2147483647, :path []},
- :8 {:distance 16, :path [:12 :14 :13 :8]},
- :9 {:distance 26, :path [:12 :14 :13 :9]},
- :2 {:distance 92, :path [:12 :14 :13 :2]},
- :5 {:distance 81, :path [:12 :5]},
- :3 {:distance 106, :path [:12 :14 :13 :3]},
- :6 {:distance 13, :path [:12 :6]}}
-update-table node: :9 weight: 34
-current_distance: 26
-{:14 {:distance 12, :path [:12 :14]},
- :12 {:distance 0, :path [:12]},
- :11 {:distance 63, :path [:12 :14 :13 :11]},
- :10 {:distance 2147483647, :path []},
- :13 {:distance 12, :path [:12 :14 :13]},
- :0 {:distance 103, :path [:12 :6 :0]},
- :4 {:distance 71, :path [:12 :6 :4]},
- :7 {:distance 23, :path [:12 :14 :7]},
- :1 {:distance 2147483647, :path []},
- :8 {:distance 16, :path [:12 :14 :13 :8]},
- :9 {:distance 26, :path [:12 :14 :13 :9]},
- :2 {:distance 92, :path [:12 :14 :13 :2]},
- :5 {:distance 81, :path [:12 :5]},
- :3 {:distance 106, :path [:12 :14 :13 :3]},
- :6 {:distance 13, :path [:12 :6]}}
-update-table node: :10 weight: 32
-current_distance: 2147483647
-{:14 {:distance 12, :path [:12 :14]},
- :12 {:distance 0, :path [:12]},
- :11 {:distance 63, :path [:12 :14 :13 :11]},
- :10 {:distance 2147483647, :path []},
- :13 {:distance 12, :path [:12 :14 :13]},
- :0 {:distance 103, :path [:12 :6 :0]},
- :4 {:distance 71, :path [:12 :6 :4]},
- :7 {:distance 23, :path [:12 :14 :7]},
- :1 {:distance 2147483647, :path []},
- :8 {:distance 16, :path [:12 :14 :13 :8]},
- :9 {:distance 26, :path [:12 :14 :13 :9]},
- :2 {:distance 92, :path [:12 :14 :13 :2]},
- :5 {:distance 81, :path [:12 :5]},
- :3 {:distance 106, :path [:12 :14 :13 :3]},
- :6 {:distance 13, :path [:12 :6]}}
-update-table node: :2 weight: 52
-current_distance: 92
-{:14 {:distance 12, :path [:12 :14]},
- :12 {:distance 0, :path [:12]},
- :11 {:distance 63, :path [:12 :14 :13 :11]},
- :10 {:distance 45, :path [:12 :6 :10]},
- :13 {:distance 12, :path [:12 :14 :13]},
- :0 {:distance 103, :path [:12 :6 :0]},
- :4 {:distance 71, :path [:12 :6 :4]},
- :7 {:distance 23, :path [:12 :14 :7]},
- :1 {:distance 2147483647, :path []},
- :8 {:distance 16, :path [:12 :14 :13 :8]},
- :9 {:distance 26, :path [:12 :14 :13 :9]},
- :2 {:distance 92, :path [:12 :14 :13 :2]},
- :5 {:distance 81, :path [:12 :5]},
- :3 {:distance 106, :path [:12 :14 :13 :3]},
- :6 {:distance 13, :path [:12 :6]}}
-update-table node: :1 weight: 8
-current_distance: 2147483647
-{:14 {:distance 12, :path [:12 :14]},
- :12 {:distance 0, :path [:12]},
- :11 {:distance 63, :path [:12 :14 :13 :11]},
- :10 {:distance 45, :path [:12 :6 :10]},
- :13 {:distance 12, :path [:12 :14 :13]},
- :0 {:distance 103, :path [:12 :6 :0]},
- :4 {:distance 71, :path [:12 :6 :4]},
- :7 {:distance 23, :path [:12 :14 :7]},
- :1 {:distance 2147483647, :path []},
- :8 {:distance 16, :path [:12 :14 :13 :8]},
- :9 {:distance 26, :path [:12 :14 :13 :9]},
- :2 {:distance 65, :path [:12 :6 :2]},
- :5 {:distance 81, :path [:12 :5]},
- :3 {:distance 106, :path [:12 :14 :13 :3]},
- :6 {:distance 13, :path [:12 :6]}}
-update-table node: :5 weight: 85
-current_distance: 81
-{:14 {:distance 12, :path [:12 :14]},
- :12 {:distance 0, :path [:12]},
- :11 {:distance 63, :path [:12 :14 :13 :11]},
- :10 {:distance 45, :path [:12 :6 :10]},
- :13 {:distance 12, :path [:12 :14 :13]},
- :0 {:distance 103, :path [:12 :6 :0]},
- :4 {:distance 71, :path [:12 :6 :4]},
- :7 {:distance 23, :path [:12 :14 :7]},
- :1 {:distance 21, :path [:12 :6 :1]},
- :8 {:distance 16, :path [:12 :14 :13 :8]},
- :9 {:distance 26, :path [:12 :14 :13 :9]},
- :2 {:distance 65, :path [:12 :6 :2]},
- :5 {:distance 81, :path [:12 :5]},
- :3 {:distance 106, :path [:12 :14 :13 :3]},
- :6 {:distance 13, :path [:12 :6]}}
-update-table node: :14 weight: 60
-current_distance: 12
-{:14 {:distance 12, :path [:12 :14]},
- :12 {:distance 0, :path [:12]},
- :11 {:distance 63, :path [:12 :14 :13 :11]},
- :10 {:distance 45, :path [:12 :6 :10]},
- :13 {:distance 12, :path [:12 :14 :13]},
- :0 {:distance 103, :path [:12 :6 :0]},
- :4 {:distance 71, :path [:12 :6 :4]},
- :7 {:distance 23, :path [:12 :14 :7]},
- :1 {:distance 21, :path [:12 :6 :1]},
- :8 {:distance 16, :path [:12 :14 :13 :8]},
- :9 {:distance 26, :path [:12 :14 :13 :9]},
- :2 {:distance 65, :path [:12 :6 :2]},
- :5 {:distance 81, :path [:12 :5]},
- :3 {:distance 106, :path [:12 :14 :13 :3]},
- :6 {:distance 13, :path [:12 :6]}}
-next_node_to_visit: :8
-
- {:14 {:distance 12, :path [:12 :14]},
-  :12 {:distance 0, :path [:12]},
-  :11 {:distance 63, :path [:12 :14 :13 :11]},
-  :10 {:distance 45, :path [:12 :6 :10]},
-  :13 {:distance 12, :path [:12 :14 :13]},
-  :0 {:distance 103, :path [:12 :6 :0]},
-  :4 {:distance 71, :path [:12 :6 :4]},
-  :7 {:distance 23, :path [:12 :14 :7]},
-  :1 {:distance 21, :path [:12 :6 :1]},
-  :8 {:distance 16, :path [:12 :14 :13 :8]},
-  :9 {:distance 26, :path [:12 :14 :13 :9]},
-  :2 {:distance 65, :path [:12 :6 :2]},
-  :5 {:distance 81, :path [:12 :5]},
-  :3 {:distance 106, :path [:12 :14 :13 :3]},
-  :6 {:distance 13, :path [:12 :6]}}current_node: :8
-neighbours: [[:9 15] [:10 34] [:7 93] [:6 83] [:2 87] [:14 20]]
-next_unvisited_nodes: (:11 :10 :0 :4 :7 :1 :9 :2 :5 :3)
-update-table node: :9 weight: 15
-current_distance: 26
-{:14 {:distance 12, :path [:12 :14]},
- :12 {:distance 0, :path [:12]},
- :11 {:distance 63, :path [:12 :14 :13 :11]},
- :10 {:distance 45, :path [:12 :6 :10]},
- :13 {:distance 12, :path [:12 :14 :13]},
- :0 {:distance 103, :path [:12 :6 :0]},
- :4 {:distance 71, :path [:12 :6 :4]},
- :7 {:distance 23, :path [:12 :14 :7]},
- :1 {:distance 21, :path [:12 :6 :1]},
- :8 {:distance 16, :path [:12 :14 :13 :8]},
- :9 {:distance 26, :path [:12 :14 :13 :9]},
- :2 {:distance 65, :path [:12 :6 :2]},
- :5 {:distance 81, :path [:12 :5]},
- :3 {:distance 106, :path [:12 :14 :13 :3]},
- :6 {:distance 13, :path [:12 :6]}}
-update-table node: :10 weight: 34
-current_distance: 45
-{:14 {:distance 12, :path [:12 :14]},
- :12 {:distance 0, :path [:12]},
- :11 {:distance 63, :path [:12 :14 :13 :11]},
- :10 {:distance 45, :path [:12 :6 :10]},
- :13 {:distance 12, :path [:12 :14 :13]},
- :0 {:distance 103, :path [:12 :6 :0]},
- :4 {:distance 71, :path [:12 :6 :4]},
- :7 {:distance 23, :path [:12 :14 :7]},
- :1 {:distance 21, :path [:12 :6 :1]},
- :8 {:distance 16, :path [:12 :14 :13 :8]},
- :9 {:distance 26, :path [:12 :14 :13 :9]},
- :2 {:distance 65, :path [:12 :6 :2]},
- :5 {:distance 81, :path [:12 :5]},
- :3 {:distance 106, :path [:12 :14 :13 :3]},
- :6 {:distance 13, :path [:12 :6]}}
-update-table node: :7 weight: 93
-current_distance: 23
-{:14 {:distance 12, :path [:12 :14]},
- :12 {:distance 0, :path [:12]},
- :11 {:distance 63, :path [:12 :14 :13 :11]},
- :10 {:distance 45, :path [:12 :6 :10]},
- :13 {:distance 12, :path [:12 :14 :13]},
- :0 {:distance 103, :path [:12 :6 :0]},
- :4 {:distance 71, :path [:12 :6 :4]},
- :7 {:distance 23, :path [:12 :14 :7]},
- :1 {:distance 21, :path [:12 :6 :1]},
- :8 {:distance 16, :path [:12 :14 :13 :8]},
- :9 {:distance 26, :path [:12 :14 :13 :9]},
- :2 {:distance 65, :path [:12 :6 :2]},
- :5 {:distance 81, :path [:12 :5]},
- :3 {:distance 106, :path [:12 :14 :13 :3]},
- :6 {:distance 13, :path [:12 :6]}}
-update-table node: :6 weight: 83
-current_distance: 13
-{:14 {:distance 12, :path [:12 :14]},
- :12 {:distance 0, :path [:12]},
- :11 {:distance 63, :path [:12 :14 :13 :11]},
- :10 {:distance 45, :path [:12 :6 :10]},
- :13 {:distance 12, :path [:12 :14 :13]},
- :0 {:distance 103, :path [:12 :6 :0]},
- :4 {:distance 71, :path [:12 :6 :4]},
- :7 {:distance 23, :path [:12 :14 :7]},
- :1 {:distance 21, :path [:12 :6 :1]},
- :8 {:distance 16, :path [:12 :14 :13 :8]},
- :9 {:distance 26, :path [:12 :14 :13 :9]},
- :2 {:distance 65, :path [:12 :6 :2]},
- :5 {:distance 81, :path [:12 :5]},
- :3 {:distance 106, :path [:12 :14 :13 :3]},
- :6 {:distance 13, :path [:12 :6]}}
-update-table node: :2 weight: 87
-current_distance: 65
-{:14 {:distance 12, :path [:12 :14]},
- :12 {:distance 0, :path [:12]},
- :11 {:distance 63, :path [:12 :14 :13 :11]},
- :10 {:distance 45, :path [:12 :6 :10]},
- :13 {:distance 12, :path [:12 :14 :13]},
- :0 {:distance 103, :path [:12 :6 :0]},
- :4 {:distance 71, :path [:12 :6 :4]},
- :7 {:distance 23, :path [:12 :14 :7]},
- :1 {:distance 21, :path [:12 :6 :1]},
- :8 {:distance 16, :path [:12 :14 :13 :8]},
- :9 {:distance 26, :path [:12 :14 :13 :9]},
- :2 {:distance 65, :path [:12 :6 :2]},
- :5 {:distance 81, :path [:12 :5]},
- :3 {:distance 106, :path [:12 :14 :13 :3]},
- :6 {:distance 13, :path [:12 :6]}}
-update-table node: :14 weight: 20
-current_distance: 12
-{:14 {:distance 12, :path [:12 :14]},
- :12 {:distance 0, :path [:12]},
- :11 {:distance 63, :path [:12 :14 :13 :11]},
- :10 {:distance 45, :path [:12 :6 :10]},
- :13 {:distance 12, :path [:12 :14 :13]},
- :0 {:distance 103, :path [:12 :6 :0]},
- :4 {:distance 71, :path [:12 :6 :4]},
- :7 {:distance 23, :path [:12 :14 :7]},
- :1 {:distance 21, :path [:12 :6 :1]},
- :8 {:distance 16, :path [:12 :14 :13 :8]},
- :9 {:distance 26, :path [:12 :14 :13 :9]},
- :2 {:distance 65, :path [:12 :6 :2]},
- :5 {:distance 81, :path [:12 :5]},
- :3 {:distance 106, :path [:12 :14 :13 :3]},
- :6 {:distance 13, :path [:12 :6]}}
-next_node_to_visit: :1
-
- {:14 {:distance 12, :path [:12 :14]},
-  :12 {:distance 0, :path [:12]},
-  :11 {:distance 63, :path [:12 :14 :13 :11]},
-  :10 {:distance 45, :path [:12 :6 :10]},
-  :13 {:distance 12, :path [:12 :14 :13]},
-  :0 {:distance 103, :path [:12 :6 :0]},
-  :4 {:distance 71, :path [:12 :6 :4]},
-  :7 {:distance 23, :path [:12 :14 :7]},
-  :1 {:distance 21, :path [:12 :6 :1]},
-  :8 {:distance 16, :path [:12 :14 :13 :8]},
-  :9 {:distance 26, :path [:12 :14 :13 :9]},
-  :2 {:distance 65, :path [:12 :6 :2]},
-  :5 {:distance 81, :path [:12 :5]},
-  :3 {:distance 106, :path [:12 :14 :13 :3]},
-  :6 {:distance 13, :path [:12 :6]}}current_node: :1
-neighbours: [[:9 47] [:0 73] [:14 88] [:10 19] [:7 42] [:6 73] [:3 49]]
-next_unvisited_nodes: (:11 :10 :0 :4 :7 :9 :2 :5 :3)
-update-table node: :9 weight: 47
-current_distance: 26
-{:14 {:distance 12, :path [:12 :14]},
- :12 {:distance 0, :path [:12]},
- :11 {:distance 63, :path [:12 :14 :13 :11]},
- :10 {:distance 45, :path [:12 :6 :10]},
- :13 {:distance 12, :path [:12 :14 :13]},
- :0 {:distance 103, :path [:12 :6 :0]},
- :4 {:distance 71, :path [:12 :6 :4]},
- :7 {:distance 23, :path [:12 :14 :7]},
- :1 {:distance 21, :path [:12 :6 :1]},
- :8 {:distance 16, :path [:12 :14 :13 :8]},
- :9 {:distance 26, :path [:12 :14 :13 :9]},
- :2 {:distance 65, :path [:12 :6 :2]},
- :5 {:distance 81, :path [:12 :5]},
- :3 {:distance 106, :path [:12 :14 :13 :3]},
- :6 {:distance 13, :path [:12 :6]}}
-update-table node: :0 weight: 73
-current_distance: 103
-{:14 {:distance 12, :path [:12 :14]},
- :12 {:distance 0, :path [:12]},
- :11 {:distance 63, :path [:12 :14 :13 :11]},
- :10 {:distance 45, :path [:12 :6 :10]},
- :13 {:distance 12, :path [:12 :14 :13]},
- :0 {:distance 103, :path [:12 :6 :0]},
- :4 {:distance 71, :path [:12 :6 :4]},
- :7 {:distance 23, :path [:12 :14 :7]},
- :1 {:distance 21, :path [:12 :6 :1]},
- :8 {:distance 16, :path [:12 :14 :13 :8]},
- :9 {:distance 26, :path [:12 :14 :13 :9]},
- :2 {:distance 65, :path [:12 :6 :2]},
- :5 {:distance 81, :path [:12 :5]},
- :3 {:distance 106, :path [:12 :14 :13 :3]},
- :6 {:distance 13, :path [:12 :6]}}
-update-table node: :14 weight: 88
-current_distance: 12
-{:14 {:distance 12, :path [:12 :14]},
- :12 {:distance 0, :path [:12]},
- :11 {:distance 63, :path [:12 :14 :13 :11]},
- :10 {:distance 45, :path [:12 :6 :10]},
- :13 {:distance 12, :path [:12 :14 :13]},
- :0 {:distance 94, :path [:12 :6 :1 :0]},
- :4 {:distance 71, :path [:12 :6 :4]},
- :7 {:distance 23, :path [:12 :14 :7]},
- :1 {:distance 21, :path [:12 :6 :1]},
- :8 {:distance 16, :path [:12 :14 :13 :8]},
- :9 {:distance 26, :path [:12 :14 :13 :9]},
- :2 {:distance 65, :path [:12 :6 :2]},
- :5 {:distance 81, :path [:12 :5]},
- :3 {:distance 106, :path [:12 :14 :13 :3]},
- :6 {:distance 13, :path [:12 :6]}}
-update-table node: :10 weight: 19
-current_distance: 45
-{:14 {:distance 12, :path [:12 :14]},
- :12 {:distance 0, :path [:12]},
- :11 {:distance 63, :path [:12 :14 :13 :11]},
- :10 {:distance 45, :path [:12 :6 :10]},
- :13 {:distance 12, :path [:12 :14 :13]},
- :0 {:distance 94, :path [:12 :6 :1 :0]},
- :4 {:distance 71, :path [:12 :6 :4]},
- :7 {:distance 23, :path [:12 :14 :7]},
- :1 {:distance 21, :path [:12 :6 :1]},
- :8 {:distance 16, :path [:12 :14 :13 :8]},
- :9 {:distance 26, :path [:12 :14 :13 :9]},
- :2 {:distance 65, :path [:12 :6 :2]},
- :5 {:distance 81, :path [:12 :5]},
- :3 {:distance 106, :path [:12 :14 :13 :3]},
- :6 {:distance 13, :path [:12 :6]}}
-update-table node: :7 weight: 42
-current_distance: 23
-{:14 {:distance 12, :path [:12 :14]},
- :12 {:distance 0, :path [:12]},
- :11 {:distance 63, :path [:12 :14 :13 :11]},
- :10 {:distance 40, :path [:12 :6 :1 :10]},
- :13 {:distance 12, :path [:12 :14 :13]},
- :0 {:distance 94, :path [:12 :6 :1 :0]},
- :4 {:distance 71, :path [:12 :6 :4]},
- :7 {:distance 23, :path [:12 :14 :7]},
- :1 {:distance 21, :path [:12 :6 :1]},
- :8 {:distance 16, :path [:12 :14 :13 :8]},
- :9 {:distance 26, :path [:12 :14 :13 :9]},
- :2 {:distance 65, :path [:12 :6 :2]},
- :5 {:distance 81, :path [:12 :5]},
- :3 {:distance 106, :path [:12 :14 :13 :3]},
- :6 {:distance 13, :path [:12 :6]}}
-update-table node: :6 weight: 73
-current_distance: 13
-{:14 {:distance 12, :path [:12 :14]},
- :12 {:distance 0, :path [:12]},
- :11 {:distance 63, :path [:12 :14 :13 :11]},
- :10 {:distance 40, :path [:12 :6 :1 :10]},
- :13 {:distance 12, :path [:12 :14 :13]},
- :0 {:distance 94, :path [:12 :6 :1 :0]},
- :4 {:distance 71, :path [:12 :6 :4]},
- :7 {:distance 23, :path [:12 :14 :7]},
- :1 {:distance 21, :path [:12 :6 :1]},
- :8 {:distance 16, :path [:12 :14 :13 :8]},
- :9 {:distance 26, :path [:12 :14 :13 :9]},
- :2 {:distance 65, :path [:12 :6 :2]},
- :5 {:distance 81, :path [:12 :5]},
- :3 {:distance 106, :path [:12 :14 :13 :3]},
- :6 {:distance 13, :path [:12 :6]}}
-update-table node: :3 weight: 49
-current_distance: 106
-{:14 {:distance 12, :path [:12 :14]},
- :12 {:distance 0, :path [:12]},
- :11 {:distance 63, :path [:12 :14 :13 :11]},
- :10 {:distance 40, :path [:12 :6 :1 :10]},
- :13 {:distance 12, :path [:12 :14 :13]},
- :0 {:distance 94, :path [:12 :6 :1 :0]},
- :4 {:distance 71, :path [:12 :6 :4]},
- :7 {:distance 23, :path [:12 :14 :7]},
- :1 {:distance 21, :path [:12 :6 :1]},
- :8 {:distance 16, :path [:12 :14 :13 :8]},
- :9 {:distance 26, :path [:12 :14 :13 :9]},
- :2 {:distance 65, :path [:12 :6 :2]},
- :5 {:distance 81, :path [:12 :5]},
- :3 {:distance 106, :path [:12 :14 :13 :3]},
- :6 {:distance 13, :path [:12 :6]}}
-next_node_to_visit: :7
-
- {:14 {:distance 12, :path [:12 :14]},
-  :12 {:distance 0, :path [:12]},
-  :11 {:distance 63, :path [:12 :14 :13 :11]},
-  :10 {:distance 40, :path [:12 :6 :1 :10]},
-  :13 {:distance 12, :path [:12 :14 :13]},
-  :0 {:distance 94, :path [:12 :6 :1 :0]},
-  :4 {:distance 71, :path [:12 :6 :4]},
-  :7 {:distance 23, :path [:12 :14 :7]},
-  :1 {:distance 21, :path [:12 :6 :1]},
-  :8 {:distance 16, :path [:12 :14 :13 :8]},
-  :9 {:distance 26, :path [:12 :14 :13 :9]},
-  :2 {:distance 65, :path [:12 :6 :2]},
-  :5 {:distance 81, :path [:12 :5]},
-  :3 {:distance 70, :path [:12 :6 :1 :3]},
-  :6 {:distance 13, :path [:12 :6]}}current_node: :7
-neighbours: [[:3 39] [:9 61] [:5 91] [:14 15] [:11 79] [:0 32]]
-next_unvisited_nodes: (:11 :10 :0 :4 :9 :2 :5 :3)
-update-table node: :3 weight: 39
-current_distance: 70
-{:14 {:distance 12, :path [:12 :14]},
- :12 {:distance 0, :path [:12]},
- :11 {:distance 63, :path [:12 :14 :13 :11]},
- :10 {:distance 40, :path [:12 :6 :1 :10]},
- :13 {:distance 12, :path [:12 :14 :13]},
- :0 {:distance 94, :path [:12 :6 :1 :0]},
- :4 {:distance 71, :path [:12 :6 :4]},
- :7 {:distance 23, :path [:12 :14 :7]},
- :1 {:distance 21, :path [:12 :6 :1]},
- :8 {:distance 16, :path [:12 :14 :13 :8]},
- :9 {:distance 26, :path [:12 :14 :13 :9]},
- :2 {:distance 65, :path [:12 :6 :2]},
- :5 {:distance 81, :path [:12 :5]},
- :3 {:distance 70, :path [:12 :6 :1 :3]},
- :6 {:distance 13, :path [:12 :6]}}
-update-table node: :9 weight: 61
-current_distance: 26
-{:14 {:distance 12, :path [:12 :14]},
- :12 {:distance 0, :path [:12]},
- :11 {:distance 63, :path [:12 :14 :13 :11]},
- :10 {:distance 40, :path [:12 :6 :1 :10]},
- :13 {:distance 12, :path [:12 :14 :13]},
- :0 {:distance 94, :path [:12 :6 :1 :0]},
- :4 {:distance 71, :path [:12 :6 :4]},
- :7 {:distance 23, :path [:12 :14 :7]},
- :1 {:distance 21, :path [:12 :6 :1]},
- :8 {:distance 16, :path [:12 :14 :13 :8]},
- :9 {:distance 26, :path [:12 :14 :13 :9]},
- :2 {:distance 65, :path [:12 :6 :2]},
- :5 {:distance 81, :path [:12 :5]},
- :3 {:distance 62, :path [:12 :14 :7 :3]},
- :6 {:distance 13, :path [:12 :6]}}
-update-table node: :5 weight: 91
-current_distance: 81
-{:14 {:distance 12, :path [:12 :14]},
- :12 {:distance 0, :path [:12]},
- :11 {:distance 63, :path [:12 :14 :13 :11]},
- :10 {:distance 40, :path [:12 :6 :1 :10]},
- :13 {:distance 12, :path [:12 :14 :13]},
- :0 {:distance 94, :path [:12 :6 :1 :0]},
- :4 {:distance 71, :path [:12 :6 :4]},
- :7 {:distance 23, :path [:12 :14 :7]},
- :1 {:distance 21, :path [:12 :6 :1]},
- :8 {:distance 16, :path [:12 :14 :13 :8]},
- :9 {:distance 26, :path [:12 :14 :13 :9]},
- :2 {:distance 65, :path [:12 :6 :2]},
- :5 {:distance 81, :path [:12 :5]},
- :3 {:distance 62, :path [:12 :14 :7 :3]},
- :6 {:distance 13, :path [:12 :6]}}
-update-table node: :14 weight: 15
-current_distance: 12
-{:14 {:distance 12, :path [:12 :14]},
- :12 {:distance 0, :path [:12]},
- :11 {:distance 63, :path [:12 :14 :13 :11]},
- :10 {:distance 40, :path [:12 :6 :1 :10]},
- :13 {:distance 12, :path [:12 :14 :13]},
- :0 {:distance 94, :path [:12 :6 :1 :0]},
- :4 {:distance 71, :path [:12 :6 :4]},
- :7 {:distance 23, :path [:12 :14 :7]},
- :1 {:distance 21, :path [:12 :6 :1]},
- :8 {:distance 16, :path [:12 :14 :13 :8]},
- :9 {:distance 26, :path [:12 :14 :13 :9]},
- :2 {:distance 65, :path [:12 :6 :2]},
- :5 {:distance 81, :path [:12 :5]},
- :3 {:distance 62, :path [:12 :14 :7 :3]},
- :6 {:distance 13, :path [:12 :6]}}
-update-table node: :11 weight: 79
-current_distance: 63
-{:14 {:distance 12, :path [:12 :14]},
- :12 {:distance 0, :path [:12]},
- :11 {:distance 63, :path [:12 :14 :13 :11]},
- :10 {:distance 40, :path [:12 :6 :1 :10]},
- :13 {:distance 12, :path [:12 :14 :13]},
- :0 {:distance 94, :path [:12 :6 :1 :0]},
- :4 {:distance 71, :path [:12 :6 :4]},
- :7 {:distance 23, :path [:12 :14 :7]},
- :1 {:distance 21, :path [:12 :6 :1]},
- :8 {:distance 16, :path [:12 :14 :13 :8]},
- :9 {:distance 26, :path [:12 :14 :13 :9]},
- :2 {:distance 65, :path [:12 :6 :2]},
- :5 {:distance 81, :path [:12 :5]},
- :3 {:distance 62, :path [:12 :14 :7 :3]},
- :6 {:distance 13, :path [:12 :6]}}
-update-table node: :0 weight: 32
-current_distance: 94
-{:14 {:distance 12, :path [:12 :14]},
- :12 {:distance 0, :path [:12]},
- :11 {:distance 63, :path [:12 :14 :13 :11]},
- :10 {:distance 40, :path [:12 :6 :1 :10]},
- :13 {:distance 12, :path [:12 :14 :13]},
- :0 {:distance 94, :path [:12 :6 :1 :0]},
- :4 {:distance 71, :path [:12 :6 :4]},
- :7 {:distance 23, :path [:12 :14 :7]},
- :1 {:distance 21, :path [:12 :6 :1]},
- :8 {:distance 16, :path [:12 :14 :13 :8]},
- :9 {:distance 26, :path [:12 :14 :13 :9]},
- :2 {:distance 65, :path [:12 :6 :2]},
- :5 {:distance 81, :path [:12 :5]},
- :3 {:distance 62, :path [:12 :14 :7 :3]},
- :6 {:distance 13, :path [:12 :6]}}
-next_node_to_visit: :9
-
- {:14 {:distance 12, :path [:12 :14]},
-  :12 {:distance 0, :path [:12]},
-  :11 {:distance 63, :path [:12 :14 :13 :11]},
-  :10 {:distance 40, :path [:12 :6 :1 :10]},
-  :13 {:distance 12, :path [:12 :14 :13]},
-  :0 {:distance 55, :path [:12 :14 :7 :0]},
-  :4 {:distance 71, :path [:12 :6 :4]},
-  :7 {:distance 23, :path [:12 :14 :7]},
-  :1 {:distance 21, :path [:12 :6 :1]},
-  :8 {:distance 16, :path [:12 :14 :13 :8]},
-  :9 {:distance 26, :path [:12 :14 :13 :9]},
-  :2 {:distance 65, :path [:12 :6 :2]},
-  :5 {:distance 81, :path [:12 :5]},
-  :3 {:distance 62, :path [:12 :14 :7 :3]},
-  :6 {:distance 13, :path [:12 :6]}}current_node: :9
-neighbours: [[:3 19] [:7 98] [:4 95] [:0 38]]
-next_unvisited_nodes: (:11 :10 :0 :4 :2 :5 :3)
-update-table node: :3 weight: 19
-current_distance: 62
-{:14 {:distance 12, :path [:12 :14]},
- :12 {:distance 0, :path [:12]},
- :11 {:distance 63, :path [:12 :14 :13 :11]},
- :10 {:distance 40, :path [:12 :6 :1 :10]},
- :13 {:distance 12, :path [:12 :14 :13]},
- :0 {:distance 55, :path [:12 :14 :7 :0]},
- :4 {:distance 71, :path [:12 :6 :4]},
- :7 {:distance 23, :path [:12 :14 :7]},
- :1 {:distance 21, :path [:12 :6 :1]},
- :8 {:distance 16, :path [:12 :14 :13 :8]},
- :9 {:distance 26, :path [:12 :14 :13 :9]},
- :2 {:distance 65, :path [:12 :6 :2]},
- :5 {:distance 81, :path [:12 :5]},
- :3 {:distance 62, :path [:12 :14 :7 :3]},
- :6 {:distance 13, :path [:12 :6]}}
-update-table node: :7 weight: 98
-current_distance: 23
-{:14 {:distance 12, :path [:12 :14]},
- :12 {:distance 0, :path [:12]},
- :11 {:distance 63, :path [:12 :14 :13 :11]},
- :10 {:distance 40, :path [:12 :6 :1 :10]},
- :13 {:distance 12, :path [:12 :14 :13]},
- :0 {:distance 55, :path [:12 :14 :7 :0]},
- :4 {:distance 71, :path [:12 :6 :4]},
- :7 {:distance 23, :path [:12 :14 :7]},
- :1 {:distance 21, :path [:12 :6 :1]},
- :8 {:distance 16, :path [:12 :14 :13 :8]},
- :9 {:distance 26, :path [:12 :14 :13 :9]},
- :2 {:distance 65, :path [:12 :6 :2]},
- :5 {:distance 81, :path [:12 :5]},
- :3 {:distance 45, :path [:12 :14 :13 :9 :3]},
- :6 {:distance 13, :path [:12 :6]}}
-update-table node: :4 weight: 95
-current_distance: 71
-{:14 {:distance 12, :path [:12 :14]},
- :12 {:distance 0, :path [:12]},
- :11 {:distance 63, :path [:12 :14 :13 :11]},
- :10 {:distance 40, :path [:12 :6 :1 :10]},
- :13 {:distance 12, :path [:12 :14 :13]},
- :0 {:distance 55, :path [:12 :14 :7 :0]},
- :4 {:distance 71, :path [:12 :6 :4]},
- :7 {:distance 23, :path [:12 :14 :7]},
- :1 {:distance 21, :path [:12 :6 :1]},
- :8 {:distance 16, :path [:12 :14 :13 :8]},
- :9 {:distance 26, :path [:12 :14 :13 :9]},
- :2 {:distance 65, :path [:12 :6 :2]},
- :5 {:distance 81, :path [:12 :5]},
- :3 {:distance 45, :path [:12 :14 :13 :9 :3]},
- :6 {:distance 13, :path [:12 :6]}}
-update-table node: :0 weight: 38
-current_distance: 55
-...
-next_node_to_visit: :10
-
- ...current_node: :10
-neighbours: [[:9 18] [:5 59] [:14 22] [:6 26] [:12 94] [:7 98] [:0 73] [:1 20]]
-next_unvisited_nodes: (:11 :0 :4 :2 :5 :3)
-update-table node: :9 weight: 18
-current_distance: 26
-...
-update-table node: :5 weight: 59
-current_distance: 81
-...
-update-table node: :14 weight: 22
-current_distance: 12
-...
-update-table node: :6 weight: 26
-current_distance: 13
-...
-update-table node: :12 weight: 94
-current_distance: 0
-...
-update-table node: :7 weight: 98
-current_distance: 23
-...
-update-table node: :0 weight: 73
-current_distance: 55
-...
-update-table node: :1 weight: 20
-current_distance: 21
-...
-next_node_to_visit: :3
-
- ...current_node: :3
-neighbours: [[:4 45] [:14 55] [:0 83] [:10 57] [:11 84]]
-next_unvisited_nodes: (:11 :0 :4 :2 :5)
-update-table node: :4 weight: 45
-current_distance: 71
-...
-update-table node: :14 weight: 55
-current_distance: 12
-...
-update-table node: :0 weight: 83
-current_distance: 55
-...
-update-table node: :10 weight: 57
-current_distance: 40
-...
-update-table node: :11 weight: 84
-current_distance: 63
-...
-next_node_to_visit: :0
-
- ...current_node: :0
-neighbours: [[:14 71] [:13 40] [:12 33] [:11 78] [:10 13] [:9 54] [:8 34] [:7 56] [:6 23] [:5 72] [:4 43] [:3 34] [:2 37] [:1 87]]
-next_unvisited_nodes: (:11 :4 :2 :5)
-update-table node: :14 weight: 71
-current_distance: 12
-...
-update-table node: :13 weight: 40
-current_distance: 12
-...
-update-table node: :12 weight: 33
-current_distance: 0
-...
-update-table node: :11 weight: 78
-current_distance: 63
-...
-update-table node: :10 weight: 13
-current_distance: 40
-...
-update-table node: :9 weight: 54
-current_distance: 26
-...
-update-table node: :8 weight: 34
-current_distance: 16
-...
-update-table node: :7 weight: 56
-current_distance: 23
-...
-update-table node: :6 weight: 23
-current_distance: 13
-...
-update-table node: :5 weight: 72
-current_distance: 81
-...
-update-table node: :4 weight: 43
-current_distance: 71
-...
-update-table node: :3 weight: 34
-current_distance: 45
-...
-update-table node: :2 weight: 37
-current_distance: 65
-...
-update-table node: :1 weight: 87
-current_distance: 21
-...
-next_node_to_visit: :11
-
- ...current_node: :11
-neighbours: [[:13 55] [:4 0]]
-next_unvisited_nodes: (:4 :2 :5)
-update-table node: :13 weight: 55
-current_distance: 12
-...
-update-table node: :4 weight: 0
-current_distance: 71
-...
-next_node_to_visit: :4
-
- ...current_node: :4
-neighbours: [[:8 21] [:6 75] [:12 9] [:0 21] [:2 19] [:11 72] [:9 79] [:7 19] [:1 46]]
-next_unvisited_nodes: (:2 :5)
-update-table node: :8 weight: 21
-current_distance: 16
-...
-update-table node: :6 weight: 75
-current_distance: 13
-...
-update-table node: :12 weight: 9
-current_distance: 0
-...
-update-table node: :0 weight: 21
-current_distance: 55
-...
-update-table node: :2 weight: 19
-current_distance: 65
-...
-update-table node: :11 weight: 72
-current_distance: 63
-...
-update-table node: :9 weight: 79
-current_distance: 26
-...
-update-table node: :7 weight: 19
-current_distance: 23
-...
-update-table node: :1 weight: 46
-current_distance: 21
-...
-next_node_to_visit: :2
-
- ...current_node: :2
-neighbours: [[:9 11] [:11 9] [:12 18] [:7 28] [:10 8] [:14 39] [:13 60]]
-next_unvisited_nodes: (:5)
-update-table node: :9 weight: 11
-current_distance: 26
-...
-update-table node: :11 weight: 9
-current_distance: 63
-...
-update-table node: :12 weight: 18
-current_distance: 0
-...
-update-table node: :7 weight: 28
-current_distance: 23
-...
-update-table node: :10 weight: 8
-current_distance: 40
-...
-update-table node: :14 weight: 39
-current_distance: 12
-...
-update-table node: :13 weight: 60
-current_distance: 12
-...
-next_node_to_visit: :5
-
- ...current_node: :5
-neighbours: [[:10 14] [:13 67] [:8 68] [:1 17] [:2 6] [:0 6] [:12 4]]
-next_unvisited_nodes: ()
-update-table node: :10 weight: 14
-current_distance: 40
-...
-update-table node: :13 weight: 67
-current_distance: 12
-...
-update-table node: :8 weight: 68
-current_distance: 16
-...
-update-table node: :1 weight: 17
-current_distance: 21
-...
-update-table node: :2 weight: 6
-current_distance: 65
-...
-update-table node: :0 weight: 6
-current_distance: 55
-...
-update-table node: :12 weight: 4
-current_distance: 0
-...
-next_node_to_visit: nil
-
- ...
- ...
- ...
- ...
- ...
- ...
- ...
- ...
- ...
- ...
- ...
- ...
- ...
- ...
- ...
- ...)
+[:A :B :D :F :C]
 clj꞉graph-traversal.q3꞉> 

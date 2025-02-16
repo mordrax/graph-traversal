@@ -1,6 +1,24 @@
+;; 3. Write an implementation of Dijkstra's algorithm that traverses your graph and outputs the shortest path between any 2 randomly selected vertices.
+;; I should be able to write something like this for example.
+
+;; #!clojure
+;; (def random-graph (make-graph 10 10))
+;; (shortest-path 
+;;    random-graph 
+;;    (first (keys random-graph)) 
+;;    (last (keys random-graph)) ; => list of nodes which is the shortest path by edge weight between the 2 nodes, or no path if one does not exist.
+
+;; Assumptions:
+;; - For a directed graph, there is no guarantee that once the target node is reached, that it is the shortest path.
+;;   Therefore, we must visit all edges, to ensure we hit directed edges 
+
 (ns graph-traversal.q3
   (:require
-   [clojure.pprint :as pprint]))
+   [clojure.pprint :as pprint])
+  ; requre q2 make-graph
+  (:require
+   [graph-traversal.q2 :refer
+    [make-graph]]))
 
 ;; (def SIMPLE_GRAPH
 ;;   {:1 [[:2 4] [:3 2]],
@@ -71,9 +89,10 @@
            distance_to_current_node (:distance (acc current_node))
            path_to_current_node (:path (acc current_node))
            new_distance_to_neighbour (+ distance_to_current_node neighbour_weight)
-           _ (println "update-table node:" neighbour_node "weight:" neighbour_weight)
-           _ (println "current_distance:" current_distance_to_neighbour)
-           _ (pprint/pprint acc)]
+          ;;  _ (println "update-table node:" neighbour_node "weight:" neighbour_weight)
+          ;;  _ (println "current_distance:" current_distance_to_neighbour)
+          ;;  _ (pprint/pprint acc)
+           ]
        ; NOTE: If the distance of both paths are the same, we do not change the path
        (if (> current_distance_to_neighbour new_distance_to_neighbour)
          (assoc acc neighbour_node
@@ -94,69 +113,72 @@
    (first unvisited_nodes)
    (rest unvisited_nodes)))
 
+(defn step [_ node [] table visited]
+  {:next_node node
+   :unvisited_nodes []
+   :table table
+   :visited_nodes visited})
 
-(defn shortest-path-helper [graph
-                            current_node
-                            unvisited_nodes
-                            shortest_path_table
-                            visited_nodes]
-  (lazy-seq
-   (if (empty? unvisited_nodes)
-          ;; all nodes have been visited
-          ;; return shortest path to end_node
-     shortest_path_table
-     (let [;
-           neighbours (graph current_node)
-           updated_visited_nodes (conj visited_nodes current_node)
-           updated_unvisited_nodes (remove (partial = current_node) unvisited_nodes)
-           _ (println "current_node:" current_node)
-           _ (println "neighbours:" neighbours)
-           _ (println "next_unvisited_nodes:" updated_unvisited_nodes)
+(defn step [graph
+            current_node
+            unvisited_nodes
+            shortest_path_table
+            visited_nodes]
+  (let [;
+        neighbours (graph current_node)
+        updated_visited_nodes (conj visited_nodes current_node)
+        updated_unvisited_nodes (remove (partial = current_node) unvisited_nodes)
+        ;; _ (println "current_node:" current_node)
+        ;; _ (println "neighbours:" neighbours)
+        ;; _ (println "next_unvisited_nodes:" updated_unvisited_nodes)
 
-           updated_shortest_path_table (update-table
-                                        shortest_path_table
-                                        neighbours
-                                        current_node)
-           next_node_to_visit (get-nearest-unvisited-node
-                               updated_shortest_path_table
-                               updated_unvisited_nodes)
-           _ (println "next_node_to_visit:" next_node_to_visit)
-           ;
-           ]
-       (cons updated_shortest_path_table
-             (shortest-path-helper graph
-                                   next_node_to_visit
-                                   updated_unvisited_nodes
-                                   updated_shortest_path_table
-                                   updated_visited_nodes))))))
+        updated_shortest_path_table (update-table
+                                     shortest_path_table
+                                     neighbours
+                                     current_node)
+        next_node_to_visit (get-nearest-unvisited-node
+                            updated_shortest_path_table
+                            updated_unvisited_nodes)
+        ;; _ (println "next_node_to_visit:" next_node_to_visit)
+        ]
+    {:next_node next_node_to_visit
+     :unvisited_nodes updated_unvisited_nodes
+     :table updated_shortest_path_table
+     :visited_nodes updated_visited_nodes}))
 
 ;; Algorithm follows: https://www.youtube.com/watch?v=bZkzH5x0SKU
 ;; each node is visited once, function terminates when either:
 ;; all (keys graph) are visited
 ;; OR
-;; no more neighbours left to visit (ie remaining unvisited nodes are not connected)
+;; no more neighbours left to visit (ie remaining unvisited nodes are not connected) 
+  
 (defn shortest-path
-  "Find shortest path between start_node and end_node using Dijkstra's algorithm"
-  [graph start_node end_node]
-  (let [current_node start_node
-           ;; 1: Mark all nodes as unvisited
-        unvisited_nodes (keys graph)
+  ([graph start_node end_node]
+     (shortest-path graph start_node end_node false))
+  
+  ([graph start_node end_node debug]
+   (loop [current_node start_node
+          unvisited_nodes (keys graph)
+          shortest_path_table (init_shortest_path_table graph start_node)
+          visited_nodes []]
+     (if (empty? unvisited_nodes)
+      ;; Return the path to end_node from the final table
+       (do
+         (if debug
+           (pprint/pprint shortest_path_table))
+         (get-in shortest_path_table [end_node :path]))
+       (let [{:keys [next_node unvisited_nodes table visited_nodes]}
+             (step graph current_node unvisited_nodes shortest_path_table visited_nodes)]
+         (recur next_node
+                unvisited_nodes
+                table
+                visited_nodes)))))
+)
 
-           ;; 2. Assign weight of all nodes other than start_node to Integer/MAX_VALUE
-           ;; assign start_node weight 0
-        shortest_path_table (init_shortest_path_table graph start_node)
-        visited_nodes []]
-    (shortest-path-helper graph
-                          current_node
-                          unvisited_nodes
-                          shortest_path_table
-                          visited_nodes)))
 
-(take 15 (shortest-path SIMPLE_GRAPH :A :C))
-
-(take 100 (shortest-path GRAPH_15_100 :12 :2))
+(shortest-path SIMPLE_GRAPH :A :C)
+(shortest-path SIMPLE_GRAPH :A :C true)
+;; (take 100 (shortest-path GRAPH_15_100 :12 :2))
 
 
 ;; (init_shortest_path_table SIMPLE_GRAPH :A)
-
-(reduce (fn [acc x] (+ acc x)) 0 (vec (range 16)))

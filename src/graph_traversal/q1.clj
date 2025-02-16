@@ -40,5 +40,5 @@
 (def seq-graph-dfs (partial seq-graph []))
 (def seq-graph-bfs (partial seq-graph clojure.lang.PersistentQueue/EMPTY))
 
-(seq-graph-dfs G :1) ; => (:1 :3 :4 :2)
+(take 2 (seq-graph-dfs G :1)) ; => (:1 :3 :4 :2)
 ;; (seq-graph-bfs G [:1 nil]) ; => (:1 :2 :3 :4)
