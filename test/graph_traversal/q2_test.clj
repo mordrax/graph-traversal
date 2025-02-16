@@ -82,5 +82,5 @@
   ;; 1000 nodes and 100_000 edges takes 3.5s to run
   (testing "big arse graph"
     (let [graph (make-graph 1000 10000)]
-      (is (= 1000 (count graph)))
+      ;; (is (= 1000 (count graph))) ; NOTE: This is not guaranteed because nodes with no directed edge from it are not recorded as []
       (is (= 20000 (count (flatten (vals graph))))))))

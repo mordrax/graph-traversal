@@ -19,7 +19,7 @@
 ;;   I'm _assuming_ the weight will be set as a global constant of 0-99 for simplicity.
 ;; - Function will return nil if the sparsity constraint is not met.
 ;; - If a node has no directed edge going to another node, 
-;;   it will not be included in the graph
+;;   it will be not included
 
 (ns graph-traversal.q2
   (:require [clojure.set :as set]))
@@ -95,6 +95,14 @@
     [row col])  
     ) 
   )
+
+(defn- init-graph [N]
+  (reduce
+   (fn [acc x]
+     (assoc acc (num-to-keyword x) []))
+   {}
+   (range N))
+  )
   
 (defn make-graph [N S]
   (when (is-valid-graph N S)
@@ -115,10 +123,11 @@
       (reduce
        (fn [acc [start end]] 
          (update acc (num-to-keyword start) conj [(num-to-keyword end) (make-weight)]))
+      ;;  (init-graph N)
        {}
        all-edges)
       )))
 
-(make-graph 5 7)
+(make-graph 10 10)
 (make-graph 50 500)
 (make-graph 15 100)

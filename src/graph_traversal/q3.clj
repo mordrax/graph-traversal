@@ -9,8 +9,7 @@
 ;;    (last (keys random-graph)) ; => list of nodes which is the shortest path by edge weight between the 2 nodes, or no path if one does not exist.
 
 ;; Assumptions:
-;; - For a directed graph, there is no guarantee that once the target node is reached, that it is the shortest path.
-;;   Therefore, we must visit all edges, to ensure we hit directed edges 
+;; 
 
 (ns graph-traversal.q3
   (:require
@@ -18,14 +17,9 @@
   ; requre q2 make-graph
   (:require
    [graph-traversal.q2 :refer
-    [make-graph]]))
+    [make-graph]])
 
-;; (def SIMPLE_GRAPH
-;;   {:1 [[:2 4] [:3 2]],
-;;    :2 [[:3 3] [:4 2] [:5 3]],
-;;    :3 [[:2 1] [:5 5] [:4 4]],
-;;    :4 []
-;;    :5 [[:4 1]]})
+  )
 
 (def SIMPLE_GRAPH
   {:A [[:B 2] [:D 8]],
@@ -33,7 +27,14 @@
    :C [[:F 3] [:E 9]],
    :D [[:A 8] [:B 5] [:E 3] [:F 2]]
    :E [[:D 3] [:F 1] [:C 9] [:B 6]]
-   :F [[:C 3] [:E 1] [:D 2]]})
+   :F [[:C 3] [:E 1] [:D 2]]})             
+
+;; (def SIMPLE_GRAPH
+;;   {:1 [[:2 4] [:3 2]],
+;;    :2 [[:3 3] [:4 2] [:5 3]],
+;;    :3 [[:2 1] [:5 5] [:4 4]],
+;;    :4 []
+;;    :5 [[:4 1]]})
 
 (def GRAPH_15_100
   {:14 [[:5 97] [:6 52] [:7 11] [:8 53] [:11 84] [:13 0]],
@@ -85,12 +86,16 @@
 (defn- update-table [shortest_path_table neighbours current_node]
   (reduce
    (fn [acc [neighbour_node neighbour_weight]]
-     (let [current_distance_to_neighbour (:distance (acc neighbour_node))
-           distance_to_current_node (:distance (acc current_node))
-           path_to_current_node (:path (acc current_node))
+     (let [current_distance_to_neighbour (get-in acc [neighbour_node :distance] Integer/MAX_VALUE)
+           distance_to_current_node (get-in acc [current_node :distance] Integer/MAX_VALUE)
+           path_to_current_node (get-in acc [current_node :path] [])
+          ;;  current_distance_to_neighbour (:distance (acc neighbour_node))
+          ;;  distance_to_current_node (:distance (acc current_node))
+          ;;  path_to_current_node (:path (acc current_node))
            new_distance_to_neighbour (+ distance_to_current_node neighbour_weight)
           ;;  _ (println "update-table node:" neighbour_node "weight:" neighbour_weight)
           ;;  _ (println "current_distance:" current_distance_to_neighbour)
+          ;;  _ (println "new_distance:" new_distance_to_neighbour)
           ;;  _ (pprint/pprint acc)
            ]
        ; NOTE: If the distance of both paths are the same, we do not change the path
@@ -150,8 +155,7 @@
 ;; each node is visited once, function terminates when either:
 ;; all (keys graph) are visited
 ;; OR
-;; no more neighbours left to visit (ie remaining unvisited nodes are not connected) 
-  
+;; no more neighbours left to visit (ie remaining unvisited nodes are not connected)  
 (defn shortest-path
   ([graph start_node end_node]
      (shortest-path graph start_node end_node false))
@@ -176,9 +180,13 @@
 )
 
 
-(shortest-path SIMPLE_GRAPH :A :C)
-(shortest-path SIMPLE_GRAPH :A :C true)
-;; (take 100 (shortest-path GRAPH_15_100 :12 :2))
 
+;; (shortest-path SIMPLE_GRAPH :A :C)
+
+;; (def random-graph (make-graph 10 10))
+
+;; (shortest-path (make-graph 10 80)
+;;                (first (keys random-graph))
+;;                (rand-nth (vec (keys random-graph))))
 
 ;; (init_shortest_path_table SIMPLE_GRAPH :A)
