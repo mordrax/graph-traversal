@@ -832,3 +832,19 @@ clj꞉graph-traversal.q3꞉> 
 clj꞉graph-traversal.q3꞉> 
 [:12 :14 :13]
 clj꞉graph-traversal.q3꞉> 
+; Execution error (ArityException) at graph-traversal.q4/eval12138 (form-init2405310019828224872.clj:9).
+; Wrong number of args (1) passed to: graph-traversal.q4/eccentricity
+clj꞉graph-traversal.q4꞉> 
+; Execution error (ArityException) at graph-traversal.q4/eval12140 (form-init2405310019828224872.clj:9).
+; Wrong number of args (1) passed to: graph-traversal.q4/eccentricity
+clj꞉graph-traversal.q4꞉> 
+nil
+clj꞉graph-traversal.q4꞉> 
+nil
+clj꞉graph-traversal.q4꞉> 
+nil
+clj꞉graph-traversal.q4꞉> 
+nil
+clj꞉graph-traversal.q4꞉> 
+nil
+clj꞉graph-traversal.q4꞉> 
