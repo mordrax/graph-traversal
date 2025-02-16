@@ -1,32 +1,18 @@
 # graph-traversal
 
-FIXME: description
+A fun little graph exercise akin to a 7DRL... except it didn't take 7 days, and it's not a RL... O_O
 
-## Installation
-
-Download from http://example.com/FIXME.
+q1 - makes weighted graphs.
+q2 - makes arbitrary weighted and directed graphs.
+q3 - runs Dijstra's algo over these graphs
+q4 - calculates eccentricity, radius and diameter of said graphs
 
 ## Usage
 
-FIXME: explanation
+This exercise was made with VSCode, Calva using Lein.
 
-    $ java -jar graph-traversal-0.1.0-standalone.jar [args]
+`lein test` should run 7 tests, 44 assertions successfully.
 
-## Options
-
-FIXME: listing of options this app accepts.
-
-## Examples
-
-...
-
-### Bugs
-
-...
-
-### Any Other Sections
-### That You Think
-### Might be Useful
 
 ## License
 
